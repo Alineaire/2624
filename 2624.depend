@@ -1,0 +1,943 @@
+# depslib dependency file v1.0
+1552400469 source:/home/pi/Desktop/2624/2624/main.cpp
+	<iostream>
+
+1552399466 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/c-example.c
+	"led-matrix-c.h"
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/led-matrix-c.h
+	<stdint.h>
+	<stdio.h>
+
+1552399486 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/input-example.cc
+	"led-matrix.h"
+	<unistd.h>
+	<math.h>
+	<stdio.h>
+	<signal.h>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/led-matrix.h
+	<stdint.h>
+	<string>
+	<vector>
+	"gpio.h"
+	"canvas.h"
+	"thread.h"
+	"pixel-mapper.h"
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/gpio.h
+	<stdint.h>
+	<vector>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/canvas.h
+	<stdint.h>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/thread.h
+	<stdint.h>
+	<pthread.h>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/pixel-mapper.h
+	<string>
+	<vector>
+
+1552399492 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/ledcat.cc
+	"led-matrix.h"
+	<math.h>
+	<signal.h>
+	<stdio.h>
+	<time.h>
+	<unistd.h>
+
+1552401322 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/demo-main.cc
+	"led-matrix.h"
+	"threaded-canvas-manipulator.h"
+	"pixel-mapper.h"
+	"graphics.h"
+	<assert.h>
+	<getopt.h>
+	<limits.h>
+	<math.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<algorithm>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/threaded-canvas-manipulator.h
+	"thread.h"
+	"canvas.h"
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/graphics.h
+	"canvas.h"
+	<map>
+	<stdint.h>
+
+1552399452 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/minimal-example.cc
+	"led-matrix.h"
+	<unistd.h>
+	<math.h>
+	<stdio.h>
+	<signal.h>
+
+1552399429 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/scrolling-text-example.cc
+	"led-matrix.h"
+	"graphics.h"
+	<string>
+	<getopt.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+
+1552399442 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/text-example.cc
+	"led-matrix.h"
+	"graphics.h"
+	<getopt.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+
+1552391863 source:/home/pi/rpi-rgb-led-matrix/lib/bdf-font.cc
+	<inttypes.h>
+	"graphics.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1552391864 source:/home/pi/rpi-rgb-led-matrix/lib/content-streamer.cc
+	"content-streamer.h"
+	"led-matrix.h"
+	<fcntl.h>
+	<stdio.h>
+	<string.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<unistd.h>
+	<algorithm>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/content-streamer.h
+	<stdint.h>
+	<stdlib.h>
+	<string>
+
+1552391863 source:/home/pi/rpi-rgb-led-matrix/lib/gpio.cc
+	<inttypes.h>
+	"gpio.h"
+	<assert.h>
+	<fcntl.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/mman.h>
+	<time.h>
+	<unistd.h>
+
+1537733351 source:/home/pi/rpi-rgb-led-matrix/lib/hardware-mapping.c
+	"hardware-mapping.h"
+
+1537733351 /home/pi/rpi-rgb-led-matrix/lib/hardware-mapping.h
+	<stdint.h>
+
+1552399472 source:/home/pi/rpi-rgb-led-matrix/examples-api-use/clock.cc
+	"led-matrix.h"
+	"graphics.h"
+	<getopt.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+
+1552391864 source:/home/pi/rpi-rgb-led-matrix/lib/led-matrix-c.cc
+	"led-matrix-c.h"
+	<string.h>
+	<stdio.h>
+	"led-matrix.h"
+	"graphics.h"
+
+1552391864 source:/home/pi/rpi-rgb-led-matrix/lib/framebuffer.cc
+	"framebuffer-internal.h"
+	<assert.h>
+	<ctype.h>
+	<math.h>
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<algorithm>
+	"gpio.h"
+
+1537733351 /home/pi/rpi-rgb-led-matrix/lib/framebuffer-internal.h
+	<stdint.h>
+	<stdlib.h>
+	"hardware-mapping.h"
+
+1552391864 source:/home/pi/rpi-rgb-led-matrix/lib/graphics.cc
+	"graphics.h"
+	"utf8-internal.h"
+	<stdlib.h>
+	<functional>
+
+1537733351 /home/pi/rpi-rgb-led-matrix/lib/utf8-internal.h
+	<stdint.h>
+
+1552391863 source:/home/pi/rpi-rgb-led-matrix/lib/pixel-mapper.cc
+	"pixel-mapper.h"
+	<assert.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<map>
+
+1537733351 source:/home/pi/rpi-rgb-led-matrix/lib/multiplex-mappers.cc
+	"multiplex-mappers-internal.h"
+
+1552391712 /home/pi/rpi-rgb-led-matrix/lib/multiplex-mappers-internal.h
+	<vector>
+	"pixel-mapper.h"
+
+1552391782 source:/home/pi/rpi-rgb-led-matrix/lib/options-initialize.cc
+	"led-matrix.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<unistd.h>
+	<grp.h>
+	<pwd.h>
+	<vector>
+	"multiplex-mappers-internal.h"
+
+1552391863 source:/home/pi/rpi-rgb-led-matrix/lib/thread.cc
+	"thread.h"
+	<sched.h>
+	<stdio.h>
+	<assert.h>
+	<string.h>
+
+1552391863 source:/home/pi/rpi-rgb-led-matrix/lib/transformer.cc
+	<assert.h>
+	<stdio.h>
+	"transformer.h"
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/transformer.h
+	"deprecated-transformer.h"
+
+1537733351 /home/pi/rpi-rgb-led-matrix/include/deprecated-transformer.h
+	<vector>
+	<cstddef>
+	"canvas.h"
+
+1552391682 source:/home/pi/rpi-rgb-led-matrix/lib/led-matrix.cc
+	"led-matrix.h"
+	<assert.h>
+	<math.h>
+	<pthread.h>
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<stdio.h>
+	<sys/time.h>
+	"gpio.h"
+	"thread.h"
+	"framebuffer-internal.h"
+	"multiplex-mappers-internal.h"
+
+1552399523 source:/home/pi/rpi-rgb-led-matrix/utils/video-viewer.cc
+	<libavcodec/avcodec.h>
+	<libavformat/avformat.h>
+	<libswscale/swscale.h>
+	<fcntl.h>
+	<getopt.h>
+	<signal.h>
+	<stdio.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<unistd.h>
+	"led-matrix.h"
+	"content-streamer.h"
+
+1552399502 source:/home/pi/rpi-rgb-led-matrix/utils/led-image-viewer.cc
+	"led-matrix.h"
+	"pixel-mapper.h"
+	"content-streamer.h"
+	<fcntl.h>
+	<math.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<sys/types.h>
+	<unistd.h>
+	<algorithm>
+	<map>
+	<string>
+	<vector>
+	<Magick++.h>
+	<magick/image.h>
+
+1540157780 /usr/include/GraphicsMagick/Magick++.h
+	<Magick++/Include.h>
+	<Magick++/Image.h>
+	<Magick++/Pixels.h>
+	<Magick++/STL.h>
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Include.h
+	"magick/magick_config.h"
+	"magick_config.h"
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+	<time.h>
+	<sys/types.h>
+	<vcl.h>
+	<magick/api.h>
+	"magick/enum_strings.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/magick_config.h
+
+1540157780 /usr/include/GraphicsMagick/magick/api.h
+	"magick/magick_config.h"
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+	<sys/types.h>
+	"magick/symbols.h"
+	"magick/common.h"
+	"magick/magick_types.h"
+	"magick/analyze.h"
+	"magick/attribute.h"
+	"magick/average.h"
+	"magick/blob.h"
+	"magick/cdl.h"
+	"magick/channel.h"
+	"magick/color.h"
+	"magick/color_lookup.h"
+	"magick/colormap.h"
+	"magick/command.h"
+	"magick/compare.h"
+	"magick/composite.h"
+	"magick/compress.h"
+	"magick/confirm_access.h"
+	"magick/constitute.h"
+	"magick/decorate.h"
+	"magick/delegate.h"
+	"magick/deprecate.h"
+	"magick/describe.h"
+	"magick/draw.h"
+	"magick/effect.h"
+	"magick/enhance.h"
+	"magick/error.h"
+	"magick/fx.h"
+	"magick/gem.h"
+	"magick/gradient.h"
+	"magick/hclut.h"
+	"magick/image.h"
+	"magick/list.h"
+	"magick/log.h"
+	"magick/magic.h"
+	"magick/magick.h"
+	"magick/memory.h"
+	"magick/module.h"
+	"magick/monitor.h"
+	"magick/montage.h"
+	"magick/operator.h"
+	"magick/paint.h"
+	"magick/pixel_cache.h"
+	"magick/pixel_iterator.h"
+	"magick/plasma.h"
+	"magick/profile.h"
+	"magick/quantize.h"
+	"magick/registry.h"
+	"magick/render.h"
+	"magick/resize.h"
+	"magick/resource.h"
+	"magick/shear.h"
+	"magick/signature.h"
+	"magick/statistics.h"
+	"magick/texture.h"
+	"magick/timer.h"
+	"magick/transform.h"
+	"magick/type.h"
+	"magick/utility.h"
+	"magick/version.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/symbols.h
+
+1540157780 /usr/include/GraphicsMagick/magick/common.h
+
+1540157780 /usr/include/GraphicsMagick/magick/magick_types.h
+
+1540157780 /usr/include/GraphicsMagick/magick/analyze.h
+	"magick/image.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/image.h
+	"magick/forward.h"
+	"magick/colorspace.h"
+	"magick/error.h"
+	"magick/timer.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/forward.h
+
+1540157780 /usr/include/GraphicsMagick/magick/colorspace.h
+
+1540157780 /usr/include/GraphicsMagick/magick/error.h
+	<magick/log.h>
+
+1540157780 /usr/include/GraphicsMagick/magick/log.h
+
+1540157780 /usr/include/GraphicsMagick/magick/timer.h
+
+1540157780 /usr/include/GraphicsMagick/magick/attribute.h
+	"magick/image.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/average.h
+	"magick/image.h"
+	"magick/error.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/blob.h
+	"magick/image.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/cdl.h
+
+1540157780 /usr/include/GraphicsMagick/magick/channel.h
+
+1540157780 /usr/include/GraphicsMagick/magick/color.h
+
+1540157780 /usr/include/GraphicsMagick/magick/color_lookup.h
+
+1540157780 /usr/include/GraphicsMagick/magick/colormap.h
+	"magick/image.h"
+	"magick/error.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/command.h
+
+1540157780 /usr/include/GraphicsMagick/magick/compare.h
+
+1540157780 /usr/include/GraphicsMagick/magick/composite.h
+
+1540157780 /usr/include/GraphicsMagick/magick/compress.h
+
+1540157780 /usr/include/GraphicsMagick/magick/confirm_access.h
+
+1540157780 /usr/include/GraphicsMagick/magick/constitute.h
+
+1540157780 /usr/include/GraphicsMagick/magick/decorate.h
+
+1540157780 /usr/include/GraphicsMagick/magick/delegate.h
+	"ghostscript/iapi.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/deprecate.h
+
+1540157780 /usr/include/GraphicsMagick/magick/describe.h
+	"magick/image.h"
+	"magick/error.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/draw.h
+	"magick/render.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/render.h
+	"magick/type.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/type.h
+
+1540157780 /usr/include/GraphicsMagick/magick/effect.h
+
+1540157780 /usr/include/GraphicsMagick/magick/enhance.h
+
+1540157780 /usr/include/GraphicsMagick/magick/fx.h
+
+1540157780 /usr/include/GraphicsMagick/magick/gem.h
+	"magick/random.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/random.h
+
+1540157780 /usr/include/GraphicsMagick/magick/gradient.h
+	"magick/image.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/hclut.h
+
+1540157780 /usr/include/GraphicsMagick/magick/list.h
+
+1540157780 /usr/include/GraphicsMagick/magick/magic.h
+
+1540157780 /usr/include/GraphicsMagick/magick/magick.h
+
+1540157780 /usr/include/GraphicsMagick/magick/memory.h
+
+1540157780 /usr/include/GraphicsMagick/magick/module.h
+
+1540157780 /usr/include/GraphicsMagick/magick/monitor.h
+
+1540157780 /usr/include/GraphicsMagick/magick/montage.h
+
+1540157780 /usr/include/GraphicsMagick/magick/operator.h
+
+1540157780 /usr/include/GraphicsMagick/magick/paint.h
+	"magick/render.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/pixel_cache.h
+	"magick/forward.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/pixel_iterator.h
+
+1540157780 /usr/include/GraphicsMagick/magick/plasma.h
+	"magick/image.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/profile.h
+
+1540157780 /usr/include/GraphicsMagick/magick/quantize.h
+
+1540157780 /usr/include/GraphicsMagick/magick/registry.h
+
+1540157780 /usr/include/GraphicsMagick/magick/resize.h
+
+1540157780 /usr/include/GraphicsMagick/magick/resource.h
+
+1540157780 /usr/include/GraphicsMagick/magick/shear.h
+
+1540157780 /usr/include/GraphicsMagick/magick/signature.h
+
+1540157780 /usr/include/GraphicsMagick/magick/statistics.h
+	"magick/image.h"
+	"magick/error.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/texture.h
+	"magick/image.h"
+	"magick/error.h"
+
+1540157780 /usr/include/GraphicsMagick/magick/transform.h
+
+1540157780 /usr/include/GraphicsMagick/magick/utility.h
+
+1540157780 /usr/include/GraphicsMagick/magick/version.h
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Image.h
+	"Magick++/Include.h"
+	<string>
+	<list>
+	"Magick++/Blob.h"
+	"Magick++/Color.h"
+	"Magick++/Drawable.h"
+	"Magick++/Exception.h"
+	"Magick++/Geometry.h"
+	"Magick++/TypeMetric.h"
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Blob.h
+	"Magick++/Include.h"
+	<string>
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Color.h
+	"Magick++/Include.h"
+	<string>
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Drawable.h
+	"Magick++/Include.h"
+	<functional>
+	<string>
+	<list>
+	<utility>
+	"Magick++/Color.h"
+	"Magick++/Geometry.h"
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Geometry.h
+	"Magick++/Include.h"
+	<string>
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Exception.h
+	"Magick++/Include.h"
+	<string>
+	<exception>
+
+1540157780 /usr/include/GraphicsMagick/Magick++/TypeMetric.h
+	"Magick++/Include.h"
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Pixels.h
+	"Magick++/Include.h"
+	"Magick++/Color.h"
+	"Magick++/Image.h"
+
+1540157780 /usr/include/GraphicsMagick/Magick++/STL.h
+	"Magick++/Include.h"
+	<algorithm>
+	<functional>
+	<iterator>
+	<map>
+	<utility>
+	"Magick++/CoderInfo.h"
+	"Magick++/Drawable.h"
+	"Magick++/Exception.h"
+	"Magick++/Montage.h"
+
+1540157780 /usr/include/GraphicsMagick/Magick++/CoderInfo.h
+	"Magick++/Include.h"
+	<string>
+
+1540157780 /usr/include/GraphicsMagick/Magick++/Montage.h
+	"Magick++/Include.h"
+	<string>
+	"Magick++/Color.h"
+	"Magick++/Geometry.h"
+
+1552416116 source:/home/pi/Desktop/2624/main.cpp
+	"ReaderScenario.h"
+	"TagsManager.h"
+	<iostream>
+
+1552399472 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/clock.cc
+	"led-matrix.h"
+	"graphics.h"
+	<getopt.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<unistd.h>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/led-matrix.h
+	<stdint.h>
+	<string>
+	<vector>
+	"gpio.h"
+	"canvas.h"
+	"thread.h"
+	"pixel-mapper.h"
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/gpio.h
+	<stdint.h>
+	<vector>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/canvas.h
+	<stdint.h>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/thread.h
+	<stdint.h>
+	<pthread.h>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/pixel-mapper.h
+	<string>
+	<vector>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/graphics.h
+	"canvas.h"
+	<map>
+	<stdint.h>
+
+1552416141 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/demo-main.cc
+	"led-matrix.h"
+	"threaded-canvas-manipulator.h"
+	"pixel-mapper.h"
+	"graphics.h"
+	<assert.h>
+	<getopt.h>
+	<limits.h>
+	<math.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<algorithm>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/threaded-canvas-manipulator.h
+	"thread.h"
+	"canvas.h"
+
+1552399486 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/input-example.cc
+	"led-matrix.h"
+	<unistd.h>
+	<math.h>
+	<stdio.h>
+	<signal.h>
+
+1552399492 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/ledcat.cc
+	"led-matrix.h"
+	<math.h>
+	<signal.h>
+	<stdio.h>
+	<time.h>
+	<unistd.h>
+
+1552399452 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/minimal-example.cc
+	"led-matrix.h"
+	<unistd.h>
+	<math.h>
+	<stdio.h>
+	<signal.h>
+
+1552399429 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/scrolling-text-example.cc
+	"led-matrix.h"
+	"graphics.h"
+	<string>
+	<getopt.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+
+1552399442 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/text-example.cc
+	"led-matrix.h"
+	"graphics.h"
+	<getopt.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+
+1552391863 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/bdf-font.cc
+	<inttypes.h>
+	"graphics.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1552391864 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/content-streamer.cc
+	"content-streamer.h"
+	"led-matrix.h"
+	<fcntl.h>
+	<stdio.h>
+	<string.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<unistd.h>
+	<algorithm>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/content-streamer.h
+	<stdint.h>
+	<stdlib.h>
+	<string>
+
+1552391864 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/framebuffer.cc
+	"framebuffer-internal.h"
+	<assert.h>
+	<ctype.h>
+	<math.h>
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<algorithm>
+	"gpio.h"
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/framebuffer-internal.h
+	<stdint.h>
+	<stdlib.h>
+	"hardware-mapping.h"
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/hardware-mapping.h
+	<stdint.h>
+
+1552391863 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/gpio.cc
+	<inttypes.h>
+	"gpio.h"
+	<assert.h>
+	<fcntl.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/mman.h>
+	<time.h>
+	<unistd.h>
+
+1552391864 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/graphics.cc
+	"graphics.h"
+	"utf8-internal.h"
+	<stdlib.h>
+	<functional>
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/utf8-internal.h
+	<stdint.h>
+
+1537733351 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/hardware-mapping.c
+	"hardware-mapping.h"
+
+1552391864 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/led-matrix-c.cc
+	"led-matrix-c.h"
+	<string.h>
+	<stdio.h>
+	"led-matrix.h"
+	"graphics.h"
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/led-matrix-c.h
+	<stdint.h>
+	<stdio.h>
+
+1552391682 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/led-matrix.cc
+	"led-matrix.h"
+	<assert.h>
+	<math.h>
+	<pthread.h>
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<stdio.h>
+	<sys/time.h>
+	"gpio.h"
+	"thread.h"
+	"framebuffer-internal.h"
+	"multiplex-mappers-internal.h"
+
+1552391712 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/multiplex-mappers-internal.h
+	<vector>
+	"pixel-mapper.h"
+
+1537733351 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/multiplex-mappers.cc
+	"multiplex-mappers-internal.h"
+
+1552391782 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/options-initialize.cc
+	"led-matrix.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<unistd.h>
+	<grp.h>
+	<pwd.h>
+	<vector>
+	"multiplex-mappers-internal.h"
+
+1552391863 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/pixel-mapper.cc
+	"pixel-mapper.h"
+	<assert.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<map>
+
+1552391863 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/thread.cc
+	"thread.h"
+	<sched.h>
+	<stdio.h>
+	<assert.h>
+	<string.h>
+
+1552391863 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/transformer.cc
+	<assert.h>
+	<stdio.h>
+	"transformer.h"
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/transformer.h
+	"deprecated-transformer.h"
+
+1537733351 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/deprecated-transformer.h
+	<vector>
+	<cstddef>
+	"canvas.h"
+
+1552399502 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/utils/led-image-viewer.cc
+	"led-matrix.h"
+	"pixel-mapper.h"
+	"content-streamer.h"
+	<fcntl.h>
+	<math.h>
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<sys/types.h>
+	<unistd.h>
+	<algorithm>
+	<map>
+	<string>
+	<vector>
+	<Magick++.h>
+	<magick/image.h>
+
+1552399523 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/utils/video-viewer.cc
+	<libavcodec/avcodec.h>
+	<libavformat/avformat.h>
+	<libswscale/swscale.h>
+	<fcntl.h>
+	<getopt.h>
+	<signal.h>
+	<stdio.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<unistd.h>
+	"led-matrix.h"
+	"content-streamer.h"
+
+1552399466 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/c-example.c
+	"led-matrix-c.h"
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+
+1552413035 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
+	"PageData.h"
+
+1552412788 /home/pi/Desktop/2624/Scenario/PageData.h
+	"DescriptorData.h"
+	"LinkData.h"
+	<list>
+
+1552416204 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
+	"TagData.h"
+	<string>
+
+1552412173 /home/pi/Desktop/2624/Scenario/Tags/TagData.h
+	<string>
+
+1552412868 /home/pi/Desktop/2624/Scenario/LinkData.h
+	<string>
+	<list>
+
+1552408838 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cpp
+	"ScenarioData.h"
+
+1552413235 /home/pi/Desktop/2624/Scenario/ScenarioData.h
+	"PageData.h"
+	<list>
+
+1552415942 source:/home/pi/Desktop/2624/ReaderScenario.cpp
+	"ReaderScenario.h"
+
+1552416055 /home/pi/Desktop/2624/ReaderScenario.h
+	"ScenarioData.h"
+	"PageData.h"
+	<string>
+
+1552414357 source:/home/pi/Desktop/2624/Scenario/Tags/TagData.cpp
+	"TagData.h"
+
+1552409808 source:/home/pi/Desktop/2624/Scenario/Tags/TagsManager.cpp
+	"TagsManager.h"
+
+1552416104 /home/pi/Desktop/2624/Scenario/Tags/TagsManager.h
+	"TagData.h"
+	<list>
+
+1552414563 source:/home/pi/Desktop/2624/Scenario/LinkData.cpp
+	"LinkData.h"
+	"PageData.h"
+	"ConditionData.h"
+	"ReaderScenario.h"
+
+1552411969 /home/pi/Desktop/2624/Scenario/Conditions/ConditionData.h
+	"LinkData.h"
+	"TagData.h"
+	<string>
+
+1552415647 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
+	"DescriptorData.h"
+	"ReaderScenario.h"
+
+1552415988 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
+	"ConditionData.h"
+	"ReaderScenario.h"
+

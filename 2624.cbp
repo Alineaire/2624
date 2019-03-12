@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="2624" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/2624" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-D8 --led-rows=16 --led-cols=32 --led-chain=4 --led-gpio-mapping=adafruit-hat " />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="Scenario/Conditions" />
+					<Add directory="Scenario" />
+					<Add directory="Scenario/Tags" />
+					<Add directory="Scenario/Descriptors" />
+					<Add directory="../2624" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/2624" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="Scenario/Conditions" />
+					<Add directory="Scenario" />
+					<Add directory="Scenario/Tags" />
+					<Add directory="Scenario/Descriptors" />
+					<Add directory="../2624" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="$\(GraphicsMagick++-config --cppflags --cxxflags\)" />
+			<Add option="-O3 -g -Wextra -Wno-unused-parameter" />
+			<Add directory="./rpi-rgb-led-matrix/include" />
+		</Compiler>
+		<Linker>
+			<Add option="$\(GraphicsMagick++-config --ldflags --libs\)" />
+			<Add library="libavcodec" />
+			<Add library="libavformat" />
+			<Add library="libswscale" />
+			<Add library="libavutil" />
+			<Add directory="./rpi-rgb-led-matrix/include" />
+		</Linker>
+		<Unit filename="ReaderScenario.cpp" />
+		<Unit filename="ReaderScenario.h" />
+		<Unit filename="Scenario/Conditions/ConditionData.cpp" />
+		<Unit filename="Scenario/Conditions/ConditionData.h" />
+		<Unit filename="Scenario/Descriptors/DescriptorData.cpp" />
+		<Unit filename="Scenario/Descriptors/DescriptorData.h" />
+		<Unit filename="Scenario/LinkData.cpp" />
+		<Unit filename="Scenario/LinkData.h" />
+		<Unit filename="Scenario/PageData.cpp" />
+		<Unit filename="Scenario/PageData.h" />
+		<Unit filename="Scenario/ScenarioData.cpp" />
+		<Unit filename="Scenario/ScenarioData.h" />
+		<Unit filename="Scenario/Tags/TagData.cpp" />
+		<Unit filename="Scenario/Tags/TagData.h" />
+		<Unit filename="Scenario/Tags/TagsManager.cpp" />
+		<Unit filename="Scenario/Tags/TagsManager.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/c-example.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/clock.cc" />
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/demo-main.cc" />
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/input-example.cc" />
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/ledcat.cc" />
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/minimal-example.cc" />
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/scrolling-text-example.cc" />
+		<Unit filename="rpi-rgb-led-matrix/examples-api-use/text-example.cc" />
+		<Unit filename="rpi-rgb-led-matrix/include/canvas.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/content-streamer.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/deprecated-transformer.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/gpio.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/graphics.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/led-matrix-c.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/led-matrix.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/pixel-mapper.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/thread.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/threaded-canvas-manipulator.h" />
+		<Unit filename="rpi-rgb-led-matrix/include/transformer.h" />
+		<Unit filename="rpi-rgb-led-matrix/lib/bdf-font.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/content-streamer.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/framebuffer-internal.h" />
+		<Unit filename="rpi-rgb-led-matrix/lib/framebuffer.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/gpio.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/graphics.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/hardware-mapping.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rpi-rgb-led-matrix/lib/hardware-mapping.h" />
+		<Unit filename="rpi-rgb-led-matrix/lib/led-matrix-c.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/led-matrix.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/multiplex-mappers-internal.h" />
+		<Unit filename="rpi-rgb-led-matrix/lib/multiplex-mappers.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/options-initialize.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/pixel-mapper.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/thread.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/transformer.cc" />
+		<Unit filename="rpi-rgb-led-matrix/lib/utf8-internal.h" />
+		<Unit filename="rpi-rgb-led-matrix/utils/led-image-viewer.cc" />
+		<Unit filename="rpi-rgb-led-matrix/utils/video-viewer.cc" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
