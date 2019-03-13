@@ -6,8 +6,12 @@ bool BoolTagConditionData::validate()
     return this->IConditionData::validate()
             && m_data->checkValue(m_action);
 }
-
 bool IntTagConditionData::validate()
+{
+    return this->IConditionData::validate()
+            && m_data->checkValue(m_action, m_value);
+}
+bool StringTagConditionData::validate()
 {
     return this->IConditionData::validate()
             && m_data->checkValue(m_action, m_value);

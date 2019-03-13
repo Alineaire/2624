@@ -11,9 +11,10 @@ class IDescriptorData
 {
     public:
         IDescriptorData();
-        virtual ~IDescriptorData();
+        virtual ~IDescriptorData() {}
         virtual void read() {}
         virtual void unload() {}
+        virtual void parse(string _text) = 0;
 
     protected:
     private:
@@ -22,36 +23,57 @@ class IDescriptorData
 class BoolTagModifierDescriptorData : public IDescriptorData
 {
     public:
-        BoolTagModifierDescriptorData();
-        virtual ~BoolTagModifierDescriptorData();
+        BoolTagModifierDescriptorData() {}
+        virtual ~BoolTagModifierDescriptorData() {}
+        void read();
+        void parse(string _text);
 
         BoolTagData* m_data;
         ChangeBool m_action;
+        bool m_value;
 
     protected:
     private:
 };
-
 class IntTagModifierDescriptorData : public IDescriptorData
 {
     public:
-        IntTagModifierDescriptorData();
-        virtual ~IntTagModifierDescriptorData();
+        IntTagModifierDescriptorData() {}
+        virtual ~IntTagModifierDescriptorData() {}
+        void read();
+        void parse(string _text);
 
         IntTagData* m_data;
-        int m_toAdd = 1;
+        ChangeInt m_action;
+        int m_value;
+
+    protected:
+    private:
+};
+class StringTagModifierDescriptorData : public IDescriptorData
+{
+    public:
+        StringTagModifierDescriptorData() {}
+        virtual ~StringTagModifierDescriptorData() {}
+        void read();
+        void parse(string _text);
+
+        StringTagData* m_data;
+        ChangeString m_action;
+        string m_value;
 
     protected:
     private:
 };
 
-class SoundDescriptorData : public IDescriptorData
+class SFXDescriptorData : public IDescriptorData
 {
     public:
-        SoundDescriptorData();
-        virtual ~SoundDescriptorData();
+        SFXDescriptorData() {}
+        virtual ~SFXDescriptorData() {}
         void read();
         void unload();
+        void parse(string _text);
 
         string m_sound;
 
@@ -62,10 +84,11 @@ class SoundDescriptorData : public IDescriptorData
 class MusicDescriptorData : public IDescriptorData
 {
     public:
-        MusicDescriptorData();
-        virtual ~MusicDescriptorData();
+        MusicDescriptorData() {}
+        virtual ~MusicDescriptorData() {}
         void read();
         void unload();
+        void parse(string _text);
 
         string m_sound;
 
@@ -76,9 +99,10 @@ class MusicDescriptorData : public IDescriptorData
 class TextDescriptorData : public IDescriptorData
 {
     public:
-        TextDescriptorData();
-        virtual ~TextDescriptorData();
+        TextDescriptorData() {}
+        virtual ~TextDescriptorData() {}
         void read();
+        void parse(string _text);
 
         string m_text;
 
@@ -86,15 +110,60 @@ class TextDescriptorData : public IDescriptorData
     private:
 };
 
-class ImageDescriptorData : public IDescriptorData
+class SpriteDescriptorData : public IDescriptorData
 {
     public:
-        ImageDescriptorData();
-        virtual ~ImageDescriptorData();
+        SpriteDescriptorData() {}
+        virtual ~SpriteDescriptorData() {}
         void read();
         void unload();
+        void parse(string _text);
 
         string m_sprite;
+
+    protected:
+    private:
+};
+
+class ColorDescriptorData : public IDescriptorData
+{
+    public:
+        ColorDescriptorData() {}
+        virtual ~ColorDescriptorData() {}
+        void read();
+        void parse(string _text);
+
+        int m_red;
+        int m_green;
+        int m_blue;
+
+    protected:
+    private:
+};
+
+class BrightnessDescriptorData : public IDescriptorData
+{
+    public:
+        BrightnessDescriptorData() {}
+        virtual ~BrightnessDescriptorData() {}
+        void read();
+        void parse(string _text);
+
+        int m_brightness;
+
+    protected:
+    private:
+};
+
+class ArduinoDescriptorData : public IDescriptorData
+{
+    public:
+        ArduinoDescriptorData() {}
+        virtual ~ArduinoDescriptorData() {}
+        void read();
+        void parse(string _text);
+
+        string m_text;
 
     protected:
     private:

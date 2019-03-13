@@ -1,8 +1,9 @@
 #include "ReaderScenario.h"
+#include "LocalisationManager.h"
 
 ReaderScenario::ReaderScenario()
 {
-    //ctor
+    m_page = nullptr;
 }
 
 ReaderScenario::~ReaderScenario()
@@ -10,9 +11,10 @@ ReaderScenario::~ReaderScenario()
     //dtor
 }
 
-void ReaderScenario::start()
+void ReaderScenario::start(ScenarioData* _scenario)
 {
-    changePage(&(*(m_scenario->m_pages.begin())));
+    m_scenario = _scenario;
+    changePage(*(m_scenario->m_pages.begin()));
 }
 
 void ReaderScenario::update()
@@ -44,7 +46,6 @@ void ReaderScenario::setText(string _text)
 {
     m_text = _text;
 }
-
 void ReaderScenario::setSprite(string _sprite)
 {
     m_sprite = _sprite;
@@ -57,7 +58,16 @@ void ReaderScenario::changeFX(string _FX)
 {
     m_FX = _FX;
 }
-
+void ReaderScenario::setColor(int _red, int _green, int _blue)
+{
+    m_red = _red;
+    m_green = _green;
+    m_blue = _blue;
+}
+void ReaderScenario::setBrightness(int _brightness)
+{
+    m_brightness = _brightness;
+}
 void ReaderScenario::setUp(string _text)
 {
     m_inputUp = _text;

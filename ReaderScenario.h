@@ -22,7 +22,7 @@ class ReaderScenario
             return ReaderScenario::m_instance;
         }
 
-        void start();
+        void start(ScenarioData* _scenario);
         void update();
         void changePage(PageData* newPage);
         void resetText();
@@ -30,6 +30,8 @@ class ReaderScenario
         void setSprite(string _sprite);
         void changeMusic(string _music);
         void changeFX(string _FX);
+        void setColor(int _red, int _green, int _blue);
+        void setBrightness(int _brightness);
         void setUp(string _text);
         void setDown(string _text);
         void setRight(string _text);
@@ -38,14 +40,19 @@ class ReaderScenario
 
     protected:
     private:
-        static ReaderScenario* m_instance;
+        void parseScenario(string& _pathScenario, string& _pathLoc);
 
+        static ReaderScenario* m_instance;
         ScenarioData* m_scenario;
         PageData* m_page;
         string m_text;
         string m_sprite;
         string m_music;
         string m_FX;
+        int m_red;
+        int m_green;
+        int m_blue;
+        int m_brightness;
         string m_inputUp;
         string m_inputDown;
         string m_inputRight;

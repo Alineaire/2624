@@ -1,0 +1,10 @@
+Ref	Color	Brightness	Text	Image	SFX	Music	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag
+0	255,255,255	75	Bl<blink>a</blink>bla<color=255,255,0>FIN DU TEXTE</color>		./SFXs/bip.wav	./Musics/ambiance1.wav#0.2	toto=true#test=false	visite+=1#pierres=3		1	./SFX/Inputs/	A&5		cle==false			s	./SFX/Inputs/	Mouse#5		cle==true			3	./SFX/Inputs/	Up,Down,Up,Down,Up,Down			pierres==0
+1			Truc Test			Off#0.2		pierres+=3
+2		100	Enjoy			./Musics/ambiance2.wav#0.2		pierres-=1
+3				./Images/Pouet.gif
+
+
+MENUFR	255,255,255	100	<blink><</blink>FRANCAIS<blink>></blink>					lang="FR"		MENUEN		gauche					MENUDE		droite
+MENUEN	255,255,255	100	<blink><</blink>ENGLISH<blink>></blink>					lang="EN"									MENUDE		gauche					MENUFR		droite
+MENUDE	255,255,255	100	<blink><</blink>DEUTSCH<blink>></blink>					lang="DE"		MENUEN		droite												MENUFR		gauche

@@ -15,7 +15,7 @@ bool LinkData::check()
 {
     if (m_nextPage != nullptr)
     {
-        for (list<IConditionData>::iterator it=m_conditions.begin(); it != m_conditions.end(); ++it)
+        for (vector<IConditionData>::iterator it = m_conditionsValidation.begin(); it != m_conditionsValidation.end(); ++it)
         {
             if (!it->validate())
                 return false;
@@ -28,8 +28,17 @@ bool LinkData::check()
 
 void LinkData::initialize()
 {
-    for (list<IConditionData>::iterator it=m_conditions.begin(); it != m_conditions.end(); ++it)
+    bool validateToDisplay = true;
+    for (vector<IConditionData>::iterator it = m_conditionsDisplay.begin(); it != m_conditionsDisplay.end(); ++it)
     {
-        it->initialize(this);
+        validateToDisplay = validateToDisplay && it->validate();
+    }
+
+    if (validateToDisplay)
+    {
+        for (vector<IConditionData>::iterator it = m_conditionsValidation.begin(); it != m_conditionsValidation.end(); ++it)
+        {
+            it->initialize(this);
+        }
     }
 }

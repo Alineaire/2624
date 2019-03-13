@@ -2,7 +2,7 @@
 #define LINKDATA_H
 
 #include <string>
-#include <list>
+#include <vector>
 
 using namespace std;
 
@@ -18,7 +18,8 @@ class LinkData
 
         string m_name;
         PageData* m_nextPage;
-        list<IConditionData> m_conditions;
+        vector<IConditionData> m_conditionsDisplay;
+        vector<IConditionData> m_conditionsValidation;
 
     protected:
     private:

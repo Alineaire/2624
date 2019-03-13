@@ -5,27 +5,43 @@
 
 using namespace std;
 
-enum ChangeBool
+enum class ChangeBool
 {
-    SetTrue,
-    SetFalse,
-    Reverse,
+    setTrue = 0,
+    setFalse,
+    affect,
+    reverse,
+};
+enum class CheckBool
+{
+    isTrue = 0,
+    isFalse,
 };
 
-enum CheckBool
+enum class ChangeInt
 {
-    IsTrue,
-    IsFalse,
+    increment = 0,
+    decrement,
+    affect,
+};
+enum class CheckInt
+{
+    equals = 0,
+    notEquals,
+    superior,
+    equalsSuperior,
+    inferior,
+    equalsInferior,
 };
 
-enum CheckInt
+enum class ChangeString
 {
-    Equals,
-    NotEquals,
-    Superior,
-    EqualsSuperior,
-    Inferior,
-    EqualsInferior,
+    affect = 0,
+};
+enum class CheckString
+{
+    equals = 0,
+    notEquals,
 };
 
 class ITagData
@@ -45,7 +61,7 @@ class BoolTagData : public ITagData
     public:
         BoolTagData() {}
         virtual ~BoolTagData() {}
-        void doAction(ChangeBool _action);
+        void doAction(ChangeBool _action, bool _value);
         bool checkValue(CheckBool _action);
         void reset() { m_value = m_initialValue; }
 
@@ -61,12 +77,28 @@ class IntTagData : public ITagData
     public:
         IntTagData() {}
         virtual ~IntTagData() {}
-        void add(int _addValue) { m_value += _addValue; }
+        void doAction(ChangeInt _action, int _value);
         bool checkValue(CheckInt _action, int _valueTest);
         void reset() { m_value = m_initialValue; }
 
         int m_initialValue;
         int m_value;
+
+    protected:
+    private:
+};
+
+class StringTagData : public ITagData
+{
+    public:
+        StringTagData() {}
+        virtual ~StringTagData() {}
+        void doAction(ChangeString _action, string _value);
+        bool checkValue(CheckString _action, string _valueTest);
+        void reset() { m_value = m_initialValue; }
+
+        string m_initialValue;
+        string m_value;
 
     protected:
     private:

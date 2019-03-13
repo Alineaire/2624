@@ -44,7 +44,8 @@
 			<Add option="-fexceptions" />
 			<Add option="$\(GraphicsMagick++-config --cppflags --cxxflags\)" />
 			<Add option="-O3 -g -Wextra -Wno-unused-parameter" />
-			<Add directory="./rpi-rgb-led-matrix/include" />
+			<Add directory="rpi-rgb-led-matrix/include" />
+			<Add directory="CsvParser/include" />
 		</Compiler>
 		<Linker>
 			<Add option="$\(GraphicsMagick++-config --ldflags --libs\)" />
@@ -52,8 +53,21 @@
 			<Add library="libavformat" />
 			<Add library="libswscale" />
 			<Add library="libavutil" />
-			<Add directory="./rpi-rgb-led-matrix/include" />
+			<Add directory="rpi-rgb-led-matrix/include" />
+			<Add directory="CsvParser/include" />
 		</Linker>
+		<Unit filename="CsvParser/examples/usage_example.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CsvParser/examples/usage_example_with_header.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CsvParser/include/csvparser.h" />
+		<Unit filename="CsvParser/src/csvparser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LocalisationManager.cpp" />
+		<Unit filename="LocalisationManager.h" />
 		<Unit filename="ReaderScenario.cpp" />
 		<Unit filename="ReaderScenario.h" />
 		<Unit filename="Scenario/Conditions/ConditionData.cpp" />
@@ -113,6 +127,7 @@
 		<Unit filename="rpi-rgb-led-matrix/lib/utf8-internal.h" />
 		<Unit filename="rpi-rgb-led-matrix/utils/led-image-viewer.cc" />
 		<Unit filename="rpi-rgb-led-matrix/utils/video-viewer.cc" />
+		<Unit filename="utils.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

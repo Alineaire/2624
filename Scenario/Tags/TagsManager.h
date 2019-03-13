@@ -3,7 +3,7 @@
 
 #include "TagData.h"
 
-#include <list>
+#include <vector>
 
 using namespace std;
 
@@ -21,11 +21,11 @@ class TagsManager
             return TagsManager::m_instance;
         }
 
-        list<ITagData> m_tags;
+        vector<ITagData> m_tags;
 
     protected:
     private:
-    static TagsManager* m_instance;
+        static TagsManager* m_instance;
 };
 
 #endif // TAGSMANAGER_H

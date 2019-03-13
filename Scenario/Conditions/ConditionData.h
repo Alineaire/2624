@@ -33,7 +33,6 @@ class BoolTagConditionData : public IConditionData
     protected:
     private:
 };
-
 class IntTagConditionData : public IConditionData
 {
     public:
@@ -44,6 +43,20 @@ class IntTagConditionData : public IConditionData
         IntTagData* m_data;
         CheckInt m_action;
         int m_value;
+
+    protected:
+    private:
+};
+class StringTagConditionData : public IConditionData
+{
+    public:
+        StringTagConditionData() {}
+        virtual ~StringTagConditionData() {}
+        bool validate();
+
+        StringTagData* m_data;
+        CheckString m_action;
+        string m_value;
 
     protected:
     private:

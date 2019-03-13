@@ -3,19 +3,21 @@
 
 #include "PageData.h"
 
-#include <list>
+#include <vector>
 
 using namespace std;
 
 class ScenarioData
 {
     public:
-        ScenarioData();
+        ScenarioData(string& _pathScenario);
         virtual ~ScenarioData();
-        list<PageData> m_pages;
+
+        vector<PageData*> m_pages;
 
     protected:
     private:
+        void parse(string& _pathScenario);
 };
 
 #endif // SCENARIODATA_H
