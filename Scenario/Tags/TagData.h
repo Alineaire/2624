@@ -7,8 +7,6 @@ using namespace std;
 
 enum class ChangeBool
 {
-    setTrue = 0,
-    setFalse,
     affect,
     reverse,
 };
@@ -48,6 +46,7 @@ class ITagData
 {
     public:
         ITagData() {}
+        ITagData(string _name) { m_name = _name; }
         virtual ~ITagData() {}
 
         string m_name;
@@ -59,7 +58,8 @@ class ITagData
 class BoolTagData : public ITagData
 {
     public:
-        BoolTagData() {}
+        BoolTagData();
+        BoolTagData(string _name);
         virtual ~BoolTagData() {}
         void doAction(ChangeBool _action, bool _value);
         bool checkValue(CheckBool _action);
@@ -75,7 +75,8 @@ class BoolTagData : public ITagData
 class IntTagData : public ITagData
 {
     public:
-        IntTagData() {}
+        IntTagData();
+        IntTagData(string _name);
         virtual ~IntTagData() {}
         void doAction(ChangeInt _action, int _value);
         bool checkValue(CheckInt _action, int _valueTest);
@@ -91,7 +92,8 @@ class IntTagData : public ITagData
 class StringTagData : public ITagData
 {
     public:
-        StringTagData() {}
+        StringTagData();
+        StringTagData(string _name);
         virtual ~StringTagData() {}
         void doAction(ChangeString _action, string _value);
         bool checkValue(CheckString _action, string _valueTest);

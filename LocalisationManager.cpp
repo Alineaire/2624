@@ -3,7 +3,7 @@
 
 LocalisationManager::LocalisationManager()
 {
-    //ctor
+    m_currentLanguageLocalisations = nullptr;
 }
 
 LocalisationManager::~LocalisationManager()
@@ -20,6 +20,8 @@ void LocalisationManager::setLanguage()
 
 string LocalisationManager::getLoc(string _key)
 {
+    if (m_currentLanguageLocalisations == nullptr)
+        setLanguage();
     map<string,string>::iterator it = m_currentLanguageLocalisations->find(_key);
     if (it == m_currentLanguageLocalisations->end())
         return "<ERROR>";

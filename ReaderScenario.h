@@ -4,6 +4,8 @@
 #include "ScenarioData.h"
 #include "PageData.h"
 
+#include "graphics.h"
+
 #include <string>
 
 using namespace std;
@@ -22,7 +24,7 @@ class ReaderScenario
             return ReaderScenario::m_instance;
         }
 
-        void start(ScenarioData* _scenario);
+        void start(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font, ScenarioData* _scenario);
         void update();
         void changePage(PageData* newPage);
         void resetText();
@@ -37,6 +39,10 @@ class ReaderScenario
         void setRight(string _text);
         void setLeft(string _text);
         void setButton(string _text);
+
+        rgb_matrix::Canvas* getMatrix() { return m_matrix; }
+        rgb_matrix::Font* getFont() { return m_font; }
+
 
     protected:
     private:
@@ -58,6 +64,8 @@ class ReaderScenario
         string m_inputRight;
         string m_inputLeft;
         string m_button;
+        rgb_matrix::Canvas* m_matrix;
+        rgb_matrix::Font* m_font;
 };
 
 #endif // READERSCENARIO_H

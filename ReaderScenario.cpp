@@ -11,16 +11,18 @@ ReaderScenario::~ReaderScenario()
     //dtor
 }
 
-void ReaderScenario::start(ScenarioData* _scenario)
+void ReaderScenario::start(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font, ScenarioData* _scenario)
 {
     m_scenario = _scenario;
+    m_matrix = _matrix;
+    m_font = _font;
     changePage(*(m_scenario->m_pages.begin()));
 }
 
 void ReaderScenario::update()
 {
     if (m_page != nullptr)
-        m_page->update();
+        m_page->update(m_matrix, m_font);
 }
 
 void ReaderScenario::changePage(PageData* newPage)

@@ -3,7 +3,8 @@
 
 #include "TagData.h"
 
-#include <vector>
+#include <map>
+#include <string>
 
 using namespace std;
 
@@ -21,7 +22,11 @@ class TagsManager
             return TagsManager::m_instance;
         }
 
-        vector<ITagData> m_tags;
+        BoolTagData* addBoolTag(string _name);
+        IntTagData* addIntTag(string _name);
+        StringTagData* addStringTag(string _name);
+
+        map<string, ITagData*> m_tags;
 
     protected:
     private:

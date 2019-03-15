@@ -2,8 +2,10 @@
 #define DESCRIPTORDATA_H
 
 #include "TagData.h"
+#include "Text.h"
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -14,7 +16,7 @@ class IDescriptorData
         virtual ~IDescriptorData() {}
         virtual void read() {}
         virtual void unload() {}
-        virtual void parse(string _text) = 0;
+        virtual void update() {}
 
     protected:
     private:
@@ -26,7 +28,7 @@ class BoolTagModifierDescriptorData : public IDescriptorData
         BoolTagModifierDescriptorData() {}
         virtual ~BoolTagModifierDescriptorData() {}
         void read();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         BoolTagData* m_data;
         ChangeBool m_action;
@@ -41,7 +43,7 @@ class IntTagModifierDescriptorData : public IDescriptorData
         IntTagModifierDescriptorData() {}
         virtual ~IntTagModifierDescriptorData() {}
         void read();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         IntTagData* m_data;
         ChangeInt m_action;
@@ -56,7 +58,7 @@ class StringTagModifierDescriptorData : public IDescriptorData
         StringTagModifierDescriptorData() {}
         virtual ~StringTagModifierDescriptorData() {}
         void read();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         StringTagData* m_data;
         ChangeString m_action;
@@ -73,7 +75,7 @@ class SFXDescriptorData : public IDescriptorData
         virtual ~SFXDescriptorData() {}
         void read();
         void unload();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         string m_sound;
 
@@ -88,7 +90,7 @@ class MusicDescriptorData : public IDescriptorData
         virtual ~MusicDescriptorData() {}
         void read();
         void unload();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         string m_sound;
 
@@ -102,9 +104,10 @@ class TextDescriptorData : public IDescriptorData
         TextDescriptorData() {}
         virtual ~TextDescriptorData() {}
         void read();
-        void parse(string _text);
+        void update();
+        static void parse(vector<IDescriptorData*>& _descriptors, string _idText);
 
-        string m_text;
+        Text m_text;
 
     protected:
     private:
@@ -117,7 +120,7 @@ class SpriteDescriptorData : public IDescriptorData
         virtual ~SpriteDescriptorData() {}
         void read();
         void unload();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         string m_sprite;
 
@@ -131,7 +134,7 @@ class ColorDescriptorData : public IDescriptorData
         ColorDescriptorData() {}
         virtual ~ColorDescriptorData() {}
         void read();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         int m_red;
         int m_green;
@@ -147,7 +150,7 @@ class BrightnessDescriptorData : public IDescriptorData
         BrightnessDescriptorData() {}
         virtual ~BrightnessDescriptorData() {}
         void read();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         int m_brightness;
 
@@ -161,7 +164,7 @@ class ArduinoDescriptorData : public IDescriptorData
         ArduinoDescriptorData() {}
         virtual ~ArduinoDescriptorData() {}
         void read();
-        void parse(string _text);
+        static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
         string m_text;
 

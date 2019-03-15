@@ -1,15 +1,11 @@
 #include "TagData.h"
 
+BoolTagData::BoolTagData() : ITagData() {}
+BoolTagData::BoolTagData(string _name) : ITagData(_name) {}
 void BoolTagData::doAction(ChangeBool _action, bool _value)
 {
     switch (_action)
     {
-        case ChangeBool::setTrue:
-            m_value = true;
-            break;
-        case ChangeBool::setFalse:
-            m_value = false;
-            break;
         case ChangeBool::affect:
             m_value = _value;
             break;
@@ -30,6 +26,8 @@ bool BoolTagData::checkValue(CheckBool _action)
     return false;
 }
 
+IntTagData::IntTagData() : ITagData() {}
+IntTagData::IntTagData(string _name) : ITagData(_name) {}
 void IntTagData::doAction(ChangeInt _action, int _value)
 {
     switch (_action)
@@ -65,6 +63,8 @@ bool IntTagData::checkValue(CheckInt _action, int _valueTest)
     return false;
 }
 
+StringTagData::StringTagData() : ITagData() {}
+StringTagData::StringTagData(string _name) : ITagData(_name) {}
 void StringTagData::doAction(ChangeString _action, string _value)
 {
     switch (_action)

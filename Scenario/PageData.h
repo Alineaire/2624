@@ -4,6 +4,8 @@
 #include "DescriptorData.h"
 #include "LinkData.h"
 
+#include "graphics.h"
+
 #include <vector>
 #include <string>
 
@@ -17,7 +19,7 @@ class PageData
         virtual ~PageData();
         void read();
         void unload();
-        void update();
+        void update(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font);
         void parse(const char** _headerFields, const char** _rowFields, int _nbRows);
 
         string m_name;
