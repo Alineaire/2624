@@ -74,6 +74,8 @@
 		<Unit filename="Scenario/Conditions/ConditionData.h" />
 		<Unit filename="Scenario/Descriptors/DescriptorData.cpp" />
 		<Unit filename="Scenario/Descriptors/DescriptorData.h" />
+		<Unit filename="Scenario/Descriptors/Text.cpp" />
+		<Unit filename="Scenario/Descriptors/Text.h" />
 		<Unit filename="Scenario/LinkData.cpp" />
 		<Unit filename="Scenario/LinkData.h" />
 		<Unit filename="Scenario/PageData.cpp" />

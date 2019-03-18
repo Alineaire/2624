@@ -589,7 +589,7 @@
 	"Magick++/Color.h"
 	"Magick++/Geometry.h"
 
-1552669132 source:/home/pi/Desktop/2624/main.cpp
+1552910188 source:/home/pi/Desktop/2624/main.cpp
 	"ReaderScenario.h"
 	"TagsManager.h"
 	"LocalisationManager.h"
@@ -602,7 +602,7 @@
 	<string.h>
 	<time.h>
 
-1552666962 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/clock.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/clock.cc
 	"led-matrix.h"
 	"graphics.h"
 	<getopt.h>
@@ -613,7 +613,7 @@
 	<time.h>
 	<unistd.h>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/led-matrix.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/led-matrix.h
 	<stdint.h>
 	<string>
 	<vector>
@@ -622,27 +622,27 @@
 	"thread.h"
 	"pixel-mapper.h"
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/gpio.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/gpio.h
 	<stdint.h>
 	<vector>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/canvas.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/canvas.h
 	<stdint.h>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/thread.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/thread.h
 	<stdint.h>
 	<pthread.h>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/pixel-mapper.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/pixel-mapper.h
 	<string>
 	<vector>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/graphics.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/graphics.h
 	"canvas.h"
 	<map>
 	<stdint.h>
 
-1552666537 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/demo-main.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/demo-main.cc
 	"led-matrix.h"
 	"threaded-canvas-manipulator.h"
 	"pixel-mapper.h"
@@ -658,18 +658,18 @@
 	<unistd.h>
 	<algorithm>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/threaded-canvas-manipulator.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/threaded-canvas-manipulator.h
 	"thread.h"
 	"canvas.h"
 
-1552644318 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/input-example.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/input-example.cc
 	"led-matrix.h"
 	<unistd.h>
 	<math.h>
 	<stdio.h>
 	<signal.h>
 
-1552644315 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/ledcat.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/ledcat.cc
 	"led-matrix.h"
 	<math.h>
 	<signal.h>
@@ -677,14 +677,14 @@
 	<time.h>
 	<unistd.h>
 
-1552644307 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/minimal-example.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/minimal-example.cc
 	"led-matrix.h"
 	<unistd.h>
 	<math.h>
 	<stdio.h>
 	<signal.h>
 
-1552644311 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/scrolling-text-example.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/scrolling-text-example.cc
 	"led-matrix.h"
 	"graphics.h"
 	<string>
@@ -695,7 +695,7 @@
 	<string.h>
 	<unistd.h>
 
-1552663169 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/text-example.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/text-example.cc
 	"led-matrix.h"
 	"graphics.h"
 	<getopt.h>
@@ -704,14 +704,14 @@
 	<string.h>
 	<unistd.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/bdf-font.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/bdf-font.cc
 	<inttypes.h>
 	"graphics.h"
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/content-streamer.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/content-streamer.cc
 	"content-streamer.h"
 	"led-matrix.h"
 	<fcntl.h>
@@ -722,12 +722,12 @@
 	<unistd.h>
 	<algorithm>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/content-streamer.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/content-streamer.h
 	<stdint.h>
 	<stdlib.h>
 	<string>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/framebuffer.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/framebuffer.cc
 	"framebuffer-internal.h"
 	<assert.h>
 	<ctype.h>
@@ -739,15 +739,15 @@
 	<algorithm>
 	"gpio.h"
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/framebuffer-internal.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/framebuffer-internal.h
 	<stdint.h>
 	<stdlib.h>
 	"hardware-mapping.h"
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/hardware-mapping.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/hardware-mapping.h
 	<stdint.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/gpio.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/gpio.cc
 	<inttypes.h>
 	"gpio.h"
 	<assert.h>
@@ -759,30 +759,30 @@
 	<time.h>
 	<unistd.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/graphics.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/graphics.cc
 	"graphics.h"
 	"utf8-internal.h"
 	<stdlib.h>
 	<functional>
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/utf8-internal.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/utf8-internal.h
 	<stdint.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/hardware-mapping.c
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/hardware-mapping.c
 	"hardware-mapping.h"
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/led-matrix-c.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/led-matrix-c.cc
 	"led-matrix-c.h"
 	<string.h>
 	<stdio.h>
 	"led-matrix.h"
 	"graphics.h"
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/led-matrix-c.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/led-matrix-c.h
 	<stdint.h>
 	<stdio.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/led-matrix.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/led-matrix.cc
 	"led-matrix.h"
 	<assert.h>
 	<math.h>
@@ -798,14 +798,14 @@
 	"framebuffer-internal.h"
 	"multiplex-mappers-internal.h"
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/multiplex-mappers-internal.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/multiplex-mappers-internal.h
 	<vector>
 	"pixel-mapper.h"
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/multiplex-mappers.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/multiplex-mappers.cc
 	"multiplex-mappers-internal.h"
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/options-initialize.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/options-initialize.cc
 	"led-matrix.h"
 	<stdio.h>
 	<stdlib.h>
@@ -817,7 +817,7 @@
 	<vector>
 	"multiplex-mappers-internal.h"
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/pixel-mapper.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/pixel-mapper.cc
 	"pixel-mapper.h"
 	<assert.h>
 	<stdio.h>
@@ -825,27 +825,27 @@
 	<string.h>
 	<map>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/thread.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/thread.cc
 	"thread.h"
 	<sched.h>
 	<stdio.h>
 	<assert.h>
 	<string.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/transformer.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/lib/transformer.cc
 	<assert.h>
 	<stdio.h>
 	"transformer.h"
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/transformer.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/transformer.h
 	"deprecated-transformer.h"
 
-1552471671 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/deprecated-transformer.h
+1552910188 /home/pi/Desktop/2624/rpi-rgb-led-matrix/include/deprecated-transformer.h
 	<vector>
 	<cstddef>
 	"canvas.h"
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/utils/led-image-viewer.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/utils/led-image-viewer.cc
 	"led-matrix.h"
 	"pixel-mapper.h"
 	"content-streamer.h"
@@ -866,7 +866,7 @@
 	<Magick++.h>
 	<magick/image.h>
 
-1552471671 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/utils/video-viewer.cc
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/utils/video-viewer.cc
 	<libavcodec/avcodec.h>
 	<libavformat/avformat.h>
 	<libswscale/swscale.h>
@@ -880,126 +880,134 @@
 	"led-matrix.h"
 	"content-streamer.h"
 
-1552644324 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/c-example.c
+1552910188 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/c-example.c
 	"led-matrix-c.h"
 	<stdio.h>
 	<string.h>
 	<unistd.h>
 
-1552668908 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
 	"PageData.h"
 	"DescriptorData.h"
 	"csvparser.h"
 
-1552666808 /home/pi/Desktop/2624/Scenario/PageData.h
+1552910188 /home/pi/Desktop/2624/Scenario/PageData.h
 	"DescriptorData.h"
 	"LinkData.h"
 	"graphics.h"
 	<vector>
 	<string>
 
-1552668587 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
+1552910188 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
 	"TagData.h"
 	"Text.h"
 	<string>
 	<vector>
 
-1552657232 /home/pi/Desktop/2624/Scenario/Tags/TagData.h
+1552910188 /home/pi/Desktop/2624/Scenario/Tags/TagData.h
 	<string>
 
-1552496732 /home/pi/Desktop/2624/Scenario/LinkData.h
+1552910188 /home/pi/Desktop/2624/Scenario/LinkData.h
 	<string>
 	<vector>
 
-1552497915 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cpp
 	"ScenarioData.h"
 	"csvparser.h"
 
-1552496738 /home/pi/Desktop/2624/Scenario/ScenarioData.h
+1552910188 /home/pi/Desktop/2624/Scenario/ScenarioData.h
 	"PageData.h"
 	<vector>
 
-1552666786 source:/home/pi/Desktop/2624/ReaderScenario.cpp
+1552910188 source:/home/pi/Desktop/2624/ReaderScenario.cpp
 	"ReaderScenario.h"
 	"LocalisationManager.h"
 
-1552668553 /home/pi/Desktop/2624/ReaderScenario.h
+1552910188 /home/pi/Desktop/2624/ReaderScenario.h
 	"ScenarioData.h"
 	"PageData.h"
 	"graphics.h"
 	<string>
 
-1552657295 source:/home/pi/Desktop/2624/Scenario/Tags/TagData.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/Tags/TagData.cpp
 	"TagData.h"
 
-1552657053 source:/home/pi/Desktop/2624/Scenario/Tags/TagsManager.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/Tags/TagsManager.cpp
 	"TagsManager.h"
 
-1552656991 /home/pi/Desktop/2624/Scenario/Tags/TagsManager.h
+1552910188 /home/pi/Desktop/2624/Scenario/Tags/TagsManager.h
 	"TagData.h"
 	<map>
 	<string>
 
-1552497128 source:/home/pi/Desktop/2624/Scenario/LinkData.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/LinkData.cpp
 	"LinkData.h"
 	"PageData.h"
 	"ConditionData.h"
 	"ReaderScenario.h"
 
-1552490379 /home/pi/Desktop/2624/Scenario/Conditions/ConditionData.h
+1552910188 /home/pi/Desktop/2624/Scenario/Conditions/ConditionData.h
 	"LinkData.h"
 	"TagData.h"
 	<string>
 
-1552668992 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
 	"DescriptorData.h"
 	"ReaderScenario.h"
 	"TagsManager.h"
 	"utils.h"
 
-1552490467 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
 	"ConditionData.h"
 	"ReaderScenario.h"
 
-1481035220 source:/home/pi/Desktop/2624/CsvParser/src/csvparser.c
+1552910188 source:/home/pi/Desktop/2624/CsvParser/src/csvparser.c
 	<stdlib.h>
 	<string.h>
 	<stdio.h>
 	<errno.h>
 	"csvparser.h"
 
-1481035128 /home/pi/Desktop/2624/CsvParser/include/csvparser.h
+1552910188 /home/pi/Desktop/2624/CsvParser/include/csvparser.h
 	<stdio.h>
 
-1552474310 source:/home/pi/Desktop/2624/CsvParser/examples/usage_example.c
-	<stdio.h>
-	"csvparser.h"
-
-1552485426 source:/home/pi/Desktop/2624/CsvParser/examples/usage_example_with_header.c
+1552910188 source:/home/pi/Desktop/2624/CsvParser/examples/usage_example.c
 	<stdio.h>
 	"csvparser.h"
 
-1552488652 /home/pi/Desktop/2624/LocalisationManager.h
+1552910188 source:/home/pi/Desktop/2624/CsvParser/examples/usage_example_with_header.c
+	<stdio.h>
+	"csvparser.h"
+
+1552910188 /home/pi/Desktop/2624/LocalisationManager.h
 	<map>
 	<string>
 
-1552667922 source:/home/pi/Desktop/2624/LocalisationManager.cpp
+1552910188 source:/home/pi/Desktop/2624/LocalisationManager.cpp
 	"LocalisationManager.h"
 	"csvparser.h"
 
-1552497765 /home/pi/Desktop/2624/utils.h
+1552910188 /home/pi/Desktop/2624/utils.h
 	<string>
 	<vector>
 	<sstream>
 	<iostream>
 
-1552668856 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
+1552910188 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
 	"graphics.h"
 	<vector>
 
-1552669545 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
+1552910188 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
 	"Text.h"
 	"LocalisationManager.h"
 	"ReaderScenario.h"
 	<string>
+
+1552910188 source:/home/pi/Desktop/2624/Scenario/LinkData.cc
+
+1552910188 source:/home/pi/Desktop/2624/Scenario/PageData.cc
+
+1552910188 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cc
+
+1552910188 source:/home/pi/Desktop/2624/Scenario/Tags/TagsManager.cc
 
