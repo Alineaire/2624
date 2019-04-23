@@ -42,6 +42,9 @@ class ReaderScenario
 
         rgb_matrix::Canvas* getMatrix() { return m_matrix; }
         rgb_matrix::Font* getFont() { return m_font; }
+        int getRed() { return m_red; }
+        int getGreen() { return m_green; }
+        int getBlue() { return m_blue; }
 
 
     protected:

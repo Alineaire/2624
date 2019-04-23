@@ -1,6 +1,7 @@
 #include "Text.h"
 #include "LocalisationManager.h"
 #include "ReaderScenario.h"
+#include "utils.h"
 
 #include <string>
 
@@ -43,9 +44,63 @@ Text::~Text()
 void Text::parse()
 {
     string text = LocalisationManager::Instance()->getLoc(m_idText);
-    for (unsigned int i = 0; i < text.length(); ++i)
+
+    vector<int> r, g, b;
+    r.push_back(ReaderScenario::Instance()->getRed());
+    g.push_back(ReaderScenario::Instance()->getGreen());
+    b.push_back(ReaderScenario::Instance()->getBlue());
+    bool blink = false;
+
+    int index = 0;
+    while (index < text.length())
     {
-        m_characters.push_back(Character(text[i], false, 255, 255, 255));
+        char character = text[index];
+        if (character == '<')
+        {
+            std::size_t foundBlink = text.find("blink", index);
+            std::size_t foundColor = text.find("color", index);
+
+            // blink
+            if (foundBlink != std::string::npos && foundBlink <= index+2 &&
+                (foundColor == std::string::npos || (foundColor != std::string::npos && foundBlink < foundColor)))
+            {
+                blink = foundBlink == index+1;
+                index = text.find(">", index);
+                continue;
+            }
+
+            // color
+            if (foundColor != std::string::npos && foundColor <= index+2 &&
+                (foundBlink == std::string::npos || (foundBlink != std::string::npos && foundColor < foundBlink)))
+            {
+                bool startNewColor = foundColor == index+1;
+                if (startNewColor)
+                {
+                    int startColor = text.find("=", index);
+                    int endColor = text.find(">", startColor);
+                    string color = text.substr(startColor, endColor-startColor);
+                    vector<string> colors = split(color, ',');
+                    if (colors.size() == 3)
+                    {
+                        r.push_back(stoi(colors[0]));
+                        g.push_back(stoi(colors[1]));
+                        b.push_back(stoi(colors[2]));
+                    }
+                    index = endColor;
+                }
+                else
+                {
+                    r.pop_back(); g.pop_back(); b.pop_back();
+                    index = text.find(">", index);
+                }
+                continue;
+            }
+
+            // nothing it's the character '<'
+        }
+
+        // add character
+        m_characters.push_back(Character(character, blink, r.back(), g.back(), b.back()));
     }
 }
 bool Text::haveBlinker()
@@ -66,8 +121,8 @@ void Text::update(bool _displayBlink)
     {
         if (x > matrix->width())
         {
-          x = 0;
-          y = font->height();
+            x = 0;
+            y = font->height();
         }
         (*it).update(matrix, font, _displayBlink, x, y);
     }
