@@ -51,7 +51,7 @@ void Text::parse()
     b.push_back(ReaderScenario::Instance()->getBlue());
     bool blink = false;
 
-    int index = 0;
+    unsigned int index = 0;
     while (index < text.length())
     {
         char character = text[index];
