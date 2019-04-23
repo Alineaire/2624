@@ -16,7 +16,7 @@ void ReaderScenario::start(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font,
     m_scenario = _scenario;
     m_matrix = _matrix;
     m_font = _font;
-    changePage(*(m_scenario->m_pages.begin()));
+    changePage(m_scenario->m_pages.begin()->second);
 }
 
 void ReaderScenario::update()

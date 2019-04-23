@@ -23,12 +23,20 @@ Character::~Character()
 }
 void Character::update(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font, bool _displayBlink, int& _posXDisplay, int& _posYDisplay)
 {
-    string valueToDisplay = " ";
+    char valueToDisplay = ' ';
     if (!m_isBlinking || (m_isBlinking && _displayBlink))
     {
         valueToDisplay = m_value;
     }
-    _posXDisplay += rgb_matrix::DrawText(_matrix, *_font, _posXDisplay, _posYDisplay + _font->baseline(), m_color, valueToDisplay.c_str());
+    _posXDisplay += rgb_matrix::DrawText(_matrix, *_font, _posXDisplay, _posYDisplay + _font->baseline(), m_color, &valueToDisplay);
+}
+int Character::getUnicodeCharacter(bool _displayBlink)
+{
+    if (!m_isBlinking || (m_isBlinking && _displayBlink))
+    {
+        return atoi(&m_value);
+    }
+    return 32; //space
 }
 
 Text::Text(string _idText, int _r, int _g, int _b)
@@ -101,13 +109,14 @@ void Text::parse()
 
         // add character
         m_characters.push_back(Character(character, blink, r.back(), g.back(), b.back()));
+        ++index;
     }
 }
 bool Text::haveBlinker()
 {
     for (vector<Character>::iterator it = m_characters.begin(); it != m_characters.end(); ++it)
     {
-        if ((*it).isBlinking())
+        if (it->isBlinking())
             return true;
     }
     return false;
@@ -119,11 +128,11 @@ void Text::update(bool _displayBlink)
     int x = 0, y = 0;
     for (vector<Character>::iterator it = m_characters.begin(); it != m_characters.end(); ++it)
     {
-        if (x > matrix->width())
+        if (x + font->CharacterWidth(it->getUnicodeCharacter(_displayBlink)) > matrix->width())
         {
             x = 0;
             y = font->height();
         }
-        (*it).update(matrix, font, _displayBlink, x, y);
+        it->update(matrix, font, _displayBlink, x, y);
     }
 }

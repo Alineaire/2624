@@ -886,12 +886,13 @@
 	<string.h>
 	<unistd.h>
 
-1552668908 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
+1556034717 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
 	"PageData.h"
 	"DescriptorData.h"
+	"ConditionData.h"
 	"csvparser.h"
 
-1552666808 /home/pi/Desktop/2624/Scenario/PageData.h
+1556029752 /home/pi/Desktop/2624/Scenario/PageData.h
 	"DescriptorData.h"
 	"LinkData.h"
 	"graphics.h"
@@ -907,23 +908,25 @@
 1552657232 /home/pi/Desktop/2624/Scenario/Tags/TagData.h
 	<string>
 
-1552496732 /home/pi/Desktop/2624/Scenario/LinkData.h
+1556034196 /home/pi/Desktop/2624/Scenario/LinkData.h
+	"DescriptorData.h"
 	<string>
 	<vector>
 
-1552497915 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cpp
+1556030621 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cpp
 	"ScenarioData.h"
 	"csvparser.h"
 
-1552496738 /home/pi/Desktop/2624/Scenario/ScenarioData.h
+1556030431 /home/pi/Desktop/2624/Scenario/ScenarioData.h
 	"PageData.h"
-	<vector>
+	<string>
+	<map>
 
-1552666786 source:/home/pi/Desktop/2624/ReaderScenario.cpp
+1556030636 source:/home/pi/Desktop/2624/ReaderScenario.cpp
 	"ReaderScenario.h"
 	"LocalisationManager.h"
 
-1556017251 /home/pi/Desktop/2624/ReaderScenario.h
+1556029715 /home/pi/Desktop/2624/ReaderScenario.h
 	"ScenarioData.h"
 	"PageData.h"
 	"graphics.h"
@@ -940,13 +943,13 @@
 	<map>
 	<string>
 
-1552497128 source:/home/pi/Desktop/2624/Scenario/LinkData.cpp
+1556034228 source:/home/pi/Desktop/2624/Scenario/LinkData.cpp
 	"LinkData.h"
 	"PageData.h"
 	"ConditionData.h"
 	"ReaderScenario.h"
 
-1552490379 /home/pi/Desktop/2624/Scenario/Conditions/ConditionData.h
+1556034317 /home/pi/Desktop/2624/Scenario/Conditions/ConditionData.h
 	"LinkData.h"
 	"TagData.h"
 	<string>
@@ -957,9 +960,11 @@
 	"TagsManager.h"
 	"utils.h"
 
-1552490467 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
+1556034652 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
 	"ConditionData.h"
 	"ReaderScenario.h"
+	"TagsManager.h"
+	"utils.h"
 
 1481035220 source:/home/pi/Desktop/2624/CsvParser/src/csvparser.c
 	<stdlib.h>
@@ -987,15 +992,15 @@
 	"LocalisationManager.h"
 	"csvparser.h"
 
-1556022825 /home/pi/Desktop/2624/utils.h
+1556024277 /home/pi/Desktop/2624/utils.h
 	<string>
 	<vector>
 
-1552668856 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
+1556026019 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
 	"graphics.h"
 	<vector>
 
-1556022643 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
+1556032947 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
 	"Text.h"
 	"LocalisationManager.h"
 	"ReaderScenario.h"
@@ -1010,7 +1015,7 @@
 
 1552910188 source:/home/pi/Desktop/2624/Scenario/Tags/TagsManager.cc
 
-1556022846 source:/home/pi/Desktop/2624/utils.cpp
+1556024277 source:/home/pi/Desktop/2624/utils.cpp
 	"utils.h"
 	<string>
 	<vector>

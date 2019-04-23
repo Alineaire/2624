@@ -1,6 +1,8 @@
 #ifndef LINKDATA_H
 #define LINKDATA_H
 
+#include "DescriptorData.h"
+
 #include <string>
 #include <vector>
 
@@ -11,15 +13,16 @@ class IConditionData;
 class LinkData
 {
     public:
-        LinkData();
+        LinkData(string _namePage = "");
         virtual ~LinkData();
+        void makeLink();
         bool check();
-        virtual void initialize();
+        void initialize();
 
-        string m_name;
+        string m_namePage;
         PageData* m_nextPage;
-        vector<IConditionData> m_conditionsDisplay;
-        vector<IConditionData> m_conditionsValidation;
+        vector<IDescriptorData*> m_descriptors;
+        vector<IConditionData*> m_conditions;
 
     protected:
     private:

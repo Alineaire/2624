@@ -8,9 +8,9 @@ ScenarioData::ScenarioData(string& _pathScenario)
 
 ScenarioData::~ScenarioData()
 {
-    for (vector<PageData*>::iterator it = m_pages.begin(); it != m_pages.end(); ++it)
+    for (std::map<string,PageData*>::iterator it = m_pages.begin(); it != m_pages.end(); ++it)
     {
-        delete (*it);
+        delete it->second;
     }
     m_pages.clear();
 }
@@ -34,9 +34,14 @@ void ScenarioData::parse(string& _pathScenario)
         {
             PageData* page = new PageData(key);
             page->parse(headerFields, rowFields, CsvParser_getNumFields(row));
-            m_pages.push_back(page);
+            m_pages[key] = page;
         }
         CsvParser_destroy_row(row);
     }
     CsvParser_destroy(csvparser);
+
+    for (std::map<string,PageData*>::iterator it = m_pages.begin(); it != m_pages.end(); ++it)
+    {
+        it->second->finalizeLink();
+    }
 }

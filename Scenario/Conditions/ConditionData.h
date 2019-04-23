@@ -26,6 +26,7 @@ class BoolTagConditionData : public IConditionData
         BoolTagConditionData() {}
         virtual ~BoolTagConditionData() {}
         bool validate();
+        static void parse(vector<IConditionData*>& _conditions, string _text);
 
         BoolTagData* m_data;
         CheckBool m_action;
@@ -39,6 +40,7 @@ class IntTagConditionData : public IConditionData
         IntTagConditionData() {}
         virtual ~IntTagConditionData() {}
         bool validate();
+        static void parse(vector<IConditionData*>& _conditions, string _text);
 
         IntTagData* m_data;
         CheckInt m_action;
@@ -53,6 +55,7 @@ class StringTagConditionData : public IConditionData
         StringTagConditionData() {}
         virtual ~StringTagConditionData() {}
         bool validate();
+        static void parse(vector<IConditionData*>& _conditions, string _text);
 
         StringTagData* m_data;
         CheckString m_action;

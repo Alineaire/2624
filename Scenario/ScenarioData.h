@@ -3,7 +3,8 @@
 
 #include "PageData.h"
 
-#include <vector>
+#include <string>
+#include <map>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ class ScenarioData
         ScenarioData(string& _pathScenario);
         virtual ~ScenarioData();
 
-        vector<PageData*> m_pages;
+        map<string, PageData*> m_pages;
 
     protected:
     private:

@@ -20,7 +20,8 @@ class PageData
         void read();
         void unload();
         void update(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font);
-        void parse(const char** _headerFields, const char** _rowFields, int _nbRows);
+        void parse(const char** _headerFields, const char** _rowFields, int _nbCols);
+        void finalizeLink();
 
         string m_name;
         vector<IDescriptorData*> m_descriptors;

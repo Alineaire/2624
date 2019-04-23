@@ -40,6 +40,7 @@ class ReaderScenario
         void setLeft(string _text);
         void setButton(string _text);
 
+        ScenarioData* getScenarioData() { return m_scenario; }
         rgb_matrix::Canvas* getMatrix() { return m_matrix; }
         rgb_matrix::Font* getFont() { return m_font; }
         int getRed() { return m_red; }

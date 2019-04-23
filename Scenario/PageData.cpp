@@ -1,5 +1,6 @@
 #include "PageData.h"
 #include "DescriptorData.h"
+#include "ConditionData.h"
 #include "csvparser.h"
 
 PageData::PageData()
@@ -57,12 +58,19 @@ void PageData::update(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font)
     }
 }
 
-void PageData::parse(const char** _headerFields, const char** _rowFields, int _nbRows)
+void PageData::parse(const char** _headerFields, const char** _rowFields, int _nbCols)
 {
     vector<IDescriptorData*> descriptors;
-    for (int i = 1; i < _nbRows ; i++)
+    int colLink = 0;
+    for (int i = 1; i < _nbCols ; i++)
     {
         string colName(_headerFields[i]);
+        if (colName == "$")
+        {
+            colLink = i;
+            break;
+        }
+
         string content(_rowFields[i]);
         if (content != "")
         {
@@ -93,5 +101,46 @@ void PageData::parse(const char** _headerFields, const char** _rowFields, int _n
                 m_descriptors.insert(m_descriptors.end(), descriptors.begin(), descriptors.end());
             }
         }
+    }
+
+    LinkData* link = nullptr;
+    while (colLink < _nbCols)
+    {
+        string colName(_headerFields[colLink]);
+        if (colName == "$")
+        {
+            string linkRef(_rowFields[++colLink]);
+            ++colLink;
+            if (linkRef == "")
+            {
+                link = nullptr;
+                continue;
+            }
+            link = new LinkData(linkRef);
+            m_links.push_back(link);
+        }
+
+        string content(_rowFields[colLink++]);
+        if (link == nullptr || content == "")
+            continue;
+
+        if (colName == "SFXInput")
+            SFXDescriptorData::parse(link->m_descriptors, content);
+        /*else if (colName == "Input")
+        else if (colName == "Time (in seconds)")*/
+        else if (colName == "BoolTag")
+            BoolTagConditionData::parse(link->m_conditions, content);
+        else if (colName == "IntTag")
+            IntTagConditionData::parse(link->m_conditions, content);
+        else if (colName == "StringTag")
+            StringTagConditionData::parse(link->m_conditions, content);
+    }
+}
+
+void PageData::finalizeLink()
+{
+    for (vector<LinkData*>::iterator it = m_links.begin(); it != m_links.end(); ++it)
+    {
+        (*it)->makeLink();
     }
 }

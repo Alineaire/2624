@@ -15,6 +15,7 @@ class Character
         virtual ~Character();
         void update(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font, bool _displayBlink, int& _posXDisplay, int& _posYDisplay);
         bool isBlinking() { return m_isBlinking; }
+        int getUnicodeCharacter(bool _displayBlink);
 
     protected:
     private:
