@@ -1,103 +1,97 @@
-Ref	Color	Brightness	Arduino	Text	count character	Sprite	SFX	Music	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag
-0	255,255,255	75	Computer	Bl<blink>a</blink>bla<color=255,255,0>FIN DU TEXTE</color>	58		./SFXs/bip.wav	./Musics/ambiance1.wav#0.2	toto=true#test=false	visite+=1#pierres=3			1	./SFX/Inputs/	A&5		cle==false			s	./SFX/Inputs/	Mouse#5		cle==true			3	./SFX/Inputs/	Up,Down,Up,Down,Up,Down			pierres==0
-1			TalkingMale	Truc Test	9			Off#0.2		pierres+=3																						
-2		100	ActionMale	Enjoy	5			./Musics/ambiance2.wav#0.2		pierres-=1																						
-3			TalkingFemale		0	./Sprites/Pouet.gif																										
-			ActionFemale		0																											
-			BlinkComputer		0																											
-MENUFR	255,120,120	100		<blink><</blink><color=120,120,255>FR</color><color=255,255,255>ANC</color><color=255,120,120>AIS</color><blink>></blink>	121						lang="FR"		MENUEN		gauche					MENUDE		droite										
-MENUEN	255,255,255	100		<blink><</blink><color=255,255,255>ENG</color><color=255,120,120>LISH</color><blink>></blink>	93						lang="EN"									MENUDE		gauche					MENUFR		droite			
-MENUDE	255,255,255	100		<blink><</blink><color=40,40,40>DE</color><color=255,120,120>UTS</color><color=255,255,0>CH</color><blink>></blink>	115						lang="DE"		MENUEN		droite												MENUFR		gauche			
-					0																											
-					0																											
-					0																											
-1	255,120,120	100	Computer	Bonjour et bienvenue,	21		./SFXs/beepbeep/						2		time=5					GAMEOVER	./SFXs/non	F,F,F,F,F,F										
-2				voici le programme 	19		./SFXs/robot/																									
-				de resexualisation	18		./SFXs/robot/																									
-				de la race humaine	18		./SFXs/robot/																									
-				afin de repeupler	17		./SFXs/robot/																									
-				la galaxie aujourd'hui en 2624.	31		./SFXs/robot/																									
-				En effet, en 2022 les humains	29		./SFXs/robot/																									
-				ont connu une regression sexuelle.	34		./SFXs/robot/																									
-				En d'autres termes,	19		./SFXs/robot/																									
-				altérité et diversité sexuelles ont été bafouées.	49		./SFXs/robot/																									
-				Le lien entre l'homme et la femme	33		./SFXs/robot/																									
-				s'est perdu d'un point de vu	28		./SFXs/robot/																									
-				somatique, psychique et social.	31		./SFXs/robot/																									
-				Malheureusement, l'humain	25		./SFXs/robot/																									
-				ne fornique plus en 2624.	25		./SFXs/robot/																									
-				Vous êtes donc choisis	22		./SFXs/robot/																									
-				pour reproduire des actes coïtaux 	34		./SFXs/robot/																									
-				à partir d'archives du 20ème siècle.	36		./SFXs/robot/																									
-				Nous avons retrouvé ainsi	25		./SFXs/robot/																									
-				des enregistrements d'onanismes mutuels de deux partenaires	59		./SFXs/robot/																									
-				afin que vous puissiez retrouver d'abord	40		./SFXs/robot/																									
-				une libido et être enfin prêts pour... <blink>... ... ... </blink>	66		./SFXs/robot/																									
-	255,120,120	75	BlinkComputer	<blink>une pénétration imminente.</blink>	41																											
-					0																											
-	255,120,120	100	Computer	Voici les instructions suivantes :	34																											
-					0																											
-	120,255,120	50	ActionMale	<blink>Vert clignotant action sur dispositif vert</blink>	57																											
-					0																											
-	120,120,255	50	ActionFemale	<blink>Bleu clignontant  action dispositif bleu</blink>	55																											
-					0																											
-	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 1</blink>	32		./SFXs/beepbeep/																									
-	120,255,120	50	TalkingMale	Moi j'aime bien quand c'est doux	32			./Musics/phase1.wav#0.5																								
-	120,120,255	50	TalkingFemale	Ca tombe bien moi aussi :)	26																											
-				Je prends les commandes, j'ai envie !	37																											
-	120,255,120	50	TalkingMale	Ok, je m'offre à toi	20			Off#0.5																								
-					0																											
-	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 2</blink>	32		./SFXs/beepbeep/																									
-	120,120,255	50	TalkingFemale	Ok super, alors dis moi ce que tu aimes	39			./Musics/phase2.wav#0.5																								
-	120,255,120	50	ActionMale	Très bien, alors vas-y doucement vers le haut	45																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
-					0																											
+Ref	Color	Brightness	Arduino	Text	count character	Sprite	SFX	Music	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag
+0													veilleFR		time=4																																																				
+veilleFR	255,120,120	100	BlinkComputer	Welcome in 2624 Move the joystick	33			./Musics/veille.wav#0.5					veilleDE		time=4					menuFR	z or s or q or d																																														
+veilleDE	255,120,120	100	BlinkComputer	Willkommen in 2624 Bewegen das Joystick	39								veilleEN		time=4					menuFR	z or s or q or d																																														
+veilleEN	255,120,120	100	BlinkComputer	Bienvenue en 2624 Bougez le joystick	36								veilleFR		time=4					menuFR	z or s or q or d																																														
+menuFR	255,120,120	100		<blink><</blink><color=120,120,255>FR</color><color=255,255,255>ANC</color><color=255,120,120>AIS</color><blink>></blink>	121						lang="FR"		menuEN		q					menuDE		d												1	z or s																																
+menuEN	255,255,255	100		<blink><</blink><color=255,255,255>ENG</color><color=255,120,120>LISH</color><blink>></blink>	93						lang="EN"									menuDE		q					menuFR		d					1	z or s																																
+menuDE	255,255,255	100		<blink><</blink><color=40,40,40>DE</color><color=255,120,120>UTS</color><color=255,255,0>CH</color><blink>></blink>	115						lang="DE"		menuEN		d												menuFR		q					1	z or s																																
+1	255,120,120	100	Computer	Bonjour et bienvenue,	21		./SFXs/beepbeep/	./Musics/accueil.wav#0.5					2		time=4					GAMEOVER	./SFXs/non	F,F,F,F,F,F																																													
+2	255,120,120	100	Computer	voici le programme 	19		./SFXs/robot/						3		time=4																																																				
+3	255,120,120	100	Computer	de resexualisation	18		./SFXs/robot/						4		time=4																																																				
+4	255,120,120	100	Computer	de la race humaine	18		./SFXs/robot/						5		time=4																																																				
+5	255,120,120	100	Computer	afin de repeupler	17		./SFXs/robot/						6		time=4																																																				
+6	255,120,120	100	Computer	la galaxie aujourd'hui en 2624.	31		./SFXs/robot/						7		time=4																																																				
+7	255,120,120	100	Computer	En effet, en 2022 les humains	29		./SFXs/robot/						8		time=4																																																				
+8	255,120,120	100	Computer	ont connu une regression sexuelle.	34		./SFXs/robot/						9		time=4																																																				
+9	255,120,120	100	Computer	En d'autres termes,	19		./SFXs/robot/						10		time=4																																																				
+10	255,120,120	100	Computer	altérité et diversité sexuelles ont été bafouées.	49		./SFXs/robot/						11		time=4																																																				
+11	255,120,120	100	Computer	Le lien entre l'homme et la femme	33		./SFXs/robot/						12		time=4																																																				
+12	255,120,120	100	Computer	s'est perdu d'un point de vu	28		./SFXs/robot/						13		time=4																																																				
+13	255,120,120	100	Computer	somatique, psychique et social.	31		./SFXs/robot/						14		time=4																																																				
+14	255,120,120	100	Computer	Malheureusement, l'humain	25		./SFXs/robot/						15		time=4																																																				
+15	255,120,120	100	Computer	ne fornique plus en 2624.	25		./SFXs/robot/						16		time=4																																																				
+16	255,120,120	100	Computer	Vous êtes donc choisis	22		./SFXs/robot/						17		time=4																																																				
+17	255,120,120	100	Computer	pour reproduire des actes coïtaux 	34		./SFXs/robot/						18		time=4																																																				
+18	255,120,120	100	Computer	à partir d'archives du 20ème siècle.	36		./SFXs/robot/						19		time=4																																																				
+19	255,120,120	100	Computer	Nous avons retrouvé ainsi	25		./SFXs/robot/						20		time=4																																																				
+20	255,120,120	100	Computer	des enregistrements d'onanismes mutuels de deux partenaires	59		./SFXs/robot/						21		time=4																																																				
+21	255,120,120	100	Computer	afin que vous puissiez retrouver d'abord	40		./SFXs/robot/						22		time=4																																																				
+22	255,120,120	100	Computer	une libido et être enfin prêts pour... <blink>... ... ... </blink>	66		./SFXs/robot/	Off#0.5					23		time=4																																																				
+23	255,120,120	75	BlinkComputer	<blink>une pénétration imminente.</blink>	41		./SFXs/beepbeep/						24		time=4																																																				
+24	255,120,120	100	Computer	Voici les instructions suivantes :	34		./SFXs/robot/						25		time=4																																																				
+25	120,255,120	50	ActionMale	<blink>Vert clignotant action partenaire vert</blink>	53								26		time=6																																																				
+26	120,120,255	50	ActionFemale	<blink>Bleu clignontant  action partenaire bleu</blink>	55								27		time=6																																																				
+27	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 1</blink>	32		./SFXs/beepbeep/						28		time=4																																																				
+28	120,255,120	50	TalkingMale	Moi j'aime bien quand c'est doux	32			./Musics/phase1.wav#0.5					29		time=4																																																				
+29	120,120,255	50	TalkingFemale	Ca tombe bien moi aussi :)	26								30		time=4																																																				
+30	120,120,255	50	TalkingFemale	Je prends les commandes, j'ai envie !	37								31		time=4																																																				
+31	120,255,120	50	TalkingMale	Ok, je m'offre à toi	20			Off#0.5					32		time=4																																																				
+32	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 2</blink>	32		./SFXs/beepbeep/						33		time=4																																																				
+33	120,120,255	50	TalkingFemale	Ok super, alors dis moi ce que tu aimes	39			./Musics/phase2.wav#0.5					34		time=4																																																				
+34	120,255,120	50	ActionMale	Très bien, alors vas-y doucement vers le haut	45								35	./SFXs/oui/	z																																																				
+35	120,255,120	50	ActionMale	Oui... maintenant vers le bas	29								36	./SFXs/oui/	s																																																				
+36	120,255,120	50	ActionMale	Hum continue comme ça.....	26								37	./SFXs/oui/	z,s,z,s,z,s,z,s,z,s,z,s,z,s																																																				
+37	120,255,120	50	ActionMale	C'est bon.. encore un peu	25								38	./SFXs/oui/	z,s,z,s,z,s,z,s,z,s,z,s,z,s																																																				
+38	120,255,120	50	TalkingMale	Merci vas-y dis-moi ce que tu as envie	38		./SFXs/satisfaction/						39		time=4																																																				
+39	120,120,255	50	TalkingFemale	J'adore quand tu me dis ça !	28			Off#0.5					40		time=4																																																				
+40	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 3</blink>	32		./SFXs/beepbeep/						41		time=4																																																				
+41	120,120,255	50	ActionFemale	Carresse-moi longuement juste au dessus	39			./Musics/phase3.wav#0.5					42	./SFXs/oui/	Mouse#0.5						./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	s	3																																					
+42	120,120,255	50	ActionFemale	en continue avec une légère pression	36								43	./SFXs/oui/	Mouse#1,Mouse#1,Mouse#1,Mouse#1,Mouse#1						./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	s	3																																					
+43	120,120,255	50	ActionFemale	un peu dans tous les sens	25								44	./SFXs/oui/	Mouse#1,Mouse#1,Mouse#1,Mouse#1,Mouse#1						./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	s	3																																					
+44	120,120,255	50	ActionFemale	Oui comme ça  t'arrête pas	26								45	./SFXs/oui/	Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5						./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	s	3																																					
+45	120,120,255	50	TalkingFemale	Merci, c'est bon ce que tu me fais	34		./SFXs/satisfaction/	Off#0.5					46		time=4																																																				
+46	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 4</blink>	32		./SFXs/beepbeep/						47		time=4																																																				
+47	120,255,120	50	TalkingMale	Tu fais toujours doucement	26			./Musics/phase4.wav#0.5					48		time=4																																																				
+48	120,255,120	50	ActionMale	de haut en bas	14								49	./SFXs/oui/	z,s						./SFXs/ouibackground/	Mouse#1	3																																												
+49	120,255,120	50	ActionMale	Puis de gauche à droite	23								50	./SFXs/oui/	q,d						./SFXs/ouibackground/	Mouse#1	3																																												
+50	120,255,120	50	ActionMale	Et tu recommences	17								51	./SFXs/oui/	z,s,q,d,z,s,q,d,z,s,q,d,z,s,q,d						./SFXs/ouibackground/	Mouse#1	3																																												
+51	120,255,120	50	ActionMale	Autant de fois que... Ne..ce..ssaire...	39								52	./SFXs/oui/	z,s,q,d,z,s,q,d,z,s,q,d,z,s,q,d,z,s,q,d						./SFXs/ouibackground/	Mouse#1	3																																												
+52	120,255,120	50	TalkingMale	Oh qu'on est bon ensemble	25		./SFXs/satisfaction/						53		time=4																																																				
+53	120,120,255	50	TalkingFemale	Haha oui c'est bien cool	24			Off#0.5					54		time=4																																																				
+54	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 5</blink>	32		./SFXs/beepbeep/						55		time=4																																																				
+55	120,255,120	50	TalkingMale	Ok à moi, je vais varier un peu ;)	34			./Musics/phase5.wav#0.5					56		time=4																																																				
+56	120,120,255	50	ActionFemale	Ah ouais ? Montre moi ça :p	27								57	./SFXs/oui/	clickmiddle						./SFXs/ouibackground/	Mouse#1	3					./SFXs/ouibackground/	s	3					./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	q	3					./SFXs/ouibackground/	d	3																
+57	120,120,255	50	ActionFemale	Ouah tu sais quand l'activer toi :)	35								58	./SFXs/oui/	clickmiddle,clickmiddle,clickmiddle						./SFXs/ouibackground/	Mouse#1	3					./SFXs/ouibackground/	s	3					./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	q	3					./SFXs/ouibackground/	d	3																
+58	120,120,255	50	ActionFemale	Vas-y plein de fois là !	24								59	./SFXs/oui/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						./SFXs/ouibackground/	Mouse#1	3					./SFXs/ouibackground/	s	3					./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	q	3					./SFXs/ouibackground/	d	3																
+59	120,120,255	50	ActionFemale	Aaaaaaaah oui, encore un peu là	31								60	./SFXs/oui/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						./SFXs/ouibackground/	Mouse#1	3					./SFXs/ouibackground/	s	3					./SFXs/ouibackground/	z	3					./SFXs/ouibackground/	q	3					./SFXs/ouibackground/	d	3																
+60	120,120,255	50	TalkingFemale	Arrêtes tes mains divines ....	30		./SFXs/satisfaction/						61		time=4																																																				
+61	120,255,120	50	TalkingMale	Hum que t'es magnifique	23								62		time=4																																																				
+62	120,120,255	50	TalkingFemale	Et toi si sexy	14								63		time=4																																																				
+63	120,255,120	50	TalkingMale	Tu serais d'accord pour ....	28			Off#0.5					64		time=4																																																				
+64	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 6</blink>	32		./SFXs/beepbeep/						65		time=4																																																				
+65	120,120,255	50	TalkingFemale	Ok, dis moi ce que je dois faire ?	34			./Musics/phase6.wav#0.5					66		time=4																																																				
+66	120,255,120	50	TalkingMale	Tu sais quand tu vas de ...	27								67		time=4																																																				
+67	120,255,120	50	ActionMale	gauche à droite Bah c'est super.......	38								68	./SFXs/oui/	q,d,q,d,q,d,q,d,q,d																																																				
+68	120,255,120	50	ActionMale	Ouhouuu ! Ca procure... beaucoup de plaisir en moi... profondément 	67								69	./SFXs/oui/	f																																																				
+69	120,255,120	50	ActionMale	Haaaaaa, oui, c'est dément huummm..	35								70	./SFXs/oui/	f,f,f,f,f,f,f,f,f,f,f,f																																																				
+70	120,255,120	50	TalkingMale	Grandiose, ça me suffit	23		./SFXs/satisfaction/						71		time=4																																																				
+71	120,120,255	50	TalkingFemale	Oh une dernière chose avant !	29								72		time=4																																																				
+72	120,255,120	50	TalkingMale	Je ferai tout ce que tu veux	28			Off#0.5					73		time=4																																																				
+73	255,120,120	75	BlinkComputer	Archive 1 <blink>Phase 7</blink>	32		./SFXs/beepbeep/						74		time=4																																																				
+74	120,120,255	50	TalkingFemale	Tu te rappelles de la dernière fois ?	37			./Musics/phase7.wav#0.5					75		time=4																																																				
+75	120,120,255	50	ActionFemale	Au fond de moi, tu alternais...	31									./SFXs/oui/	clickright			clickinside+=1			./SFXs/oui/	clickleft			clickinside+=1		76	./SFXs/oui/	clickinside=2																																						
+76	120,120,255	50	ActionFemale	OUI ! Continue comme ça !  En alternance !	42									./SFXs/oui/	clickright			clickinside+=1			./SFXs/oui/	clickleft			clickinside+=1		77	./SFXs/oui/	clickinside=10																																						
+77	120,120,255	50	ActionFemale	Ooooh qu'elle folie	19									./SFXs/oui/	clickright			clickinside+=1			./SFXs/oui/	clickleft			clickinside+=1		78	./SFXs/oui/	clickinside=8																																						
+78	120,120,255	50	TalkingFemale	Qu'est ce... Que tu...	22		./SFXs/questcequetu/	Off#0.5					79		time=4																																																				
+79	120,120,255	50	TalkingFemale	Attends.... Pour me la....	26								80		time=4																																																				
+80	255,120,120	100	BlinkComputer	#01101010110101# Archive 2 corrompu	35		./SFXs/fichiercorrompu/						81		time=6																																																				
+81	255,120,120	75	Computer	Vous seul savez ce qui reste à faire	36		./SFXs/robot/						82		time=4																																																				
+82	255,120,120	75	Computer	Vous avez théoriquement	23		./SFXs/robot/						83		time=4																																																				
+83	255,120,120	75	Computer	atteint l'envie de forniquer	28		./SFXs/robot/						84		time=4																																																				
+84	255,120,120	75	Computer	Nous n'avons pas d'archives	27		./SFXs/robot/						85		time=4																																																				
+85	255,120,120	75	Computer	de l'acte coïtal.	17		./SFXs/robot/						86		time=4																																																				
+86	255,120,120	75	Computer	A vous d'improviser pour  faire des bébés.	42		./SFXs/robot/						87		time=4																																																				
+87	255,120,120	75	Computer	Au nom de l'humanité, 	22		./SFXs/robot/						88		time=4																																																				
+88	255,120,120	75	Computer	merci et bon courage.	21		./SFXs/win/						89		time=4																																																				
+gameOVER	255,120,120	100	Computer	Vous n'avez pas respecté votre partenaire.	42		./SFXs/gameover/						0		time=6																																																				
