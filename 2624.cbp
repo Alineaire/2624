@@ -26,6 +26,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
+				<Option parameters='--led-rows=16 --led-cols=32 --led-chain=4 --led-gpio-mapping=adafruit-hat -f &quot;./fonts/5x8.bdf&quot; -s &quot;./Scenario - Scenario.tsv&quot; -l &quot;./Scenario - Loc.tsv&quot;' />
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="Scenario/Conditions" />
