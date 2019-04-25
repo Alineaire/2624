@@ -1,6 +1,8 @@
 #include "ConditionData.h"
 #include "ReaderScenario.h"
 #include "TagsManager.h"
+#include "Time.h"
+#include "InputManager.h"
 #include "utils.h"
 
 bool BoolTagConditionData::validate()
@@ -151,33 +153,37 @@ void TimeConditionData::initialize(LinkData* _link)
 {
     this->IConditionData::initialize(_link);
 
-    //m_time = Time.time; //TODO
+    m_time = Time::Instance()->ActualTime();
 }
 bool TimeConditionData::validate()
 {
-    return this->IConditionData::validate()
-            //&& Time.time >= m_time + m_duration //TODO
-            ;
+    return this->IConditionData::validate() && Time::Instance()->ActualTime() >= m_time + m_duration;
+}
+void TimeConditionData::parse(vector<IConditionData*>& _conditions, string _text)
+{
+    TimeConditionData* data = new TimeConditionData();
+    data->m_duration = stof(_text);
+    _conditions.push_back(data);
 }
 
 void InputConditionData::initialize(LinkData* _link)
 {
     this->IConditionData::initialize(_link);
-
-    if (m_input == "UpArrow")
-        ReaderScenario::Instance()->setUp(_link->m_namePage);
-    if (m_input == "DownArrow")
-        ReaderScenario::Instance()->setDown(_link->m_namePage);
-    if (m_input == "RightArrow")
-        ReaderScenario::Instance()->setRight(_link->m_namePage);
-    if (m_input == "LeftArrow")
-        ReaderScenario::Instance()->setLeft(_link->m_namePage);
-    if (m_input == "Space")
-        ReaderScenario::Instance()->setButton(_link->m_namePage);
+    m_index = 0;
 }
 bool InputConditionData::validate()
 {
-    return this->IConditionData::validate()
-            //&& Input.GetKeyDown(m_input)//TODO
-            ;
+    if (m_index < m_inputs.size() && InputManager::Instance()->keyPress(m_inputs[m_index]))
+        ++m_index;
+    return this->IConditionData::validate() && m_index >= m_inputs.size();
+}
+void InputConditionData::parse(vector<IConditionData*>& _conditions, string _text)
+{
+    vector<string> variables = split(_text, '|');
+    for (vector<string>::iterator it = variables.begin(); it != variables.end(); ++it)
+    {
+        InputConditionData* data = new InputConditionData();
+        data->m_inputs = split(*it, ",");
+        _conditions.push_back(data);
+    }
 }

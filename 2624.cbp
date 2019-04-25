@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters='--led-rows=16 --led-cols=32 --led-chain=4 --led-gpio-mapping=adafruit-hat -f &quot;./fonts/6x9.bdf&quot; -s &quot;./Scenario - Scenario.tsv&quot; -l &quot;./Scenario - Loc.tsv&quot;' />
+				<Option parameters='--led-rows=16 --led-cols=32 --led-chain=4 --led-gpio-mapping=adafruit-hat -f &quot;./fonts/5x8.bdf&quot; -s &quot;./Scenario - Scenario.tsv&quot; -l &quot;./Scenario - Loc.tsv&quot;' />
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="Scenario/Conditions" />
@@ -24,7 +24,7 @@
 			<Target title="Release">
 				<Option output="bin/Release/2624" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -42,12 +42,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="`sdl2-config --cflags`" />
 			<Add option="$\(GraphicsMagick++-config --cppflags --cxxflags\)" />
 			<Add option="-O3 -g -Wextra -Wno-unused-parameter" />
 			<Add directory="rpi-rgb-led-matrix/include" />
 			<Add directory="CsvParser/include" />
 		</Compiler>
 		<Linker>
+			<Add option="`sdl2-config --libs`" />
 			<Add option="$\(GraphicsMagick++-config --ldflags --libs\)" />
 			<Add library="libavcodec" />
 			<Add library="libavformat" />
@@ -66,6 +68,8 @@
 		<Unit filename="CsvParser/src/csvparser.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="InputManager.cpp" />
+		<Unit filename="InputManager.h" />
 		<Unit filename="LocalisationManager.cpp" />
 		<Unit filename="LocalisationManager.h" />
 		<Unit filename="ReaderScenario.cpp" />
@@ -86,6 +90,8 @@
 		<Unit filename="Scenario/Tags/TagData.h" />
 		<Unit filename="Scenario/Tags/TagsManager.cpp" />
 		<Unit filename="Scenario/Tags/TagsManager.h" />
+		<Unit filename="Time.cpp" />
+		<Unit filename="Time.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="rpi-rgb-led-matrix/examples-api-use/c-example.c">
 			<Option compilerVar="CC" />
@@ -131,6 +137,8 @@
 		<Unit filename="rpi-rgb-led-matrix/utils/video-viewer.cc" />
 		<Unit filename="utils.cpp" />
 		<Unit filename="utils.h" />
+		<Unit filename="window.cpp" />
+		<Unit filename="window.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

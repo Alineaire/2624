@@ -2,6 +2,7 @@
 #include "DescriptorData.h"
 #include "ConditionData.h"
 #include "csvparser.h"
+#include "utils.h"
 
 PageData::PageData()
 {
@@ -109,7 +110,7 @@ void PageData::parse(const char** _headerFields, const char** _rowFields, int _n
         string colName(_headerFields[colLink]);
         if (colName == "$")
         {
-            string linkRef(_rowFields[++colLink]);
+            string linkRef(toUpper(_rowFields[++colLink]));
             ++colLink;
             if (linkRef == "")
             {
@@ -126,8 +127,10 @@ void PageData::parse(const char** _headerFields, const char** _rowFields, int _n
 
         if (colName == "SFXInput")
             SFXDescriptorData::parse(link->m_descriptors, content);
-        /*else if (colName == "Input")
-        else if (colName == "Time (in seconds)")*/
+        else if (colName == "Input")
+            InputConditionData::parse(link->m_conditions, content);
+        else if (colName == "Time (in seconds)")
+            TimeConditionData::parse(link->m_conditions, content);
         else if (colName == "BoolTag")
             BoolTagConditionData::parse(link->m_conditions, content);
         else if (colName == "IntTag")
@@ -137,10 +140,10 @@ void PageData::parse(const char** _headerFields, const char** _rowFields, int _n
     }
 }
 
-void PageData::finalizeLink()
+void PageData::finalizeLink(map<string, PageData*>& _pages)
 {
     for (vector<LinkData*>::iterator it = m_links.begin(); it != m_links.end(); ++it)
     {
-        (*it)->makeLink();
+        (*it)->makeLink(_pages);
     }
 }

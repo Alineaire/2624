@@ -15,7 +15,7 @@ class LinkData
     public:
         LinkData(string _namePage = "");
         virtual ~LinkData();
-        void makeLink();
+        void makeLink(map<string, PageData*>& _pages);
         bool check();
         void initialize();
 

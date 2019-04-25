@@ -1,5 +1,6 @@
 #include "ScenarioData.h"
 #include "csvparser.h"
+#include "utils.h"
 
 ScenarioData::ScenarioData(string& _pathScenario)
 {
@@ -29,7 +30,7 @@ void ScenarioData::parse(string& _pathScenario)
     while ((row = CsvParser_getRow(csvparser)) )
     {
         const char** rowFields = CsvParser_getFields(row);
-        string key = rowFields[0];
+        string key = toUpper(rowFields[0]);
         if (key != "")
         {
             PageData* page = new PageData(key);
@@ -42,6 +43,6 @@ void ScenarioData::parse(string& _pathScenario)
 
     for (std::map<string,PageData*>::iterator it = m_pages.begin(); it != m_pages.end(); ++it)
     {
-        it->second->finalizeLink();
+        it->second->finalizeLink(m_pages);
     }
 }

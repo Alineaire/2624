@@ -73,7 +73,7 @@ void Text::parse()
                 (foundColor == std::string::npos || (foundColor != std::string::npos && foundBlink < foundColor)))
             {
                 blink = foundBlink == index+1;
-                index = text.find(">", index);
+                index = text.find(">", index)+1;
                 continue;
             }
 
@@ -94,12 +94,12 @@ void Text::parse()
                         g.push_back(stoi(colors[1]));
                         b.push_back(stoi(colors[2]));
                     }
-                    index = endColor;
+                    index = endColor+1;
                 }
                 else
                 {
                     r.pop_back(); g.pop_back(); b.pop_back();
-                    index = text.find(">", index);
+                    index = text.find(">", index)+1;
                 }
                 continue;
             }
@@ -121,7 +121,7 @@ bool Text::haveBlinker()
     }
     return false;
 }
-void Text::update(bool _displayBlink)
+void Text::update(float _deltaTime, bool _displayBlink)
 {
     rgb_matrix::Canvas* matrix = ReaderScenario::Instance()->getMatrix();
     rgb_matrix::Font* font = ReaderScenario::Instance()->getFont();

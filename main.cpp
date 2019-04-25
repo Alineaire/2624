@@ -2,6 +2,9 @@
 #include "TagsManager.h"
 #include "LocalisationManager.h"
 #include "ScenarioData.h"
+#include "Time.h"
+#include "InputManager.h"
+#include "window.h"
 
 #include "led-matrix.h"
 
@@ -18,6 +21,8 @@ using namespace rgb_matrix;
 ReaderScenario* ReaderScenario::m_instance = nullptr;
 TagsManager* TagsManager::m_instance = nullptr;
 LocalisationManager* LocalisationManager::m_instance = nullptr;
+Time* Time::m_instance = nullptr;
+InputManager* InputManager::m_instance = nullptr;
 
 #if 1
 static int usage(const char *progname) {
@@ -89,30 +94,48 @@ int main(int argc, char *argv[])
 
     ReaderScenario::Instance()->start(matrix, &font, &scenario);
 
-    struct timespec next_time;
-    next_time.tv_sec = time(NULL);
-    next_time.tv_nsec = 0;
-    struct tm tm;
     //FrameCanvas *offscreen = matrix->CreateFrameCanvas();
 
-    signal(SIGTERM, InterruptHandler);
-    signal(SIGINT, InterruptHandler);
+    //signal(SIGTERM, InterruptHandler);
+    //signal(SIGINT, InterruptHandler);
 
-    while (!interrupt_received)
+    try
     {
-        //localtime_r(&next_time.tv_sec, &tm);
-        //offscreen->Fill(0, 0, 0);
-        ReaderScenario::Instance()->update();
+        window window;
 
-        // Wait until we're ready to show it.
-        //clock_nanosleep(CLOCK_REALTIME, TIMER_ABSTIME, &next_time, NULL);
+        Time::Instance()->init();
+        SDL_Event e;
+        while (!interrupt_received)
+        {
+            while( SDL_PollEvent( &e ) != 0 )
+            {
+                //User presses a key
+                if( e.type == SDL_KEYDOWN )
+                {
+                    string keyName(SDL_GetKeyName(e.key.keysym.sym));
+                }
+            }
+            //InputManager::Instance()->update();
+            //offscreen->Fill(0, 0, 0);
+            ReaderScenario::Instance()->update();
+            //window.draw();
 
-        // Atomic swap with double buffer
-        //offscreen = matrix->SwapOnVSync(offscreen);
+            // Wait until we're ready to show it.
+            //clock_nanosleep(CLOCK_REALTIME, TIMER_ABSTIME, &next_time, NULL);
 
-        //next_time.tv_sec += 1;
+            // Atomic swap with double buffer
+            //offscreen = matrix->SwapOnVSync(offscreen);
+
+            Time::Instance()->update();
+        }
+    }
+    catch ( const InitError & err )
+    {
+        cerr << "Error while initializing SDL: " << err.what() << endl;
     }
 
+    delete InputManager::Instance();
+    delete Time::Instance();
     delete LocalisationManager::Instance();
     delete TagsManager::Instance();
     delete ReaderScenario::Instance();

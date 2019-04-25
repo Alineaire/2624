@@ -589,11 +589,14 @@
 	"Magick++/Color.h"
 	"Magick++/Geometry.h"
 
-1552670161 source:/home/pi/Desktop/2624/main.cpp
+1556155242 source:/home/pi/Desktop/2624/main.cpp
 	"ReaderScenario.h"
 	"TagsManager.h"
 	"LocalisationManager.h"
 	"ScenarioData.h"
+	"Time.h"
+	"InputManager.h"
+	"window.h"
 	"led-matrix.h"
 	<getopt.h>
 	<iostream>
@@ -662,7 +665,7 @@
 	"thread.h"
 	"canvas.h"
 
-1552644318 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/input-example.cc
+1556147634 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/input-example.cc
 	"led-matrix.h"
 	<unistd.h>
 	<math.h>
@@ -695,7 +698,7 @@
 	<string.h>
 	<unistd.h>
 
-1552663169 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/text-example.cc
+1556147659 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/text-example.cc
 	"led-matrix.h"
 	"graphics.h"
 	<getopt.h>
@@ -880,26 +883,27 @@
 	"led-matrix.h"
 	"content-streamer.h"
 
-1552644324 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/c-example.c
+1556119471 source:/home/pi/Desktop/2624/rpi-rgb-led-matrix/examples-api-use/c-example.c
 	"led-matrix-c.h"
 	<stdio.h>
 	<string.h>
 	<unistd.h>
 
-1556034717 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
+1556117180 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
 	"PageData.h"
 	"DescriptorData.h"
 	"ConditionData.h"
 	"csvparser.h"
+	"utils.h"
 
-1556029752 /home/pi/Desktop/2624/Scenario/PageData.h
+1556108715 /home/pi/Desktop/2624/Scenario/PageData.h
 	"DescriptorData.h"
 	"LinkData.h"
 	"graphics.h"
 	<vector>
 	<string>
 
-1552668587 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
+1556119295 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
 	"TagData.h"
 	"Text.h"
 	<string>
@@ -908,25 +912,26 @@
 1552657232 /home/pi/Desktop/2624/Scenario/Tags/TagData.h
 	<string>
 
-1556034196 /home/pi/Desktop/2624/Scenario/LinkData.h
+1556108797 /home/pi/Desktop/2624/Scenario/LinkData.h
 	"DescriptorData.h"
 	<string>
 	<vector>
 
-1556030621 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cpp
+1556098557 source:/home/pi/Desktop/2624/Scenario/ScenarioData.cpp
 	"ScenarioData.h"
 	"csvparser.h"
+	"utils.h"
 
 1556030431 /home/pi/Desktop/2624/Scenario/ScenarioData.h
 	"PageData.h"
 	<string>
 	<map>
 
-1556030636 source:/home/pi/Desktop/2624/ReaderScenario.cpp
+1556126963 source:/home/pi/Desktop/2624/ReaderScenario.cpp
 	"ReaderScenario.h"
 	"LocalisationManager.h"
 
-1556029715 /home/pi/Desktop/2624/ReaderScenario.h
+1556126963 /home/pi/Desktop/2624/ReaderScenario.h
 	"ScenarioData.h"
 	"PageData.h"
 	"graphics.h"
@@ -943,27 +948,30 @@
 	<map>
 	<string>
 
-1556034228 source:/home/pi/Desktop/2624/Scenario/LinkData.cpp
+1556116628 source:/home/pi/Desktop/2624/Scenario/LinkData.cpp
 	"LinkData.h"
 	"PageData.h"
 	"ConditionData.h"
 	"ReaderScenario.h"
+	<iostream>
 
-1556034317 /home/pi/Desktop/2624/Scenario/Conditions/ConditionData.h
+1556127263 /home/pi/Desktop/2624/Scenario/Conditions/ConditionData.h
 	"LinkData.h"
 	"TagData.h"
 	<string>
 
-1552668992 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
+1556120623 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
 	"DescriptorData.h"
 	"ReaderScenario.h"
 	"TagsManager.h"
 	"utils.h"
 
-1556034652 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
+1556127231 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
 	"ConditionData.h"
 	"ReaderScenario.h"
 	"TagsManager.h"
+	"Time.h"
+	"InputManager.h"
 	"utils.h"
 
 1481035220 source:/home/pi/Desktop/2624/CsvParser/src/csvparser.c
@@ -992,15 +1000,15 @@
 	"LocalisationManager.h"
 	"csvparser.h"
 
-1556024277 /home/pi/Desktop/2624/utils.h
+1556097871 /home/pi/Desktop/2624/utils.h
 	<string>
 	<vector>
 
-1556026019 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
+1556106648 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
 	"graphics.h"
 	<vector>
 
-1556032947 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
+1556127465 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
 	"Text.h"
 	"LocalisationManager.h"
 	"ReaderScenario.h"
@@ -1015,10 +1023,377 @@
 
 1552910188 source:/home/pi/Desktop/2624/Scenario/Tags/TagsManager.cc
 
-1556024277 source:/home/pi/Desktop/2624/utils.cpp
+1556098417 source:/home/pi/Desktop/2624/utils.cpp
 	"utils.h"
 	<string>
 	<vector>
 	<sstream>
+	<iostream>
+	<locale>
+
+1556154459 /home/pi/Desktop/2624/window.h
+	<exception>
+	<string>
+	<SDL.h>
+
+1556153083 /usr/local/include/SDL2/SDL.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_config.h
+	"SDL_platform.h"
+
+1556153084 /usr/local/include/SDL2/SDL_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/begin_code.h
+
+1556153084 /usr/local/include/SDL2/close_code.h
+
+1556153083 /usr/local/include/SDL2/SDL_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1556153083 /usr/local/include/SDL2/SDL_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1556153083 /usr/local/include/SDL2/SDL_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153083 /usr/local/include/SDL2/SDL_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153083 /usr/local/include/SDL2/SDL_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153083 /usr/local/include/SDL2/SDL_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1556153084 /usr/local/include/SDL2/SDL_scancode.h
+	"SDL_stdinc.h"
+
+1556153084 /usr/local/include/SDL2/SDL_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1556153084 /usr/local/include/SDL2/SDL_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556153084 /usr/local/include/SDL2/SDL_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556154895 source:/home/pi/Desktop/2624/window.cpp
+	"window.h"
+
+1556124606 /home/pi/Desktop/2624/Time.h
+
+1556124617 source:/home/pi/Desktop/2624/Time.cpp
+	"Time.h"
+	<SDL.h>
+
+1556130430 /home/pi/Desktop/2624/InputManager.h
+	<string>
+	<map>
+
+1556155109 source:/home/pi/Desktop/2624/InputManager.cpp
+	"InputManager.h"
+	"utils.h"
+	<SDL.h>
 	<iostream>
 

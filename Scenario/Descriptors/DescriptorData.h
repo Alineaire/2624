@@ -104,6 +104,7 @@ class TextDescriptorData : public IDescriptorData
         TextDescriptorData() {}
         virtual ~TextDescriptorData() {}
         void read();
+        void unload();
         void update();
         static void parse(vector<IDescriptorData*>& _descriptors, string _idText);
 

@@ -2,48 +2,151 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="Scenario/ScenarioData.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scenario/LinkData.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="243" topLine="0" />
+			<Cursor1 position="193" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scenario/Descriptors/Text.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2456" topLine="80" />
+			<Cursor1 position="1211" topLine="29" />
 		</Cursor>
+	</File>
+	<File name="rpi-rgb-led-matrix/lib/gpio.cc" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13379" topLine="360" />
+		</Cursor>
+	</File>
+	<File name="rpi-rgb-led-matrix/include/canvas.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1414" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="window.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="360" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Time.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="287" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="utils.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="360" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Scenario/Conditions/ConditionData.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1475" topLine="60" />
+		</Cursor>
+	</File>
+	<File name="InputManager.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="64" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="rpi-rgb-led-matrix/include/led-matrix.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18773" topLine="458" />
+		</Cursor>
+	</File>
+	<File name="rpi-rgb-led-matrix/include/gpio.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1721" topLine="36" />
+		</Cursor>
+	</File>
+	<File name="CsvParser/examples/usage_example.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="458" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Time.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="328" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Scenario/ScenarioData.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="122" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="19" />
+		</Folding>
+	</File>
+	<File name="Scenario/LinkData.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="730" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="rpi-rgb-led-matrix/examples-api-use/input-example.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="215" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Scenario/Conditions/ConditionData.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5858" topLine="58" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+			<Collapse line="51" />
+		</Folding>
 	</File>
 	<File name="rpi-rgb-led-matrix/examples-api-use/text-example.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="352" topLine="0" />
+			<Cursor1 position="205" topLine="6" />
 		</Cursor>
 	</File>
-	<File name="Scenario/Descriptors/DescriptorData.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CsvParser/examples/usage_example_with_header.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3626" topLine="51" />
+			<Cursor1 position="5" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="15" />
-			<Collapse line="40" />
-		</Folding>
+	</File>
+	<File name="window.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="393" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2994" topLine="91" />
+		</Cursor>
+	</File>
+	<File name="LocalisationManager.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="671" topLine="0" />
+		</Cursor>
 	</File>
 	<File name="utils.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="546" topLine="0" />
+			<Cursor1 position="1184" topLine="37" />
 		</Cursor>
 	</File>
-	<File name="rpi-rgb-led-matrix/examples-api-use/clock.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scenario/PageData.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1952" topLine="41" />
+			<Cursor1 position="178" topLine="1" />
 		</Cursor>
 	</File>
-	<File name="Scenario/PageData.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scenario/Descriptors/Text.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3865" topLine="104" />
+			<Cursor1 position="817" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Scenario/Descriptors/Text.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="rpi-rgb-led-matrix/lib/led-matrix.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1190" topLine="18" />
+			<Cursor1 position="3690" topLine="78" />
+		</Cursor>
+	</File>
+	<File name="rpi-rgb-led-matrix/lib/options-initialize.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18991" topLine="513" />
+		</Cursor>
+	</File>
+	<File name="CsvParser/src/csvparser.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2984" topLine="67" />
 		</Cursor>
 	</File>
 	<File name="Scenario/Tags/TagsManager.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -51,9 +154,44 @@
 			<Cursor1 position="299" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="utils.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="rpi-rgb-led-matrix/examples-api-use/c-example.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="32" topLine="0" />
+			<Cursor1 position="113" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="Scenario/PageData.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="343" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Scenario/Tags/TagData.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="481" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="rpi-rgb-led-matrix/examples-api-use/clock.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="273" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="ReaderScenario.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="903" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="Scenario/Descriptors/DescriptorData.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2374" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="Scenario/Tags/TagsManager.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="488" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Scenario/Tags/TagData.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="347" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="rpi-rgb-led-matrix/examples-api-use/demo-main.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -63,108 +201,33 @@
 	</File>
 	<File name="LocalisationManager.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="910" topLine="20" />
+			<Cursor1 position="666" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="LocalisationManager.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="InputManager.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="671" topLine="0" />
+			<Cursor1 position="338" topLine="15" />
 		</Cursor>
 	</File>
-	<File name="CsvParser/src/csvparser.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scenario/ScenarioData.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2984" topLine="67" />
+			<Cursor1 position="246" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Scenario/Tags/TagData.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scenario/Descriptors/DescriptorData.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="481" topLine="13" />
+			<Cursor1 position="4898" topLine="58" />
 		</Cursor>
-	</File>
-	<File name="ReaderScenario.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="312" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Scenario/ScenarioData.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="926" topLine="5" />
-		</Cursor>
+		<Folding>
+			<Collapse line="14" />
+			<Collapse line="43" />
+			<Collapse line="80" />
+			<Collapse line="84" />
+		</Folding>
 	</File>
 	<File name="ReaderScenario.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="688" topLine="7" />
-		</Cursor>
-	</File>
-	<File name="Scenario/Tags/TagData.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="347" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Scenario/PageData.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="88" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Scenario/LinkData.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="474" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="rpi-rgb-led-matrix/include/led-matrix.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="18773" topLine="458" />
-		</Cursor>
-	</File>
-	<File name="Scenario/LinkData.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="325" topLine="16" />
-		</Cursor>
-	</File>
-	<File name="rpi-rgb-led-matrix/lib/options-initialize.cc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="18991" topLine="513" />
-		</Cursor>
-	</File>
-	<File name="CsvParser/examples/usage_example.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="458" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Scenario/Conditions/ConditionData.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1360" topLine="19" />
-		</Cursor>
-		<Folding>
-			<Collapse line="23" />
-		</Folding>
-	</File>
-	<File name="Scenario/Tags/TagsManager.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="488" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Scenario/Conditions/ConditionData.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5577" topLine="11" />
-		</Cursor>
-		<Folding>
-			<Collapse line="6" />
-			<Collapse line="11" />
-			<Collapse line="44" />
-			<Collapse line="49" />
-			<Collapse line="117" />
-			<Collapse line="122" />
-		</Folding>
-	</File>
-	<File name="CsvParser/examples/usage_example_with_header.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Scenario/Descriptors/DescriptorData.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="571" topLine="24" />
+			<Cursor1 position="94" topLine="1" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

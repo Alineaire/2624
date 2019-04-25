@@ -31,7 +31,7 @@ class Text
         virtual ~Text();
         void parse();
         bool haveBlinker();
-        void update(bool _displayBlink = true);
+        void update(float _deltaTime = 0.0f, bool _displayBlink = true);
 
         string m_idText;
 

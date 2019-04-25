@@ -3,6 +3,8 @@
 #include "ConditionData.h"
 #include "ReaderScenario.h"
 
+#include <iostream>
+
 LinkData::LinkData(string _namePage)
 {
     m_namePage = _namePage;
@@ -14,11 +16,17 @@ LinkData::~LinkData()
     {
         delete (*it);
     }
+    m_conditions.clear();
+    for (vector<IDescriptorData*>::iterator it = m_descriptors.begin(); it != m_descriptors.end(); ++it)
+    {
+        delete (*it);
+    }
+    m_descriptors.clear();
 }
 
-void LinkData::makeLink()
+void LinkData::makeLink(map<string, PageData*>& _pages)
 {
-    m_nextPage = ReaderScenario::Instance()->getScenarioData()->m_pages[m_namePage];
+    m_nextPage = _pages[m_namePage];
     if (m_nextPage == nullptr)
     {
         fprintf(stderr, "Not find page '%s'\n", m_namePage.c_str());

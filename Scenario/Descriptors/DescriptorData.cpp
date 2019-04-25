@@ -5,7 +5,6 @@
 
 IDescriptorData::IDescriptorData()
 {
-    //ctor
 }
 
 void BoolTagModifierDescriptorData::read()
@@ -106,7 +105,7 @@ void SFXDescriptorData::read()
 }
 void SFXDescriptorData::unload()
 {
-    ReaderScenario::Instance()->changeFX(nullptr);
+    ReaderScenario::Instance()->changeFX("");
 }
 void SFXDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _text)
 {
@@ -121,7 +120,7 @@ void MusicDescriptorData::read()
 }
 void MusicDescriptorData::unload()
 {
-    ReaderScenario::Instance()->changeMusic(nullptr);
+    ReaderScenario::Instance()->changeMusic("");
 }
 void MusicDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _text)
 {
@@ -135,6 +134,10 @@ void TextDescriptorData::read()
     m_text.parse();
     if (!m_text.haveBlinker())
         m_text.update();
+}
+void TextDescriptorData::unload()
+{
+    ReaderScenario::Instance()->getMatrix()->Clear();
 }
 void TextDescriptorData::update()
 {
@@ -154,7 +157,7 @@ void SpriteDescriptorData::read()
 }
 void SpriteDescriptorData::unload()
 {
-    ReaderScenario::Instance()->setSprite(nullptr);
+    ReaderScenario::Instance()->getMatrix()->Clear();
 }
 void SpriteDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _text)
 {

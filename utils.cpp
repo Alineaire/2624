@@ -6,6 +6,7 @@
 #include <vector>
 #include <sstream>
 #include <iostream>
+#include <locale>
 
 using namespace std;
 
@@ -46,6 +47,30 @@ vector<string> split(string stringToBeSplitted, string delimeter)
 	}
 	return splittedString;
 
+}
+
+/*
+string to upper
+*/
+string toUpper(string _string)
+{
+    locale loc;
+    string output = "";
+    for (string::size_type i = 0; i < _string.length(); ++i)
+        output += toupper(_string[i], loc);
+    return output;
+}
+
+/*
+string to lower
+*/
+string toLower(string _string)
+{
+    locale loc;
+    string output = "";
+    for (string::size_type i = 0; i < _string.length(); ++i)
+        output += tolower(_string[i], loc);
+    return output;
 }
 
 #endif // UTILS_H

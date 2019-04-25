@@ -72,6 +72,7 @@ class TimeConditionData : public IConditionData
         virtual ~TimeConditionData() {}
         void initialize(LinkData* _link);
         bool validate();
+        static void parse(vector<IConditionData*>& _conditions, string _text);
 
         float m_duration;
         float m_time;
@@ -87,8 +88,10 @@ class InputConditionData : public IConditionData
         virtual ~InputConditionData() {}
         void initialize(LinkData* _link);
         bool validate();
+        static void parse(vector<IConditionData*>& _conditions, string _text);
 
-        string m_input;
+        vector<string> m_inputs;
+        unsigned int m_index;
 
     protected:
     private:
