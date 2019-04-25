@@ -14,6 +14,7 @@
 #include <string>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 
 using namespace std;
 using namespace rgb_matrix;
@@ -25,7 +26,8 @@ Time* Time::m_instance = nullptr;
 InputManager* InputManager::m_instance = nullptr;
 
 #if 1
-static int usage(const char *progname) {
+static int usage(const char *progname)
+{
     fprintf(stderr, "usage: %s [options]\n", progname);
     fprintf(stderr, "Reads text from stdin and displays it. "
           "Empty string: clear screen\n");
@@ -40,7 +42,8 @@ static int usage(const char *progname) {
 }
 
 volatile bool interrupt_received = false;
-static void InterruptHandler(int signo) {
+static void InterruptHandler(int signo)
+{
   interrupt_received = true;
 }
 
@@ -50,6 +53,7 @@ int main(int argc, char *argv[])
     rgb_matrix::RuntimeOptions runtime_opt;
     if (!rgb_matrix::ParseOptionsFromFlags(&argc, &argv, &matrix_options, &runtime_opt))
         return usage(argv[0]);
+    runtime_opt.drop_privileges = -1;
 
     const char* bdf_font_file = NULL;
     const char* scenario_file = NULL;
@@ -85,49 +89,38 @@ int main(int argc, char *argv[])
     if (matrix == NULL)
         return 1;
 
-    matrix->SetBrightness(100);
+    matrix->SetBrightness(70);
+
+    FrameCanvas* offscreen = matrix->CreateFrameCanvas();
+
+    signal(SIGTERM, InterruptHandler);
+    signal(SIGINT, InterruptHandler);
 
     string pathLoc(localisation_file);
     LocalisationManager::Instance()->loadTSV(pathLoc);
     string pathScenario(scenario_file);
     ScenarioData scenario(pathScenario);
-
-    ReaderScenario::Instance()->start(matrix, &font, &scenario);
-
-    //FrameCanvas *offscreen = matrix->CreateFrameCanvas();
-
-    //signal(SIGTERM, InterruptHandler);
-    //signal(SIGINT, InterruptHandler);
+    ReaderScenario::Instance()->start(matrix, offscreen, &font, &scenario);
 
     try
     {
-        window window;
+        window* windows = new window();
 
         Time::Instance()->init();
-        SDL_Event e;
         while (!interrupt_received)
         {
-            while( SDL_PollEvent( &e ) != 0 )
-            {
-                //User presses a key
-                if( e.type == SDL_KEYDOWN )
-                {
-                    string keyName(SDL_GetKeyName(e.key.keysym.sym));
-                }
-            }
-            //InputManager::Instance()->update();
-            //offscreen->Fill(0, 0, 0);
+            InputManager::Instance()->update();
             ReaderScenario::Instance()->update();
-            //window.draw();
-
-            // Wait until we're ready to show it.
-            //clock_nanosleep(CLOCK_REALTIME, TIMER_ABSTIME, &next_time, NULL);
+            windows->draw();
 
             // Atomic swap with double buffer
-            //offscreen = matrix->SwapOnVSync(offscreen);
+            //usleep(500);
+            offscreen = matrix->SwapOnVSync(offscreen);
+            offscreen->Clear();
 
             Time::Instance()->update();
         }
+        delete windows;
     }
     catch ( const InitError & err )
     {

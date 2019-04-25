@@ -45,17 +45,7 @@ void IntTagModifierDescriptorData::parse(vector<IDescriptorData*>& _descriptors,
     vector<string> variables = split(_text, '#');
     for (vector<string>::iterator it = variables.begin(); it != variables.end(); ++it)
     {
-        vector<string> content = split(*it, '=');
-        if (content.size() == 2)
-        {
-            IntTagModifierDescriptorData* data = new IntTagModifierDescriptorData();
-            data->m_data = TagsManager::Instance()->addIntTag(content[0]);
-            data->m_action = ChangeInt::affect;
-            data->m_value = stoi(content[1]);
-            _descriptors.push_back(data);
-            continue;
-        }
-        content = split(*it, "+=");
+        vector<string> content = split(*it, "+=");
         if (content.size() == 2)
         {
             IntTagModifierDescriptorData* data = new IntTagModifierDescriptorData();
@@ -71,6 +61,16 @@ void IntTagModifierDescriptorData::parse(vector<IDescriptorData*>& _descriptors,
             IntTagModifierDescriptorData* data = new IntTagModifierDescriptorData();
             data->m_data = TagsManager::Instance()->addIntTag(content[0]);
             data->m_action = ChangeInt::decrement;
+            data->m_value = stoi(content[1]);
+            _descriptors.push_back(data);
+            continue;
+        }
+        content = split(*it, '=');
+        if (content.size() == 2)
+        {
+            IntTagModifierDescriptorData* data = new IntTagModifierDescriptorData();
+            data->m_data = TagsManager::Instance()->addIntTag(content[0]);
+            data->m_action = ChangeInt::affect;
             data->m_value = stoi(content[1]);
             _descriptors.push_back(data);
             continue;
@@ -132,16 +132,17 @@ void MusicDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _
 void TextDescriptorData::read()
 {
     m_text.parse();
-    if (!m_text.haveBlinker())
-        m_text.update();
+    //if (!m_text.haveBlinker())
+    //    m_text.update();
 }
 void TextDescriptorData::unload()
 {
     ReaderScenario::Instance()->getMatrix()->Clear();
+    ReaderScenario::Instance()->getMatrix()->Fill(0,0,0);
 }
 void TextDescriptorData::update()
 {
-    if (m_text.haveBlinker())
+    //if (m_text.haveBlinker())
         m_text.update();
 }
 void TextDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _idText)

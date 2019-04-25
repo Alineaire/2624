@@ -81,6 +81,13 @@ class TimeConditionData : public IConditionData
     private:
 };
 
+struct CheckInput
+{
+    vector<string> m_inputs;
+    unsigned int m_index;
+    float m_time;
+};
+
 class InputConditionData : public IConditionData
 {
     public:
@@ -90,8 +97,7 @@ class InputConditionData : public IConditionData
         bool validate();
         static void parse(vector<IConditionData*>& _conditions, string _text);
 
-        vector<string> m_inputs;
-        unsigned int m_index;
+        vector<CheckInput> m_inputs;
 
     protected:
     private:

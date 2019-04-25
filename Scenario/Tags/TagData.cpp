@@ -1,7 +1,7 @@
 #include "TagData.h"
 
-BoolTagData::BoolTagData() : ITagData() {}
-BoolTagData::BoolTagData(string _name) : ITagData(_name) {}
+BoolTagData::BoolTagData() : ITagData() { m_value = false; }
+BoolTagData::BoolTagData(string _name) : ITagData(_name) { m_value = false; }
 void BoolTagData::doAction(ChangeBool _action, bool _value)
 {
     switch (_action)
@@ -26,8 +26,8 @@ bool BoolTagData::checkValue(CheckBool _action)
     return false;
 }
 
-IntTagData::IntTagData() : ITagData() {}
-IntTagData::IntTagData(string _name) : ITagData(_name) {}
+IntTagData::IntTagData() : ITagData() { m_value = 0; }
+IntTagData::IntTagData(string _name) : ITagData(_name) { m_value = 0; }
 void IntTagData::doAction(ChangeInt _action, int _value)
 {
     switch (_action)
@@ -63,8 +63,8 @@ bool IntTagData::checkValue(CheckInt _action, int _valueTest)
     return false;
 }
 
-StringTagData::StringTagData() : ITagData() {}
-StringTagData::StringTagData(string _name) : ITagData(_name) {}
+StringTagData::StringTagData() : ITagData() { m_value = ""; }
+StringTagData::StringTagData(string _name) : ITagData(_name) { m_value = ""; }
 void StringTagData::doAction(ChangeString _action, string _value)
 {
     switch (_action)

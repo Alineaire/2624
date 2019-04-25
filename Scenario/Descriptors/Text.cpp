@@ -39,12 +39,9 @@ int Character::getUnicodeCharacter(bool _displayBlink)
     return 32; //space
 }
 
-Text::Text(string _idText, int _r, int _g, int _b)
+Text::Text(string _idText)
 {
     m_idText = _idText;
-    m_color.r = _r;
-    m_color.g = _g;
-    m_color.b = _b;
 }
 Text::~Text()
 {
@@ -59,6 +56,7 @@ void Text::parse()
     b.push_back(ReaderScenario::Instance()->getBlue());
     bool blink = false;
 
+    m_characters.clear();
     unsigned int index = 0;
     while (index < text.length())
     {
@@ -84,7 +82,7 @@ void Text::parse()
                 bool startNewColor = foundColor == index+1;
                 if (startNewColor)
                 {
-                    int startColor = text.find("=", index);
+                    int startColor = text.find("=", index)+1;
                     int endColor = text.find(">", startColor);
                     string color = text.substr(startColor, endColor-startColor);
                     vector<string> colors = split(color, ',');
@@ -123,7 +121,7 @@ bool Text::haveBlinker()
 }
 void Text::update(float _deltaTime, bool _displayBlink)
 {
-    rgb_matrix::Canvas* matrix = ReaderScenario::Instance()->getMatrix();
+    rgb_matrix::Canvas* matrix = ReaderScenario::Instance()->getOffscreen();
     rgb_matrix::Font* font = ReaderScenario::Instance()->getFont();
     int x = 0, y = 0;
     for (vector<Character>::iterator it = m_characters.begin(); it != m_characters.end(); ++it)

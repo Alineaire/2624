@@ -5,6 +5,7 @@
 #include "PageData.h"
 
 #include "graphics.h"
+#include "led-matrix.h"
 
 #include <string>
 
@@ -24,7 +25,7 @@ class ReaderScenario
             return ReaderScenario::m_instance;
         }
 
-        void start(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font, ScenarioData* _scenario);
+        void start(rgb_matrix::Canvas* _matrix, rgb_matrix::FrameCanvas* _offscreen, rgb_matrix::Font* _font, ScenarioData* _scenario);
         void update();
         void changePage(PageData* newPage);
         void setSprite(string _sprite);
@@ -35,6 +36,7 @@ class ReaderScenario
 
         ScenarioData* getScenarioData() { return m_scenario; }
         rgb_matrix::Canvas* getMatrix() { return m_matrix; }
+        rgb_matrix::FrameCanvas* getOffscreen() { return m_offscreen; }
         rgb_matrix::Font* getFont() { return m_font; }
         int getRed() { return m_red; }
         int getGreen() { return m_green; }
@@ -56,6 +58,7 @@ class ReaderScenario
         int m_blue;
         int m_brightness;
         rgb_matrix::Canvas* m_matrix;
+        rgb_matrix::FrameCanvas* m_offscreen;
         rgb_matrix::Font* m_font;
 };
 

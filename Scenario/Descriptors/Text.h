@@ -27,7 +27,7 @@ class Character
 class Text
 {
     public:
-        Text(string _idText = "", int _r = -1, int _g = -1, int _b = -1);
+        Text(string _idText = "");
         virtual ~Text();
         void parse();
         bool haveBlinker();
@@ -37,7 +37,6 @@ class Text
 
     protected:
     private:
-        rgb_matrix::Color m_color;
         vector<Character> m_characters;
 };
 

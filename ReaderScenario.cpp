@@ -11,11 +11,12 @@ ReaderScenario::~ReaderScenario()
     //dtor
 }
 
-void ReaderScenario::start(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font, ScenarioData* _scenario)
+void ReaderScenario::start(rgb_matrix::Canvas* _matrix, rgb_matrix::FrameCanvas* _offscreen, rgb_matrix::Font* _font, ScenarioData* _scenario)
 {
-    m_scenario = _scenario;
     m_matrix = _matrix;
+    m_offscreen = _offscreen;
     m_font = _font;
+    m_scenario = _scenario;
     changePage(m_scenario->m_pages.begin()->second);
 }
 
