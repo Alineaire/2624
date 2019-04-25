@@ -194,7 +194,7 @@ bool InputConditionData::validate()
                     nextInput = (it->m_time > duration);
                 }
             }
-            else if (InputManager::Instance()->keyPress(it->m_inputs[it->m_index]))
+            else if (InputManager::Instance()->keyJustPress(it->m_inputs[it->m_index]))
                 nextInput = true;
 
             if (nextInput)

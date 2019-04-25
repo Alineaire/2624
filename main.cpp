@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
             windows->draw();
 
             // Atomic swap with double buffer
-            //dddddddddddddddddddddusleep(500);
+            //usleep(500);
             offscreen = matrix->SwapOnVSync(offscreen);
             offscreen->Clear();
 

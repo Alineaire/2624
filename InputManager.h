@@ -25,6 +25,7 @@ class InputManager
 
         void update();
         bool keyPress(string _key) { return keys[_key]; }
+        bool keyJustPress(string _key) { return keys[_key] && !previousKeys[_key]; }
 
         vec2f getMousePosition() { return mouse; }
         vec2f getMouseDeltaPosition() { return mouseDelta; }
@@ -34,6 +35,7 @@ class InputManager
     private:
         static InputManager* m_instance;
         map<string, bool> keys;
+        map<string, bool> previousKeys;
         vec2f mouse, mouseDelta;
 };
 

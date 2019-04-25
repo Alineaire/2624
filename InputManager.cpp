@@ -10,6 +10,7 @@ InputManager::~InputManager()
 
 void InputManager::update()
 {
+    previousKeys = keys;
     SDL_Event event;
     while (SDL_PollEvent(&event) != 0)
     {
