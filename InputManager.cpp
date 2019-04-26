@@ -14,7 +14,6 @@ void InputManager::update()
     SDL_Event event;
     while (SDL_PollEvent(&event) != 0)
     {
-        //cout << (SDL_EventType)event.type << endl;
         switch (event.type)
         {
         case SDL_QUIT:

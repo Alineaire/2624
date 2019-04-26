@@ -50,7 +50,7 @@
 			<Add directory="CsvParser/include" />
 		</Compiler>
 		<Linker>
-			<Add option="`sdl2-config --libs`" />
+			<Add option="`sdl2-config --libs`  -lSDL2_mixer -lSDL2_image" />
 			<Add option="$\(GraphicsMagick++-config --ldflags --libs\)" />
 			<Add library="libavcodec" />
 			<Add library="libavformat" />
@@ -91,6 +91,8 @@
 		<Unit filename="Scenario/Tags/TagData.h" />
 		<Unit filename="Scenario/Tags/TagsManager.cpp" />
 		<Unit filename="Scenario/Tags/TagsManager.h" />
+		<Unit filename="SoundManager.cpp" />
+		<Unit filename="SoundManager.h" />
 		<Unit filename="Time.cpp" />
 		<Unit filename="Time.h" />
 		<Unit filename="main.cpp" />

@@ -8,7 +8,6 @@ ReaderScenario::ReaderScenario()
 
 ReaderScenario::~ReaderScenario()
 {
-    //dtor
 }
 
 void ReaderScenario::start(rgb_matrix::Canvas* _matrix, rgb_matrix::FrameCanvas* _offscreen, rgb_matrix::Font* _font, ScenarioData* _scenario)
@@ -37,14 +36,6 @@ void ReaderScenario::changePage(PageData* newPage)
 void ReaderScenario::setSprite(string _sprite)
 {
     m_sprite = _sprite;
-}
-void ReaderScenario::changeMusic(string _music)
-{
-    m_music = _music;
-}
-void ReaderScenario::changeFX(string _FX)
-{
-    m_FX = _FX;
 }
 void ReaderScenario::setColor(int _red, int _green, int _blue)
 {

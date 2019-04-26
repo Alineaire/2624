@@ -77,7 +77,7 @@ class SFXDescriptorData : public IDescriptorData
         void unload();
         static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
-        string m_sound;
+        vector<string> m_sounds;
 
     protected:
     private:
@@ -92,7 +92,8 @@ class MusicDescriptorData : public IDescriptorData
         void unload();
         static void parse(vector<IDescriptorData*>& _descriptors, string _text);
 
-        string m_sound;
+        vector<string> m_sounds;
+        float m_fade;
 
     protected:
     private:

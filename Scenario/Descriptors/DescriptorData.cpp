@@ -1,7 +1,10 @@
 #include "DescriptorData.h"
 #include "ReaderScenario.h"
+#include "SoundManager.h"
 #include "TagsManager.h"
 #include "utils.h"
+
+#include <stdlib.h>
 
 IDescriptorData::IDescriptorData()
 {
@@ -101,31 +104,55 @@ void StringTagModifierDescriptorData::parse(vector<IDescriptorData*>& _descripto
 
 void SFXDescriptorData::read()
 {
-    ReaderScenario::Instance()->changeFX(m_sound);
+    if (m_sounds.size() > 0)
+    {
+        int index = rand() % m_sounds.size();
+        SoundManager::Instance()->playSFX(m_sounds[index]);
+    }
 }
 void SFXDescriptorData::unload()
 {
-    ReaderScenario::Instance()->changeFX("");
 }
 void SFXDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _text)
 {
     SFXDescriptorData* data = new SFXDescriptorData();
-    data->m_sound = _text;
+    if (!endWith(_text, "/"))
+        data->m_sounds.push_back(_text);
+    else
+        getFilesLocation(_text, data->m_sounds, ".wav");
+
+    // load
+    for (vector<string>::iterator it = data->m_sounds.begin(); it != data->m_sounds.end(); ++it)
+        SoundManager::Instance()->loadSFX(*it);
+
     _descriptors.push_back(data);
 }
 
 void MusicDescriptorData::read()
 {
-    ReaderScenario::Instance()->changeMusic(m_sound);
+    if (m_sounds.size() > 0)
+    {
+        int index = rand() % m_sounds.size();
+        SoundManager::Instance()->playMusic(m_sounds[index], m_fade);
+    }
 }
 void MusicDescriptorData::unload()
 {
-    ReaderScenario::Instance()->changeMusic("");
 }
 void MusicDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _text)
 {
     MusicDescriptorData* data = new MusicDescriptorData();
-    data->m_sound = _text;
+    vector<string> content = split(_text, '#');
+    data->m_fade = (content.size() > 1 ? stof(content[1]) * 1000.0f : 0.0f);
+    if (!endWith(content[0], "/"))
+        data->m_sounds.push_back(content[0]);
+    else
+        getFilesLocation(content[0], data->m_sounds, ".wav");
+
+    // load
+    for (vector<string>::iterator it = data->m_sounds.begin(); it != data->m_sounds.end(); ++it)
+        SoundManager::Instance()->loadMusic(*it);
+
     _descriptors.push_back(data);
 }
 
@@ -137,8 +164,6 @@ void TextDescriptorData::read()
 }
 void TextDescriptorData::unload()
 {
-    ReaderScenario::Instance()->getMatrix()->Clear();
-    ReaderScenario::Instance()->getMatrix()->Fill(0,0,0);
 }
 void TextDescriptorData::update()
 {
@@ -154,7 +179,7 @@ void TextDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _i
 
 void SpriteDescriptorData::read()
 {
-    ReaderScenario::Instance()->setSprite(m_sprite);
+    ReaderScenario::Instance()->setSprite(m_sprite); //TODO
 }
 void SpriteDescriptorData::unload()
 {

@@ -589,13 +589,14 @@
 	"Magick++/Color.h"
 	"Magick++/Geometry.h"
 
-1556206559 source:/home/pi/Desktop/2624/main.cpp
+1556274725 source:/home/pi/Desktop/2624/main.cpp
 	"ReaderScenario.h"
 	"TagsManager.h"
 	"LocalisationManager.h"
 	"ScenarioData.h"
 	"Time.h"
 	"InputManager.h"
+	"SoundManager.h"
 	"window.h"
 	"led-matrix.h"
 	<getopt.h>
@@ -904,7 +905,7 @@
 	<vector>
 	<string>
 
-1556119295 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
+1556291534 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
 	"TagData.h"
 	"Text.h"
 	<string>
@@ -928,11 +929,11 @@
 	<string>
 	<map>
 
-1556204144 source:/home/pi/Desktop/2624/ReaderScenario.cpp
+1556294345 source:/home/pi/Desktop/2624/ReaderScenario.cpp
 	"ReaderScenario.h"
 	"LocalisationManager.h"
 
-1556204265 /home/pi/Desktop/2624/ReaderScenario.h
+1556294323 /home/pi/Desktop/2624/ReaderScenario.h
 	"ScenarioData.h"
 	"PageData.h"
 	"graphics.h"
@@ -962,11 +963,13 @@
 	"TagData.h"
 	<string>
 
-1556210257 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
+1556293026 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
 	"DescriptorData.h"
 	"ReaderScenario.h"
+	"SoundManager.h"
 	"TagsManager.h"
 	"utils.h"
+	<stdlib.h>
 
 1556211119 source:/home/pi/Desktop/2624/Scenario/Conditions/ConditionData.cpp
 	"ConditionData.h"
@@ -1002,15 +1005,15 @@
 	"LocalisationManager.h"
 	"csvparser.h"
 
-1556097871 /home/pi/Desktop/2624/utils.h
+1556289913 /home/pi/Desktop/2624/utils.h
 	<string>
 	<vector>
 
-1556205201 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
+1556268730 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
 	"graphics.h"
 	<vector>
 
-1556207698 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
+1556269607 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
 	"Text.h"
 	"LocalisationManager.h"
 	"ReaderScenario.h"
@@ -1025,13 +1028,18 @@
 
 1552910188 source:/home/pi/Desktop/2624/Scenario/Tags/TagsManager.cc
 
-1556098417 source:/home/pi/Desktop/2624/utils.cpp
+1556290398 source:/home/pi/Desktop/2624/utils.cpp
 	"utils.h"
 	<string>
 	<vector>
 	<sstream>
 	<iostream>
 	<locale>
+	<dirent.h>
+	<errno.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<string.h>
 
 1556173887 /home/pi/Desktop/2624/window.h
 	<exception>
@@ -1395,9 +1403,20 @@
 	<map>
 	<SDL.h>
 
-1556210726 source:/home/pi/Desktop/2624/InputManager.cpp
+1556284335 source:/home/pi/Desktop/2624/InputManager.cpp
 	"InputManager.h"
 
 1556198435 /home/pi/Desktop/2624/vec2.h
 	<cmath>
+
+1556292987 source:/home/pi/Desktop/2624/SoundManager.cpp
+	"SoundManager.h"
+	"window.h"
+	<iostream>
+
+1556292743 /home/pi/Desktop/2624/SoundManager.h
+	<map>
+	<string>
+	<SDL.h>
+	<SDL2/SDL_mixer.h>
 

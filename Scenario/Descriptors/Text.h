@@ -13,8 +13,10 @@ class Character
         Character();
         Character(char _value, bool _isBlinking = false, int _r = -1, int _g = -1, int _b = -1);
         virtual ~Character();
+
         void update(rgb_matrix::Canvas* _matrix, rgb_matrix::Font* _font, bool _displayBlink, int& _posXDisplay, int& _posYDisplay);
         bool isBlinking() { return m_isBlinking; }
+        char getCharacter() { return m_value; }
         int getUnicodeCharacter(bool _displayBlink);
 
     protected:

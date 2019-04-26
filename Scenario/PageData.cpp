@@ -121,6 +121,7 @@ void PageData::parse(const char** _headerFields, const char** _rowFields, int _n
             m_links.push_back(link);
         }
 
+        colName = _headerFields[colLink];
         string content(_rowFields[colLink++]);
         if (link == nullptr || content == "")
             continue;

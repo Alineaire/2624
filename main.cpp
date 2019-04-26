@@ -4,6 +4,7 @@
 #include "ScenarioData.h"
 #include "Time.h"
 #include "InputManager.h"
+#include "SoundManager.h"
 #include "window.h"
 
 #include "led-matrix.h"
@@ -24,6 +25,7 @@ TagsManager* TagsManager::m_instance = nullptr;
 LocalisationManager* LocalisationManager::m_instance = nullptr;
 Time* Time::m_instance = nullptr;
 InputManager* InputManager::m_instance = nullptr;
+SoundManager* SoundManager::m_instance = nullptr;
 
 #if 1
 static int usage(const char *progname)
@@ -96,17 +98,19 @@ int main(int argc, char *argv[])
     signal(SIGTERM, InterruptHandler);
     signal(SIGINT, InterruptHandler);
 
-    string pathLoc(localisation_file);
-    LocalisationManager::Instance()->loadTSV(pathLoc);
-    string pathScenario(scenario_file);
-    ScenarioData scenario(pathScenario);
-    ReaderScenario::Instance()->start(matrix, offscreen, &font, &scenario);
-
     try
     {
         window* windows = new window();
-
+        SoundManager::Instance()->init();
         Time::Instance()->init();
+
+        string pathLoc(localisation_file);
+        LocalisationManager::Instance()->loadTSV(pathLoc);
+        string pathScenario(scenario_file);
+        ScenarioData scenario(pathScenario);
+
+        ReaderScenario::Instance()->start(matrix, offscreen, &font, &scenario);
+
         while (!interrupt_received)
         {
             InputManager::Instance()->update();
@@ -127,6 +131,7 @@ int main(int argc, char *argv[])
         cerr << "Error while initializing SDL: " << err.what() << endl;
     }
 
+    delete SoundManager::Instance();
     delete InputManager::Instance();
     delete Time::Instance();
     delete LocalisationManager::Instance();

@@ -104,6 +104,11 @@ void Text::parse()
 
             // nothing it's the character '<'
         }
+        if (index > 1 && text[index-1] == '$' && character == ' ')
+        {
+            ++index;
+            continue;
+        }
 
         // add character
         m_characters.push_back(Character(character, blink, r.back(), g.back(), b.back()));
@@ -126,11 +131,13 @@ void Text::update(float _deltaTime, bool _displayBlink)
     int x = 0, y = 0;
     for (vector<Character>::iterator it = m_characters.begin(); it != m_characters.end(); ++it)
     {
-        if (x + font->CharacterWidth(it->getUnicodeCharacter(_displayBlink)) > matrix->width())
+        bool returnCharacter = it->getCharacter() == '$';
+        if (returnCharacter || x + font->CharacterWidth(it->getUnicodeCharacter(_displayBlink)) > matrix->width())
         {
             x = 0;
             y = font->height();
         }
-        it->update(matrix, font, _displayBlink, x, y);
+        if (!returnCharacter)
+            it->update(matrix, font, _displayBlink, x, y);
     }
 }
