@@ -31,15 +31,18 @@ class Text
     public:
         Text(string _idText = "");
         virtual ~Text();
-        void parse();
+        void init();
         bool haveBlinker();
-        void update(float _deltaTime = 0.0f, bool _displayBlink = true);
+        void update();
 
         string m_idText;
 
     protected:
     private:
         vector<Character> m_characters;
+        float startingTime;
+
+        void parse();
 };
 
 #endif // TEXT_H

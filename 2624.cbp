@@ -14,11 +14,6 @@
 				<Option parameters='--led-rows=16 --led-cols=32 --led-chain=4 --led-gpio-mapping=adafruit-hat -f &quot;./fonts/5x8.bdf&quot; -s &quot;./Scenario - Scenario.tsv&quot; -l &quot;./Scenario - Loc.tsv&quot;' />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="Scenario/Conditions" />
-					<Add directory="Scenario" />
-					<Add directory="Scenario/Tags" />
-					<Add directory="Scenario/Descriptors" />
-					<Add directory="../2624" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -29,11 +24,6 @@
 				<Option parameters='--led-rows=16 --led-cols=32 --led-chain=4 --led-gpio-mapping=adafruit-hat -f &quot;./fonts/5x8.bdf&quot; -s &quot;./Scenario - Scenario.tsv&quot; -l &quot;./Scenario - Loc.tsv&quot;' />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="Scenario/Conditions" />
-					<Add directory="Scenario" />
-					<Add directory="Scenario/Tags" />
-					<Add directory="Scenario/Descriptors" />
-					<Add directory="../2624" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,6 +38,12 @@
 			<Add option="-O3 -g -Wextra -Wno-unused-parameter" />
 			<Add directory="rpi-rgb-led-matrix/include" />
 			<Add directory="CsvParser/include" />
+			<Add directory="Scenario/Conditions" />
+			<Add directory="Scenario/Descriptors" />
+			<Add directory="Scenario/Tags" />
+			<Add directory="Scenario" />
+			<Add directory="Serial" />
+			<Add directory="../2624" />
 		</Compiler>
 		<Linker>
 			<Add option="`sdl2-config --libs`  -lSDL2_mixer -lSDL2_image" />
@@ -59,6 +55,8 @@
 			<Add directory="rpi-rgb-led-matrix/include" />
 			<Add directory="CsvParser/include" />
 		</Linker>
+		<Unit filename="ArduinoManager.cpp" />
+		<Unit filename="ArduinoManager.h" />
 		<Unit filename="CsvParser/examples/usage_example.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -91,6 +89,19 @@
 		<Unit filename="Scenario/Tags/TagData.h" />
 		<Unit filename="Scenario/Tags/TagsManager.cpp" />
 		<Unit filename="Scenario/Tags/TagsManager.h" />
+		<Unit filename="Serial/arduino_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Serial/demo_rx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Serial/demo_tx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Serial/rs232.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Serial/rs232.h" />
 		<Unit filename="SoundManager.cpp" />
 		<Unit filename="SoundManager.h" />
 		<Unit filename="Time.cpp" />

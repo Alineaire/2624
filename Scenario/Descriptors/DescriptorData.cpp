@@ -1,3 +1,4 @@
+#include "ArduinoManager.h"
 #include "DescriptorData.h"
 #include "ReaderScenario.h"
 #include "SoundManager.h"
@@ -158,17 +159,14 @@ void MusicDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _
 
 void TextDescriptorData::read()
 {
-    m_text.parse();
-    //if (!m_text.haveBlinker())
-    //    m_text.update();
+    m_text.init();
 }
 void TextDescriptorData::unload()
 {
 }
 void TextDescriptorData::update()
 {
-    //if (m_text.haveBlinker())
-        m_text.update();
+    m_text.update();
 }
 void TextDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _idText)
 {
@@ -222,11 +220,23 @@ void BrightnessDescriptorData::parse(vector<IDescriptorData*>& _descriptors, str
 
 void ArduinoDescriptorData::read()
 {
-    //TODO
+    ArduinoManager::Instance()->send(m_text);
 }
 void ArduinoDescriptorData::parse(vector<IDescriptorData*>& _descriptors, string _text)
 {
     ArduinoDescriptorData* data = new ArduinoDescriptorData();
-    data->m_text = _text;
+    data->m_text = "-1";
+    if (_text == "Computer")
+        data->m_text = "0";
+    else if (_text == "BlinkComputer")
+        data->m_text = "1";
+    else if (_text == "TalkingMale")
+        data->m_text = "2";
+    else if (_text == "TalkingFemale")
+        data->m_text = "3";
+    else if (_text == "ActionMale")
+        data->m_text = "4";
+    else if (_text == "ActionFemale")
+        data->m_text = "5";
     _descriptors.push_back(data);
 }

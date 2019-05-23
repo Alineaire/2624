@@ -5,6 +5,7 @@
 #include "Time.h"
 #include "InputManager.h"
 #include "SoundManager.h"
+#include "ArduinoManager.h"
 #include "window.h"
 
 #include "led-matrix.h"
@@ -26,6 +27,7 @@ LocalisationManager* LocalisationManager::m_instance = nullptr;
 Time* Time::m_instance = nullptr;
 InputManager* InputManager::m_instance = nullptr;
 SoundManager* SoundManager::m_instance = nullptr;
+ArduinoManager* ArduinoManager::m_instance = nullptr;
 
 #if 1
 static int usage(const char *progname)
@@ -102,6 +104,7 @@ int main(int argc, char *argv[])
     {
         window* windows = new window();
         SoundManager::Instance()->init();
+        ArduinoManager::Instance()->init();
         Time::Instance()->init();
 
         string pathLoc(localisation_file);
@@ -131,6 +134,7 @@ int main(int argc, char *argv[])
         cerr << "Error while initializing SDL: " << err.what() << endl;
     }
 
+    delete ArduinoManager::Instance();
     delete SoundManager::Instance();
     delete InputManager::Instance();
     delete Time::Instance();

@@ -1,9 +1,14 @@
 #include "Text.h"
 #include "LocalisationManager.h"
 #include "ReaderScenario.h"
+#include "Time.h"
 #include "utils.h"
 
+#include <math.h>
 #include <string>
+
+#define BLINKINGTIME 2.5f
+#define BLINKINGTIME_DISPLAY (BLINKINGTIME / 2.0f)
 
 using namespace std;
 
@@ -45,6 +50,11 @@ Text::Text(string _idText)
 }
 Text::~Text()
 {
+}
+void Text::init()
+{
+    parse();
+    startingTime = Time::Instance()->ActualTime();
 }
 void Text::parse()
 {
@@ -124,20 +134,21 @@ bool Text::haveBlinker()
     }
     return false;
 }
-void Text::update(float _deltaTime, bool _displayBlink)
+void Text::update()
 {
     rgb_matrix::Canvas* matrix = ReaderScenario::Instance()->getOffscreen();
     rgb_matrix::Font* font = ReaderScenario::Instance()->getFont();
     int x = 0, y = 0;
+    bool blink = fmod(Time::Instance()->ActualTime() - startingTime, BLINKINGTIME) <= BLINKINGTIME_DISPLAY;
     for (vector<Character>::iterator it = m_characters.begin(); it != m_characters.end(); ++it)
     {
         bool returnCharacter = it->getCharacter() == '$';
-        if (returnCharacter || x + font->CharacterWidth(it->getUnicodeCharacter(_displayBlink)) > matrix->width())
+        if (returnCharacter || x + font->CharacterWidth(it->getUnicodeCharacter(blink)) > matrix->width())
         {
             x = 0;
             y = font->height();
         }
         if (!returnCharacter)
-            it->update(matrix, font, _displayBlink, x, y);
+            it->update(matrix, font, blink, x, y);
     }
 }

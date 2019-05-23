@@ -589,7 +589,7 @@
 	"Magick++/Color.h"
 	"Magick++/Geometry.h"
 
-1556274725 source:/home/pi/Desktop/2624/main.cpp
+1558623445 source:/home/pi/Desktop/2624/main.cpp
 	"ReaderScenario.h"
 	"TagsManager.h"
 	"LocalisationManager.h"
@@ -597,6 +597,7 @@
 	"Time.h"
 	"InputManager.h"
 	"SoundManager.h"
+	"ArduinoManager.h"
 	"window.h"
 	"led-matrix.h"
 	<getopt.h>
@@ -891,7 +892,7 @@
 	<string.h>
 	<unistd.h>
 
-1556117180 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
+1556294792 source:/home/pi/Desktop/2624/Scenario/PageData.cpp
 	"PageData.h"
 	"DescriptorData.h"
 	"ConditionData.h"
@@ -905,7 +906,7 @@
 	<vector>
 	<string>
 
-1556291534 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
+1558630859 /home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.h
 	"TagData.h"
 	"Text.h"
 	<string>
@@ -963,7 +964,8 @@
 	"TagData.h"
 	<string>
 
-1556293026 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
+1558630963 source:/home/pi/Desktop/2624/Scenario/Descriptors/DescriptorData.cpp
+	"ArduinoManager.h"
 	"DescriptorData.h"
 	"ReaderScenario.h"
 	"SoundManager.h"
@@ -1009,15 +1011,17 @@
 	<string>
 	<vector>
 
-1556268730 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
+1558620431 /home/pi/Desktop/2624/Scenario/Descriptors/Text.h
 	"graphics.h"
 	<vector>
 
-1556269607 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
+1558632660 source:/home/pi/Desktop/2624/Scenario/Descriptors/Text.cpp
 	"Text.h"
 	"LocalisationManager.h"
 	"ReaderScenario.h"
+	"Time.h"
 	"utils.h"
+	<math.h>
 	<string>
 
 1552910188 source:/home/pi/Desktop/2624/Scenario/LinkData.cc
@@ -1419,4 +1423,48 @@
 	<string>
 	<SDL.h>
 	<SDL2/SDL_mixer.h>
+
+1468164430 source:/home/pi/Desktop/2624/Serial/rs232.c
+	"rs232.h"
+
+1468162330 /home/pi/Desktop/2624/Serial/rs232.h
+	<stdio.h>
+	<string.h>
+	<termios.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<limits.h>
+	<sys/file.h>
+	<errno.h>
+	<windows.h>
+
+1558623030 source:/home/pi/Desktop/2624/Serial/arduino_test.c
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	"rs232.h"
+
+1558623006 source:/home/pi/Desktop/2624/Serial/demo_rx.c
+	<stdlib.h>
+	<stdio.h>
+	<Windows.h>
+	<unistd.h>
+	"rs232.h"
+
+1558624784 source:/home/pi/Desktop/2624/Serial/demo_tx.c
+	<stdlib.h>
+	<stdio.h>
+	<Windows.h>
+	<unistd.h>
+	"rs232.h"
+
+1558632869 /home/pi/Desktop/2624/ArduinoManager.h
+	<string>
+
+1558627143 source:/home/pi/Desktop/2624/ArduinoManager.cpp
+	"ArduinoManager.h"
+	"rs232.h"
 
