@@ -44,13 +44,13 @@ window::~window()
 void window::draw()
 {
     // Clear the window with a black background
-    /*SDL_SetRenderDrawColor( m_renderer, 0, 0, 0, 255 );
+    SDL_SetRenderDrawColor( m_renderer, 0, 0, 0, 255 );
     SDL_RenderClear( m_renderer );
 
     // Show the window
     SDL_RenderPresent( m_renderer );
 
-    int rgb[] = { 203, 203, 203, // Gray
+    /*int rgb[] = { 203, 203, 203, // Gray
                   254, 254,  31, // Yellow
                     0, 255, 255, // Cyan
                     0, 254,  30, // Green

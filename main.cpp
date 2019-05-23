@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
 
         ReaderScenario::Instance()->start(matrix, offscreen, &font, &scenario);
 
-        while (!interrupt_received)
+        while (!interrupt_received && !InputManager::Instance()->isClosing())
         {
             InputManager::Instance()->update();
             ReaderScenario::Instance()->update();

@@ -31,8 +31,9 @@ Mode mode = Computer;
 unsigned long time = 0;
 String inputString = "";
 boolean stringComplete = false;
-#define BLINKINGTIME 2500
-#define BLINKINGTIME_DISPLAY (BLINKINGTIME / 2)
+#define BLINKINGDISLAY 250
+#define BLINKINGHIDE 2125
+#define BLINKINGTIME (BLINKINGDISLAY + BLINKINGHIDE)
 
 void setup()
 {
@@ -75,7 +76,7 @@ void readInput()
 
 void displayMode()
 {
-  boolean blinking = ((time - millis()) % BLINKINGTIME) <= BLINKINGTIME_DISPLAY;
+  boolean blinking = ((time - millis()) % BLINKINGTIME) <= BLINKINGDISLAY;
   if (mode == Computer)
   {
     for(int i = startComputer; i < endComputer; ++i)

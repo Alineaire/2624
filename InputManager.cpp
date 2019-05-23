@@ -17,6 +17,8 @@ void InputManager::update()
         switch (event.type)
         {
         case SDL_QUIT:
+            closing = true;
+            exit(0);
             //game_state = 0; // set game state to done,(do what you want here)
             break;
         case SDL_KEYDOWN:
@@ -24,6 +26,11 @@ void InputManager::update()
         {
             string code(SDL_GetKeyName(event.key.keysym.sym));
             keys[code] = (event.type == SDL_KEYDOWN);
+            if (event.key.keysym.sym == SDLK_F4 && (event.key.keysym.mod == KMOD_LALT || event.key.keysym.mod == KMOD_ALT))
+            {
+                closing = true;
+                exit(0);
+            }
             break;
         }
         case SDL_MOUSEBUTTONDOWN:
@@ -50,6 +57,15 @@ void InputManager::update()
             mouse.y = event.motion.y;
             mouseDelta.x = event.motion.xrel;
             mouseDelta.y = event.motion.yrel;
+            break;
+        }
+        case SDL_WINDOWEVENT:
+        {
+            if (event.window.event == SDL_WINDOWEVENT_CLOSE)
+            {
+                closing = true;
+                exit(0);
+            }
             break;
         }
         default:

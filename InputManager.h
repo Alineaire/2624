@@ -29,6 +29,7 @@ class InputManager
 
         vec2f getMousePosition() { return mouse; }
         vec2f getMouseDeltaPosition() { return mouseDelta; }
+        bool isClosing() { return closing; }
 
     protected:
 
@@ -37,6 +38,7 @@ class InputManager
         map<string, bool> keys;
         map<string, bool> previousKeys;
         vec2f mouse, mouseDelta;
+        bool closing;
 };
 
 #endif // INPUTMANAGER_H

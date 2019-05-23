@@ -36,6 +36,7 @@ class ReaderScenario
         rgb_matrix::Canvas* getMatrix() { return m_matrix; }
         rgb_matrix::FrameCanvas* getOffscreen() { return m_offscreen; }
         rgb_matrix::Font* getFont() { return m_font; }
+        int getFontWidth() { return m_font->CharacterWidth(32); } //space
         int getRed() { return m_red; }
         int getGreen() { return m_green; }
         int getBlue() { return m_blue; }

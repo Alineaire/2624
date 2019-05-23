@@ -7,8 +7,9 @@
 #include <math.h>
 #include <string>
 
-#define BLINKINGTIME 2.5f
-#define BLINKINGTIME_DISPLAY (BLINKINGTIME / 2.0f)
+#define BLINKDISPLAY 0.5f
+#define BLINKHIDE 0.25f
+#define BLINKINGTIME (BLINKDISPLAY + BLINKHIDE)
 
 using namespace std;
 
@@ -68,6 +69,12 @@ void Text::parse()
 
     m_characters.clear();
     unsigned int index = 0;
+    center = false;
+    if (text.find("<center>", index) != std::string::npos)
+    {
+        center = true;
+        index = text.find(">", index)+1;
+    }
     while (index < text.length())
     {
         char character = text[index];
@@ -138,17 +145,39 @@ void Text::update()
 {
     rgb_matrix::Canvas* matrix = ReaderScenario::Instance()->getOffscreen();
     rgb_matrix::Font* font = ReaderScenario::Instance()->getFont();
-    int x = 0, y = 0;
-    bool blink = fmod(Time::Instance()->ActualTime() - startingTime, BLINKINGTIME) <= BLINKINGTIME_DISPLAY;
-    for (vector<Character>::iterator it = m_characters.begin(); it != m_characters.end(); ++it)
+    int fontWidth = ReaderScenario::Instance()->getFontWidth();
+    int i = 0, x = calculateOffsetCenter(0), y = 0;
+    bool blink = fmod(Time::Instance()->ActualTime() - startingTime, BLINKINGTIME) <= BLINKDISPLAY;
+    for (vector<Character>::iterator it = m_characters.begin(); it != m_characters.end(); ++it, ++i)
     {
         bool returnCharacter = it->getCharacter() == '$';
-        if (returnCharacter || x + font->CharacterWidth(it->getUnicodeCharacter(blink)) > matrix->width())
+        if (returnCharacter || x + fontWidth > matrix->width())
         {
-            x = 0;
+            x = calculateOffsetCenter(i+1);
             y = font->height();
         }
         if (!returnCharacter)
             it->update(matrix, font, blink, x, y);
     }
+}
+int Text::sizeLine(int indexCharacter)
+{
+    rgb_matrix::Canvas* matrix = ReaderScenario::Instance()->getOffscreen();
+    int fontWidth = ReaderScenario::Instance()->getFontWidth();
+    int actualSizeLine = 0;
+    for (unsigned int i = indexCharacter; i < m_characters.size(); ++i)
+    {
+        bool returnCharacter = m_characters[i].getCharacter() == '$';
+        if (returnCharacter || actualSizeLine + fontWidth > matrix->width())
+            break;
+        actualSizeLine += fontWidth;
+    }
+    return actualSizeLine;
+}
+int Text::calculateOffsetCenter(int indexCharacter)
+{
+    if (!center)
+        return 0;
+    rgb_matrix::Canvas* matrix = ReaderScenario::Instance()->getOffscreen();
+    return (matrix->width() - sizeLine(indexCharacter)) / 2.0f;
 }
