@@ -6,13 +6,13 @@
 
 #define PIN 6
 Adafruit_NeoPixel pixels;
-int numPixels = 50;
-int nbLedByPart = 14;
+int numPixels = 83;
+int nbLedByPart = 25;
 int nbLedByBlanckPart = 4;
 int startMan = 0;
 int endMan = nbLedByPart;
-int startComputer = nbLedByPart + nbLedByBlanckPart;
-int endComputer = nbLedByPart * 2 + nbLedByBlanckPart;
+int startComputer = nbLedByPart;
+int endComputer = nbLedByPart * 2 + nbLedByBlanckPart * 2;
 int startWoman = nbLedByPart * 2 + nbLedByBlanckPart * 2;
 int endWoman = numPixels;
 
@@ -25,6 +25,7 @@ enum Mode
   ActionMale,
   ActionFemale,
   All,
+  AllBlink,
 };
 
 Mode mode = Computer;
@@ -32,8 +33,11 @@ unsigned long time = 0;
 String inputString = "";
 boolean stringComplete = false;
 #define BLINKINGDISLAY 250
-#define BLINKINGHIDE 2125
+#define BLINKINGHIDE 125
 #define BLINKINGTIME (BLINKINGDISLAY + BLINKINGHIDE)
+int redValue = 50;
+int greenValue = 255;
+int blueValue = 255;
 
 void setup()
 {
@@ -80,7 +84,7 @@ void displayMode()
   if (mode == Computer)
   {
     for(int i = startComputer; i < endComputer; ++i)
-      pixels.setPixelColor(i, pixels.Color(150,0,0));
+      pixels.setPixelColor(i, pixels.Color(redValue,0,0));
   }
   else if (mode == BlinkComputer)
   {
@@ -89,18 +93,18 @@ void displayMode()
     else
     {
       for(int i = startComputer; i < endComputer; ++i)
-        pixels.setPixelColor(i, pixels.Color(10,0,0));
+        pixels.setPixelColor(i, pixels.Color(redValue,0,0));
     }
   }
   else if (mode == TalkingMale)
   {
     for(int i = startMan; i < endMan; ++i)
-      pixels.setPixelColor(i, pixels.Color(0,150,0));
+      pixels.setPixelColor(i, pixels.Color(0,greenValue,0));
   }
   else if (mode == TalkingFemale)
   {
     for(int i = startWoman; i < endWoman; ++i)
-      pixels.setPixelColor(i, pixels.Color(0,0,150));
+      pixels.setPixelColor(i, pixels.Color(0,0,blueValue));
   }
   else if (mode == ActionMale)
   {
@@ -109,7 +113,7 @@ void displayMode()
     else
     {
       for(int i = startMan; i < endMan; ++i)
-        pixels.setPixelColor(i, pixels.Color(0,10,0));
+        pixels.setPixelColor(i, pixels.Color(0,greenValue,0));
     }
   }
   else if (mode == ActionFemale)
@@ -119,17 +123,31 @@ void displayMode()
     else
     {
       for(int i = startWoman; i < endWoman; ++i)
-        pixels.setPixelColor(i, pixels.Color(0,0,10));
+        pixels.setPixelColor(i, pixels.Color(0,0,blueValue));
     }
   }
   else if (mode == All)
   {
     for(int i = startComputer; i < endComputer; ++i)
-      pixels.setPixelColor(i, pixels.Color(10,0,0));
+      pixels.setPixelColor(i, pixels.Color(redValue,0,0));
     for(int i = startMan; i < endMan; ++i)
-      pixels.setPixelColor(i, pixels.Color(0,10,0));
+      pixels.setPixelColor(i, pixels.Color(0,greenValue,0));
     for(int i = startWoman; i < endWoman; ++i)
-      pixels.setPixelColor(i, pixels.Color(0,0,10));
+      pixels.setPixelColor(i, pixels.Color(0,0,blueValue));
+  }
+  else if (mode == AllBlink)
+  {
+    if (blinking)
+      pixels.clear();
+    else
+    {
+      for(int i = startComputer; i < endComputer; ++i)
+        pixels.setPixelColor(i, pixels.Color(redValue,0,0));
+      for(int i = startMan; i < endMan; ++i)
+        pixels.setPixelColor(i, pixels.Color(0,greenValue,0));
+      for(int i = startWoman; i < endWoman; ++i)
+        pixels.setPixelColor(i, pixels.Color(0,0,blueValue));
+    }
   }
   pixels.show();
 }

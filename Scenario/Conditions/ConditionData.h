@@ -14,7 +14,7 @@ class IConditionData
         IConditionData() {}
         virtual ~IConditionData() {}
         virtual void initialize(LinkData* _link) {}
-        virtual bool validate() { return true; }
+        virtual bool validate(LinkData* _link) { return true; }
 
     protected:
     private:
@@ -25,7 +25,7 @@ class BoolTagConditionData : public IConditionData
     public:
         BoolTagConditionData() {}
         virtual ~BoolTagConditionData() {}
-        bool validate();
+        bool validate(LinkData* _link);
         static void parse(vector<IConditionData*>& _conditions, string _text);
 
         BoolTagData* m_data;
@@ -39,7 +39,7 @@ class IntTagConditionData : public IConditionData
     public:
         IntTagConditionData() {}
         virtual ~IntTagConditionData() {}
-        bool validate();
+        bool validate(LinkData* _link);
         static void parse(vector<IConditionData*>& _conditions, string _text);
 
         IntTagData* m_data;
@@ -54,7 +54,7 @@ class StringTagConditionData : public IConditionData
     public:
         StringTagConditionData() {}
         virtual ~StringTagConditionData() {}
-        bool validate();
+        bool validate(LinkData* _link);
         static void parse(vector<IConditionData*>& _conditions, string _text);
 
         StringTagData* m_data;
@@ -71,7 +71,7 @@ class TimeConditionData : public IConditionData
         TimeConditionData() {}
         virtual ~TimeConditionData() {}
         void initialize(LinkData* _link);
-        bool validate();
+        bool validate(LinkData* _link);
         static void parse(vector<IConditionData*>& _conditions, string _text);
 
         float m_duration;
@@ -94,7 +94,7 @@ class InputConditionData : public IConditionData
         InputConditionData() {}
         virtual ~InputConditionData() {}
         void initialize(LinkData* _link);
-        bool validate();
+        bool validate(LinkData* _link);
         static void parse(vector<IConditionData*>& _conditions, string _text);
 
         vector<CheckInput> m_inputs;

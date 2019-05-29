@@ -26,7 +26,7 @@ class ArduinoManager
 
     private:
         static ArduinoManager* m_instance;
-        int comport_number = 24;    /* /dev/ttyACM0 */
+        int comport_number = 25;    /* /dev/ttyACM1 */
         int baudrate = 9600;        /* 9600 baud */
 };
 

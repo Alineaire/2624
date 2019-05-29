@@ -39,13 +39,10 @@ bool LinkData::check()
     {
         for (vector<IConditionData*>::iterator it = m_conditions.begin(); it != m_conditions.end(); ++it)
         {
-            if (!(*it)->validate())
+            if (!(*it)->validate(this))
                 return false;
         }
-        for (vector<IDescriptorData*>::iterator it = m_descriptors.begin(); it != m_descriptors.end(); ++it)
-        {
-            (*it)->read();
-        }
+        launchValidateDescriptors();
         ReaderScenario::Instance()->changePage(m_nextPage);
         return true;
     }
@@ -57,5 +54,13 @@ void LinkData::initialize()
     for (vector<IConditionData*>::iterator it = m_conditions.begin(); it != m_conditions.end(); ++it)
     {
         (*it)->initialize(this);
+    }
+}
+
+void LinkData::launchValidateDescriptors()
+{
+    for (vector<IDescriptorData*>::iterator it = m_descriptors.begin(); it != m_descriptors.end(); ++it)
+    {
+        (*it)->read();
     }
 }

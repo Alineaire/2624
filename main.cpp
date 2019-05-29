@@ -97,6 +97,11 @@ int main(int argc, char *argv[])
 
     FrameCanvas* offscreen = matrix->CreateFrameCanvas();
 
+    struct timespec next_time;
+    next_time.tv_sec = time(NULL);
+    next_time.tv_nsec = 0;
+    struct tm tm;
+
     signal(SIGTERM, InterruptHandler);
     signal(SIGINT, InterruptHandler);
 
@@ -116,16 +121,23 @@ int main(int argc, char *argv[])
 
         while (!interrupt_received && !InputManager::Instance()->isClosing())
         {
+            localtime_r(&next_time.tv_sec, &tm);
+            offscreen->Clear();
+
             InputManager::Instance()->update();
             ReaderScenario::Instance()->update();
             windows->draw();
 
+            // Wait until we're ready to show it.
+            clock_nanosleep(CLOCK_REALTIME, TIMER_ABSTIME, &next_time, NULL);
+
             // Atomic swap with double buffer
-            //usleep(500);
+            //usleep(30);
             offscreen = matrix->SwapOnVSync(offscreen);
-            offscreen->Clear();
+            ReaderScenario::Instance()->setOffscreen(offscreen);
 
             Time::Instance()->update();
+            next_time.tv_nsec += 1000/15;
         }
         delete windows;
     }

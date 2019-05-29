@@ -25,7 +25,7 @@ class ReaderScenario
             return ReaderScenario::m_instance;
         }
 
-        void start(rgb_matrix::Canvas* _matrix, rgb_matrix::FrameCanvas* _offscreen, rgb_matrix::Font* _font, ScenarioData* _scenario);
+        void start(rgb_matrix::RGBMatrix* _matrix, rgb_matrix::FrameCanvas* _offscreen, rgb_matrix::Font* _font, ScenarioData* _scenario);
         void update();
         void changePage(PageData* newPage);
         void setSprite(string _sprite);
@@ -33,8 +33,9 @@ class ReaderScenario
         void setBrightness(int _brightness);
 
         ScenarioData* getScenarioData() { return m_scenario; }
-        rgb_matrix::Canvas* getMatrix() { return m_matrix; }
+        rgb_matrix::RGBMatrix* getMatrix() { return m_matrix; }
         rgb_matrix::FrameCanvas* getOffscreen() { return m_offscreen; }
+        void setOffscreen(rgb_matrix::FrameCanvas* _offscreen) { m_offscreen = _offscreen; }
         rgb_matrix::Font* getFont() { return m_font; }
         int getFontWidth() { return m_font->CharacterWidth(32); } //space
         int getRed() { return m_red; }
@@ -54,7 +55,7 @@ class ReaderScenario
         int m_green;
         int m_blue;
         int m_brightness;
-        rgb_matrix::Canvas* m_matrix;
+        rgb_matrix::RGBMatrix* m_matrix;
         rgb_matrix::FrameCanvas* m_offscreen;
         rgb_matrix::Font* m_font;
 };

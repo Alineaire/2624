@@ -10,7 +10,7 @@ ReaderScenario::~ReaderScenario()
 {
 }
 
-void ReaderScenario::start(rgb_matrix::Canvas* _matrix, rgb_matrix::FrameCanvas* _offscreen, rgb_matrix::Font* _font, ScenarioData* _scenario)
+void ReaderScenario::start(rgb_matrix::RGBMatrix* _matrix, rgb_matrix::FrameCanvas* _offscreen, rgb_matrix::Font* _font, ScenarioData* _scenario)
 {
     m_matrix = _matrix;
     m_offscreen = _offscreen;
@@ -46,4 +46,5 @@ void ReaderScenario::setColor(int _red, int _green, int _blue)
 void ReaderScenario::setBrightness(int _brightness)
 {
     m_brightness = _brightness;
+    m_matrix->SetBrightness(m_brightness);
 }

@@ -5,9 +5,9 @@
 #include "InputManager.h"
 #include "utils.h"
 
-bool BoolTagConditionData::validate()
+bool BoolTagConditionData::validate(LinkData* _link)
 {
-    return this->IConditionData::validate()
+    return this->IConditionData::validate(_link)
             && m_data->checkValue(m_action);
 }
 void BoolTagConditionData::parse(vector<IConditionData*>& _conditions, string _text)
@@ -43,9 +43,9 @@ void BoolTagConditionData::parse(vector<IConditionData*>& _conditions, string _t
     }
 }
 
-bool IntTagConditionData::validate()
+bool IntTagConditionData::validate(LinkData* _link)
 {
-    return this->IConditionData::validate()
+    return this->IConditionData::validate(_link)
             && m_data->checkValue(m_action, m_value);
 }
 void IntTagConditionData::parse(vector<IConditionData*>& _conditions, string _text)
@@ -116,9 +116,9 @@ void IntTagConditionData::parse(vector<IConditionData*>& _conditions, string _te
     }
 }
 
-bool StringTagConditionData::validate()
+bool StringTagConditionData::validate(LinkData* _link)
 {
-    return this->IConditionData::validate()
+    return this->IConditionData::validate(_link)
             && m_data->checkValue(m_action, m_value);
 }
 void StringTagConditionData::parse(vector<IConditionData*>& _conditions, string _text)
@@ -155,9 +155,9 @@ void TimeConditionData::initialize(LinkData* _link)
 
     m_time = Time::Instance()->ActualTime();
 }
-bool TimeConditionData::validate()
+bool TimeConditionData::validate(LinkData* _link)
 {
-    return this->IConditionData::validate() && Time::Instance()->ActualTime() >= m_time + m_duration;
+    return this->IConditionData::validate(_link) && Time::Instance()->ActualTime() >= m_time + m_duration;
 }
 void TimeConditionData::parse(vector<IConditionData*>& _conditions, string _text)
 {
@@ -175,9 +175,10 @@ void InputConditionData::initialize(LinkData* _link)
         it->m_time = 0.0f;
     }
 }
-bool InputConditionData::validate()
+bool InputConditionData::validate(LinkData* _link)
 {
     bool oneFinish = false;
+    bool oneIncrease = false;
     for (vector<CheckInput>::iterator it = m_inputs.begin(); it != m_inputs.end(); ++it)
     {
         string currentInput = it->m_index < it->m_inputs.size() ? it->m_inputs[it->m_index] : "";
@@ -201,6 +202,7 @@ bool InputConditionData::validate()
             {
                 ++(it->m_index);
                 it->m_time = 0.0f;
+                oneIncrease = true;
             }
         }
         if (it->m_index >= it->m_inputs.size())
@@ -209,7 +211,9 @@ bool InputConditionData::validate()
             break;
         }
     }
-    return this->IConditionData::validate() && oneFinish;
+    if (oneIncrease && !oneFinish)
+        _link->launchValidateDescriptors();
+    return this->IConditionData::validate(_link) && oneFinish;
 }
 void InputConditionData::parse(vector<IConditionData*>& _conditions, string _text)
 {

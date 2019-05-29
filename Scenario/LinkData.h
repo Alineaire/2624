@@ -18,6 +18,7 @@ class LinkData
         void makeLink(map<string, PageData*>& _pages);
         bool check();
         void initialize();
+        void launchValidateDescriptors();
 
         string m_namePage;
         PageData* m_nextPage;

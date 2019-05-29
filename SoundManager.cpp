@@ -23,7 +23,7 @@ SoundManager::~SoundManager()
 
 void SoundManager::init()
 {
-	if (Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096) == -1)
+	if (Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 3, 4096) == -1)
 		throw InitError();
 
     Mix_HookMusicFinished(SoundManager::musicFinished);
