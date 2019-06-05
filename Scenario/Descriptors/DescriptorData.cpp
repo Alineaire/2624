@@ -215,7 +215,7 @@ void BrightnessDescriptorData::parse(vector<IDescriptorData*>& _descriptors, str
 {
     BrightnessDescriptorData* data = new BrightnessDescriptorData();
     data->m_brightness = stoi(_text);
-    data->m_brightness = 20; // TODO Remove
+    data->m_brightness = 30; // TODO Remove
     _descriptors.push_back(data);
 }
 

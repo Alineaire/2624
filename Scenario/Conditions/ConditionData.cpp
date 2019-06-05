@@ -188,7 +188,7 @@ bool InputConditionData::validate(LinkData* _link)
             if (currentInput.find("MOUSE") != string::npos)
             {
                 vec2f delta = InputManager::Instance()->getMouseDeltaPosition();
-                if (delta.length() > 1)
+                if (delta.length() > 2.0f)
                 {
                     it->m_time += Time::Instance()->DeltaTime();
                     float duration = stof(split(currentInput, "#")[1]);
