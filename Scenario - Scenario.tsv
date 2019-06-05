@@ -1,37 +1,37 @@
 Ref	Color	Brightness	Arduino	Text	count character	Sprite	SFX	Music	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag	$	LinkRef	SFXInput	Input	Time (in seconds)	BoolTag	IntTag	StringTag
 0	255,0,0	70	Computer		0								veilleFR			0.0																																																											
-veilleFR	255,0,0	70	BlinkComputer	<center>Bienvenue en 2806$ Bougez le joystick</center>	54		./SFXs/beepbeep/						veilleFR			4.0					1		w|s|q|d																																																				
-1	255,0,0	70	Computer	<center>Bonjour et bienvenue,$ voici le programme </center>	59		./SFXs/beepbeep/	./Musics/accueil.wav#0.5					2			4.0																																																											
-2	255,0,0	70	Computer	<center>de resexualisation$ de la race humaine</center>	55		./SFXs/robot/						3			4.0																																																											
-3	255,0,0	70	Computer	<center>afin de repeupler$ la galaxie.</center>	47		./SFXs/robot/						4			4.0																																																											
-4	255,0,0	70	Computer	<center>En effet, en 2022$ les humains</center>	0		./SFXs/robot/						5			4.0																																																											
-5	255,0,0	70	Computer	<center>ont connu une$ regression sexuelle.</center>	47		./SFXs/robot/						6			4.0																																																											
-6	255,0,0	70	Computer	<center>En d'autres termes,</center>	52		./SFXs/robot/						7			4.0																																																											
-7	255,0,0	70	Computer	<center>alterite et diversite$ sexuelles</center>	36		./SFXs/robot/						8			4.0																																																											
-8	255,0,0	70	Computer	<center>ont ete bafouees.</center>	49		./SFXs/robot/						9																																																														
-9	255,0,0	70	Computer	<center>Le lien entre l'homme$ et la femme</center>	34		./SFXs/robot/						10			4.0																																																											
-10	255,0,0	70	Computer	<center>s'est perdu d'un$ point de vue</center>	51		./SFXs/robot/						11			4.0																																																											
-11	255,0,0	70	Computer	<center>somatique, psychique$ et social.</center>	47		./SFXs/robot/						12			4.0																																																											
-12	255,0,0	70	Computer	<center>Malheureusement, l'humain$ ne fornique plus en 2806.</center>	49		./SFXs/robot/						13			4.0																																																											
-13	255,0,0	70	Computer	<center>Vous etes donc choisis$ pour reproduire</center>	69		./SFXs/robot/						14			4.0																																																											
-14	255,0,0	70	Computer	<center>des gestes coitaux$ a partir d'archives</center>	56		./SFXs/robot/						15			4.0																																																											
-15	255,0,0	70	Computer	<center>du 20eme siecle.</center>	56		./SFXs/robot/						16			4.0																																																											
-16	255,0,0	70	Computer	<center>Nous avons retrouve ainsi</center>	33		./SFXs/robot/						17			4.0																																																											
-17	255,0,0	70	Computer	<center>des enregistrements$ d'onanismes mutuels </center>	42		./SFXs/robot/						18			4.0																																																											
-18	255,0,0	70	Computer	<center>de deux partenaires$ consentants</center>	58		./SFXs/robot/						19			4.0																																																											
-19	255,0,0	70	Computer	<center>pour que vous puissiez$ retrouver d'abord</center>	49		./SFXs/robot/						20			4.0																																																											
-20	255,0,0	70	Computer	<center>une libido et etre $ enfin prets pour...</center>	58		./SFXs/robot/						21			4.0																																																											
-21	255,0,0	70	BlinkComputer	<center><blink>une penetration imminente</blink></center>	57		./SFXs/robot/						22			4.0																																																											
-22	255,0,0	70	Computer	<center>Je serai votre coach tout$ au long de ce programme.</center>	57		./SFXs/robot/						23			4.0																																																											
-23	255,0,0	70	Computer	<center>Voici les instructions$ suivantes :</center>	52		./SFXs/robot/						24			4.0																																																											
+veilleFR	255,0,0	70	BlinkComputer	<center>Bienvenue en 2806$ Bougez le joystick	45		./SFXs/beepbeep/						veilleFR			4.0					1		w|s|q|d																																																				
+1	255,0,0	70	Computer	<center>Bonjour et bienvenue,$ voici le programme 	50		./SFXs/beepbeep/	./Musics/accueil.wav#0.5					2			4.0																																																											
+2	255,0,0	70	Computer	<center>de resexualisation$ de la race humaine	46		./SFXs/robot/						3			4.0																																																											
+3	255,0,0	70	Computer	<center>afin de repeupler$ la galaxie.	38		./SFXs/robot/						4			4.0																																																											
+4	255,0,0	70	Computer	<center>En effet, en 2022$ les humains	0		./SFXs/robot/						5			4.0																																																											
+5	255,0,0	70	Computer	<center>ont connu une$ regression sexuelle.	38		./SFXs/robot/						6			4.0																																																											
+6	255,0,0	70	Computer	<center>En d'autres termes,	43		./SFXs/robot/						7			4.0																																																											
+7	255,0,0	70	Computer	<center>alterite et diversite$ sexuelles	27		./SFXs/robot/						8			4.0																																																											
+8	255,0,0	70	Computer	<center>ont ete bafouees.	40		./SFXs/robot/						9																																																														
+9	255,0,0	70	Computer	<center>Le lien entre l'homme$ et la femme	25		./SFXs/robot/						10			4.0																																																											
+10	255,0,0	70	Computer	<center>s'est perdu d'un$ point de vue	42		./SFXs/robot/						11			4.0																																																											
+11	255,0,0	70	Computer	<center>somatique, psychique$ et social.	38		./SFXs/robot/						12			4.0																																																											
+12	255,0,0	70	Computer	<center>Malheureusement, l'humain$ ne fornique plus en 2806.	40		./SFXs/robot/						13			4.0																																																											
+13	255,0,0	70	Computer	<center>Vous etes donc choisis$ pour reproduire	60		./SFXs/robot/						14			4.0																																																											
+14	255,0,0	70	Computer	<center>des gestes coitaux$ a partir d'archives	47		./SFXs/robot/						15			4.0																																																											
+15	255,0,0	70	Computer	<center>du 20eme siecle.	47		./SFXs/robot/						16			4.0																																																											
+16	255,0,0	70	Computer	<center>Nous avons retrouve ainsi	24		./SFXs/robot/						17			4.0																																																											
+17	255,0,0	70	Computer	<center>des enregistrements$ d'onanismes mutuels 	33		./SFXs/robot/						18			4.0																																																											
+18	255,0,0	70	Computer	<center>de deux partenaires$ consentants	49		./SFXs/robot/						19			4.0																																																											
+19	255,0,0	70	Computer	<center>pour que vous puissiez$ retrouver d'abord	40		./SFXs/robot/						20			4.0																																																											
+20	255,0,0	70	Computer	<center>une libido et etre $ enfin prets pour...	49		./SFXs/robot/						21			4.0																																																											
+21	255,0,0	70	BlinkComputer	<center><blink>une penetration imminente</blink>	48		./SFXs/robot/						22			4.0																																																											
+22	255,0,0	70	Computer	<center>Je serai votre coach tout$ au long de ce programme.	48		./SFXs/robot/						23			4.0																																																											
+23	255,0,0	70	Computer	<center>Voici les instructions$ suivantes :	43		./SFXs/robot/						24			4.0																																																											
 24	120,255,120	50	ActionMale	<blink>          Vert clignotant$    action partenaire vert</blink>	67		./SFXs/robot/						25			7.0																																																											
 25	120,120,255	50	ActionFemale	<blink>Bleu clignontant$ action partenaire bleu</blink>	55		./SFXs/robot/						26			7.0																																																											
-26	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 1</blink></center>	50		./SFXs/beepbeep/						27			3.0																																																											
+26	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 1</blink>	41		./SFXs/beepbeep/						27			3.0																																																											
 27	120,255,120	50	TalkingMale	          Moi j'aime bien$          quand c'est doux	52			./Musics/phase1.wav#0.5					28			4.0																																																											
 28	120,120,255	50	TalkingFemale	Ca tombe bien, moi aussi,$ doux et ferme :)	43								29			4.0																																																											
 29	120,120,255	50	TalkingFemale	Je prends les commandes,$ j'ai envie !	38								30			4.0																																																											
 30	120,255,120	50	TalkingMale	           Ok, je m'offre$              a toi alors.	52			Off#0.5					31			4.0																																																											
-31	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 2</blink></center>	50		./SFXs/beepbeep/						32			3.0																																																											
+31	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 2</blink>	41		./SFXs/beepbeep/						32			3.0																																																											
 32	120,120,255	50	TalkingFemale	Ok super, alors dis moi$ ce que tu aimes.	41			./Musics/phase2.wav#0.5					33			4.0																																																											
 33	120,255,120	50	ActionMale	<blink>   Tres bien, alors vas-y$    doucement vers le haut</blink>	67								34	./SFXs/oui/	w						GAMEOVER	./SFXs/non/	f,f,f,f,f						GAMEOVER	./SFXs/non/	Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5						GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 34	120,255,120	50	ActionMale	<blink>                   Oui...$    maintenant vers le bas</blink>	67								35	./SFXs/oui/	s						GAMEOVER	./SFXs/non/	f,f,f,f,f						GAMEOVER	./SFXs/non/	Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5						GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
@@ -39,13 +39,13 @@ veilleFR	255,0,0	70	BlinkComputer	<center>Bienvenue en 2806$ Bougez le joystick<
 36	120,255,120	50	ActionMale	<blink>      Oh que c'est bon...$            encore un peu.</blink>	67								37	./SFXs/oui/	w,s,w,s,w,s,w,s,w,s,w,s,w,s						GAMEOVER	./SFXs/non/	f,f,f,f,f						GAMEOVER	./SFXs/non/	Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5						GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 37	120,255,120	50	TalkingMale	 Super, merci. Dis-moi ce$   que tu veux maintenant.	52		./SFXs/satisfaction/						38			4.0																																																											
 38	120,120,255	50	TalkingFemale	J'adore quand$ tu me demandes ca !	34			Off#0.5					39			4.0																																																											
-39	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 3</blink></center>	50		./SFXs/beepbeep/						40			3.0																																																											
+39	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 3</blink>	41		./SFXs/beepbeep/						40			3.0																																																											
 40	120,120,255	50	ActionFemale	<blink>Carresse-moi longuement$ juste au dessus.</blink>	56			./Musics/phase3.wav#0.5					41	./SFXs/oui/	Mouse#0.5						GAMEOVER	./SFXs/non/	f,f,f,f,f														GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 41	120,120,255	50	ActionFemale	<blink>en continue avec une$ legere pression</blink>	52								42	./SFXs/oui/	Mouse#1.0,Mouse#1.0,Mouse#1.0,Mouse#1.0,Mouse#1.0						GAMEOVER	./SFXs/non/	f,f,f,f,f														GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 42	120,120,255	50	ActionFemale	<blink>hum... un peu dans$ tous les sens</blink>	48								43	./SFXs/oui/	Mouse#1.0,Mouse#1.0,Mouse#1.0,Mouse#1.0,Mouse#1.0						GAMEOVER	./SFXs/non/	f,f,f,f,f														GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 43	120,120,255	50	ActionFemale	<blink>Oui comme ca$ t'arrete pas</blink>	41								44	./SFXs/oui/	Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5,Mouse#0.5						GAMEOVER	./SFXs/non/	f,f,f,f,f														GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 44	120,120,255	50	TalkingFemale	Merci, c'est bon ce que$ tu m'as fait	37		./SFXs/satisfaction/	Off#0.5					45			4.0																																																											
-45	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 4</blink></center>	50		./SFXs/beepbeep/						46			3.0																																																											
+45	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 4</blink>	41		./SFXs/beepbeep/						46			3.0																																																											
 46	120,255,120	50	TalkingMale	         Tu fais toujours$                 doucement	52			./Musics/phase4.wav#0.5					47			4.0																																																											
 47	120,255,120	50	ActionMale	<blink>           de haut en bas</blink>	40								48	./SFXs/oui/	w,s						GAMEOVER	./SFXs/non/	f,f,f,f,f														GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 48	120,255,120	50	ActionMale	<blink>  Puis de gauche a droite</blink>	40								49	./SFXs/oui/	a,d						GAMEOVER	./SFXs/non/	f,f,f,f,f														GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
@@ -53,7 +53,7 @@ veilleFR	255,0,0	70	BlinkComputer	<center>Bienvenue en 2806$ Bougez le joystick<
 50	120,255,120	50	ActionMale	<blink>    Autant de fois que...$         Ne..ce..ssaire...</blink>	67								51	./SFXs/oui/	w,s,a,d,w,s,a,d,w,s,a,d,w,s,a,d						GAMEOVER	./SFXs/non/	f,f,f,f,f														GAMEOVER	./SFXs/non/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 51	120,255,120	50	TalkingMale	       Genial ! Qu'on est$             bon ensemble.	52		./SFXs/satisfaction/						52			4.0																																																											
 52	120,120,255	50	TalkingFemale	Haha oui c'est bien cool$ tous les deux !	41			Off#0.5					53			4.0																																																											
-53	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 5</blink></center>	50		./SFXs/beepbeep/						54			3.0																																																											
+53	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 5</blink>	41		./SFXs/beepbeep/						54			3.0																																																											
 54	120,255,120	50	TalkingMale	        Ok a moi, je vais$          varier un peu ;)	52			./Musics/phase5.wav#0.5					55			4.0																																																											
 55	120,120,255	50	ActionFemale	<blink>Ah ouais ? Montre-moi ca$ Tu vas faire quoi ? :p</blink>	63								56	./SFXs/oui/	clickmiddle						GAMEOVER	./SFXs/non/	f,f,f,f,f																						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
 56	120,120,255	50	ActionFemale	<blink>Ouah tu sais faire$ quand il faut. Continue !</blink>	60								57	./SFXs/oui/	clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	f,f,f,f,f																						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
@@ -63,7 +63,7 @@ veilleFR	255,0,0	70	BlinkComputer	<center>Bienvenue en 2806$ Bougez le joystick<
 60	120,255,120	50	TalkingMale	  Hum que t'es magnifique$                        :D	52								61			4.0																																																											
 61	120,120,255	50	TalkingFemale	Et toi si sexy ;)	17								62			4.0																																																											
 62	120,255,120	50	TalkingMale	       Au fait, tu serais$        d'accord pour ....	52			Off#0.5					63			4.0																																																											
-63	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 6</blink></center>	50		./SFXs/beepbeep/						64			3.0																																																											
+63	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 6</blink>	41		./SFXs/beepbeep/						64			3.0																																																											
 64	120,120,255	50	TalkingFemale	Ok, dis moi ce que$ je dois faire ?	35			./Musics/phase6.wav#0.5					65			4.0																																																											
 65	120,255,120	50	TalkingMale	            Tu sais quand$             tu vas de ...	52								66			4.0																																																											
 66	120,255,120	50	ActionMale	<blink>          gauche a droite$       Bah c'est super....</blink>	67								67	./SFXs/oui/	a,d,a,d																														GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60											
@@ -73,23 +73,23 @@ veilleFR	255,0,0	70	BlinkComputer	<center>Bienvenue en 2806$ Bougez le joystick<
 70	120,255,120	50	TalkingMale	           Grandiose ! :)$           Ca me suffit...	52		./SFXs/satisfaction/						71			4.0																																																											
 71	120,120,255	50	TalkingFemale	Oh une derniere$ chose avant !	30								72			4.0																																																											
 72	120,255,120	50	TalkingMale	         Je ferai tout ce$         que tu as envie.	51			Off#0.5					73			4.0																																																											
-73	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 7</blink></center>	50		./SFXs/beepbeep/						74			3.0																																																											
+73	255,0,0	75	BlinkComputer	<center>Archive 1$ <blink>Phase 7</blink>	41		./SFXs/beepbeep/						74			3.0																																																											
 74	120,120,255	50	TalkingFemale	Tu te rappelles de $ la derniere fois ?	39			./Musics/phase7.wav#0.5		clickinside=0			75			4.0																																																											
 75	120,120,255	50	ActionFemale	<blink>Au fond de moi,$ tu alternais...</blink>	47					clickinside+=1			75	./SFXs/oui/	clickright|clickleft			clickinside<2			76	./SFXs/oui/	clickright|clickleft			clickinside>=2																																			WAIT	./SFXs/beepbeep/		60											
 76	120,120,255	50	ActionFemale	<blink>OUI ! Continue comme ca !$ En alternance !</blink>	57					clickinside+=1			76	./SFXs/oui/	clickright|clickleft			clickinside<10			77	./SFXs/oui/	clickright|clickleft			clickinside>=10																																			WAIT	./SFXs/beepbeep/		60											
 77	120,120,255	50	ActionFemale	<blink>Ooooh qu'elle folie !</blink>	36					clickinside+=1			77	./SFXs/oui/	clickright|clickleft			clickinside<8			78	./SFXs/oui/	clickright|clickleft			clickinside>=8																																			WAIT	./SFXs/beepbeep/		60											
 78	120,120,255	50	TalkingFemale	Qu'est ce...$ Que tu...	23		dz	Off#0.5					79			4.0																																																											
 79	120,120,255	50	TalkingFemale	Attends....$ Pour me la....	27								80			4.0																																																											
-80	255,0,0	70	BlinkComputer	<center>#01101010110101#$ Archive 2 corrompue</center>	54		./SFXs/fichiercorrompu/						81			6.0																																																											
-81	255,0,0	75	Computer	<center>Vous seul savez$ ce qui reste a faire</center>	54		./SFXs/robot/						82			4.0																																																											
-82	255,0,0	75	Computer	<center>Vous avez theoriquement</center>	40		./SFXs/robot/						83			4.0																																																											
-83	255,0,0	75	Computer	<center>atteint l'envie$ de forniquer</center>	46		./SFXs/robot/						84			4.0																																																											
-84	255,0,0	75	Computer	<center>Nous n'avons pas$ d'archives</center>	45		./SFXs/robot/						85			4.0																																																											
-85	255,0,0	75	Computer	<center>de l'acte coital.</center>	34		./SFXs/robot/						86			4.0																																																											
-86	255,0,0	75	Computer	<center>A vous d'improviser pour$ faire des bebes.</center>	59		./SFXs/robot/						87			4.0																																																											
-87	255,0,0	75	Computer	<center>Au nom de l'humanite, </center>	39		./SFXs/robot/						88			4.0																																																											
-88	255,0,0	75	Computer	<center>merci et bon courage.</center>	38		./SFXs/win/						veilleFR			4.0																																																											
-gameOVER	255,0,0	75	BlinkComputer	<center>Vous avez importune$ votre partenaire !</center>	56		./SFXs/gameover/						veilleFR			6.0																																																											
+80	255,0,0	70	BlinkComputer	<center>#01101010110101#$ Archive 2 corrompue	45		./SFXs/fichiercorrompu/						81			6.0																																																											
+81	255,0,0	75	Computer	<center>Vous seul savez$ ce qui reste a faire	45		./SFXs/robot/						82			4.0																																																											
+82	255,0,0	75	Computer	<center>Vous avez theoriquement	31		./SFXs/robot/						83			4.0																																																											
+83	255,0,0	75	Computer	<center>atteint l'envie$ de forniquer	37		./SFXs/robot/						84			4.0																																																											
+84	255,0,0	75	Computer	<center>Nous n'avons pas$ d'archives	36		./SFXs/robot/						85			4.0																																																											
+85	255,0,0	75	Computer	<center>de l'acte coital.	25		./SFXs/robot/						86			4.0																																																											
+86	255,0,0	75	Computer	<center>A vous d'improviser pour$ faire des bebes.	50		./SFXs/robot/						87			4.0																																																											
+87	255,0,0	75	Computer	<center>Au nom de l'humanite, 	30		./SFXs/robot/						88			4.0																																																											
+88	255,0,0	75	Computer	<center>merci et bon courage.	29		./SFXs/win/						veilleFR			4.0																																																											
+gameOVER	255,0,0	75	BlinkComputer	<center>Vous avez importune$ votre partenaire !	47		./SFXs/gameover/						veilleFR			6.0																																																											
 WAIT	255,0,0	75	BlinkComputer	<center><blink>-Inactivité d'une minute-</blink>$ Les cobayes dorment ?			./SFXs/beepbeep/						WAIT2			5.0																																																											
 WAIT2	255,0,0	75	BlinkComputer	Reset du programme de$ resexualitation <blink>...</blink>			./SFXs/beepbeep/						veilleFR			5.0																																																											
 																																																																											
@@ -98,4 +98,4 @@ WAIT2	255,0,0	75	BlinkComputer	Reset du programme de$ resexualitation <blink>...
 					723	ActionMale	12																																																																				
 					434	TalkingFemale	13																																																																				
 					623	TalkingMale	12																																																																				
-					1411	Computer	31																																																																				
+					1150	Computer	31																																																																				
