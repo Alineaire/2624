@@ -59,7 +59,7 @@ veilleFR	255,0,0	70	BlinkComputer	<center>Bienvenue en 2806$ Bougez le joystick	
 56	120,120,255	50	ActionFemale	<blink>Ouah tu sais faire$ quand il faut. Continue !</blink>	60								57	./SFXs/oui/	clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	f,f,f,f,f																						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60					0		r				
 57	120,120,255	50	ActionFemale	<blink>Vas-y encore$ plein de fois la !</blink>	47								58	./SFXs/oui/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	f,f,f,f,f																						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60					0		r				
 58	120,120,255	50	ActionFemale	<blink>Aaaaaaaah oui, encore$ un peu la.</blink>	48								59	./SFXs/oui/	clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle,clickmiddle						GAMEOVER	./SFXs/non/	f,f,f,f,f																						GAMEOVER	./SFXs/non/	clilckleft,clilckleft,clilckleft						GAMEOVER	./SFXs/non/	clickleft,clickleft,clickleft						WAIT	./SFXs/beepbeep/		60					0		r				
-59	120,120,255	50	TalkingFemale	Arretes tes mains divines$ :)	29		./SFXs/satisfaction/						60			4.0																																																					0		r				
+59	120,120,255	50	TalkingFemale	Arrete tes mains divines$ :)	28		./SFXs/satisfaction/						60			4.0																																																					0		r				
 60	120,255,120	50	TalkingMale	  Hum que t'es magnifique$                        :D	52								61			4.0																																																					0		r				
 61	120,120,255	50	TalkingFemale	Et toi si sexy ;)	17								62			4.0																																																					0		r				
 62	120,255,120	50	TalkingMale	       Au fait, tu serais$        d'accord pour ....	52			Off#0.5					63			4.0																																																					0		r				
@@ -96,6 +96,6 @@ WAIT2	255,0,0	75	BlinkComputer	Reset du programme de$ resexualitation <blink>...
 					Nombre de caratères		Nombre de popup																																																																				
 					610	ActionFemale	12																																																																				
 					723	ActionMale	12																																																																				
-					434	TalkingFemale	13																																																																				
+					433	TalkingFemale	13																																																																				
 					624	TalkingMale	12																																																																				
 					1150	Computer	31																																																																				
